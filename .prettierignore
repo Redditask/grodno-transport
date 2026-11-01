@@ -1,0 +1,10 @@
+node_modules/
+dist/
+work/
+.idea/
+.env
+.env.*
+*.tsbuildinfo
+*.log
+package-lock.json
+**/*.md
