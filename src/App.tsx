@@ -1,8 +1,15 @@
-export const App = () => {
-  return (
+import { AppFooter } from './components/AppFooter/AppFooter';
+import { AppHeader } from './components/AppHeader/AppHeader';
+import { StopsList } from './components/StopsList/StopsList';
+
+import styles from './App.module.scss';
+
+export const App = () => (
+  <div className={styles.page}>
+    <AppHeader />
     <main>
-      <h1>Транспорт Гродно</h1>
-      <p>Здесь появятся ближайшие отправления.</p>
+      <StopsList />
     </main>
-  );
-};
+    <AppFooter />
+  </div>
+);
