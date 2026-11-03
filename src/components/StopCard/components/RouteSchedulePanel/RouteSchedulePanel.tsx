@@ -1,52 +1,59 @@
-import type { StopRouteItem } from '../../../../utils/getStopRouteItems';
+import type { StopRouteItem } from '../../../../utils/buildStopRouteItems';
 import { groupDeparturesByHour } from '../../../../utils/groupDeparturesByHour';
 import type { DayType } from '../../../../utils/transportTime';
 import { TransportBadge } from '../../../TransportBadge/TransportBadge';
 
 import panel from '../../styles/StopPanel.module.scss';
-import styles from './SchedulePanel.module.scss';
+import styles from './RouteSchedulePanel.module.scss';
 
-interface Props {
-  item: StopRouteItem;
-  scheduleDay: DayType;
-  todayType: DayType;
+interface RouteSchedulePanelProps {
+  routeItem: StopRouteItem;
+  selectedDayType: DayType;
+  todayDayType: DayType;
   onDayChange: (day: DayType) => void;
   onBack: () => void;
 }
 
-export const SchedulePanel = ({ item, scheduleDay, todayType, onDayChange, onBack }: Props) => {
-  const departures = item.schedule?.departures[scheduleDay];
+export const RouteSchedulePanel = ({
+  routeItem,
+  selectedDayType,
+  todayDayType,
+  onDayChange,
+  onBack,
+}: RouteSchedulePanelProps) => {
+  const departures = routeItem.schedule?.departures[selectedDayType];
   const groupedDepartures = groupDeparturesByHour(departures ?? []);
 
   const handleWeekday = () => onDayChange('weekday');
   const handleWeekend = () => onDayChange('weekend');
 
   return (
-    <div className={panel.panel} data-transport={item.line.transportType}>
+    <div className={panel.panel} data-transport={routeItem.line.transportType}>
       <button className={styles.backButton} type="button" data-panel-focus onClick={onBack}>
         <span aria-hidden="true">←</span> К маршрутам
       </button>
 
       <div className={styles.scheduleHeading}>
-        <TransportBadge line={item.line} />
+        <TransportBadge line={routeItem.line} />
 
         <div>
           <span className={styles.transportName}>
-            {item.line.transportType === 'bus' ? 'Автобус' : 'Троллейбус'} №{item.line.number}
+            {routeItem.line.transportType === 'bus' ? 'Автобус' : 'Троллейбус'} №
+            {routeItem.line.number}
           </span>
 
           <h2 className={styles.direction}>
-            {item.origin} → {item.destination}
+            {routeItem.origin} → {routeItem.destination}
           </h2>
         </div>
       </div>
 
       <div className={styles.daySwitch} role="group" aria-label="Дни движения">
-        <button type="button" aria-pressed={scheduleDay === 'weekday'} onClick={handleWeekday}>
+        <button type="button" aria-pressed={selectedDayType === 'weekday'} onClick={handleWeekday}>
           Будни
         </button>
 
-        <button type="button" aria-pressed={scheduleDay === 'weekend'} onClick={handleWeekend}>
+        <button type="button" aria-pressed={selectedDayType === 'weekend'} onClick={handleWeekend}>
           Выходные
         </button>
       </div>
@@ -55,9 +62,9 @@ export const SchedulePanel = ({ item, scheduleDay, todayType, onDayChange, onBac
         <h3>Все отправления</h3>
 
         <span className={panel.caption}>
-          {scheduleDay === todayType
+          {selectedDayType === todayDayType
             ? 'Сегодня'
-            : scheduleDay === 'weekday'
+            : selectedDayType === 'weekday'
               ? 'Будний день'
               : 'Выходной день'}
         </span>
@@ -80,11 +87,10 @@ export const SchedulePanel = ({ item, scheduleDay, todayType, onDayChange, onBac
                 {hourDepartures.map((departure) => (
                   <time
                     dateTime={departure.time}
-                    key={`${departure.serviceMinutes}:${departure.annotation ?? ''}`}
+                    key={departure.serviceMinutes}
                     aria-label={`${departure.time}${dayOffset > 0 ? ', на следующий день' : ''}`}
                   >
                     {departure.time.split(':')[1]}
-                    {departure.annotation ? <sup>{departure.annotation}</sup> : null}
                   </time>
                 ))}
               </dd>
@@ -92,14 +98,6 @@ export const SchedulePanel = ({ item, scheduleDay, todayType, onDayChange, onBac
           ))}
         </dl>
       )}
-
-      {item.schedule && item.schedule.notes.length > 0 ? (
-        <ul className={styles.notes}>
-          {item.schedule.notes.map((note) => (
-            <li key={note}>{note}</li>
-          ))}
-        </ul>
-      ) : null}
 
       <p className={panel.panelFootnote}>Плановое время отправления с этой остановки.</p>
     </div>

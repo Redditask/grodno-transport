@@ -2,12 +2,14 @@ import type { ChangeEvent } from 'react';
 import { useState } from 'react';
 
 import { transportData } from '../../data/transportData';
+import type { Stop } from '../../domain/stop';
 import { StopCard } from '../StopCard/StopCard';
 
-import styles from './StopsList.module.scss';
+import styles from './StopList.module.scss';
 
-export const StopsList = () => {
+export const StopList = () => {
   const [query, setQuery] = useState('');
+  const [openStopId, setOpenStopId] = useState<Stop['id'] | null>(null);
 
   const searchText = query.trim().toLocaleLowerCase('ru');
   const visibleStops = transportData.stops.filter((stop) =>
@@ -16,7 +18,13 @@ export const StopsList = () => {
 
   const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
+    setOpenStopId(null);
   };
+
+  const handleToggleStop = (stopId: Stop['id']) => {
+    setOpenStopId((current) => (current === stopId ? null : stopId));
+  };
+  const handleCloseStop = () => setOpenStopId(null);
 
   return (
     <section aria-labelledby="stops-heading">
@@ -39,7 +47,14 @@ export const StopsList = () => {
 
       <div className={styles.stops}>
         {visibleStops.map((stop) => (
-          <StopCard key={stop.id} stop={stop} data={transportData} />
+          <StopCard
+            key={stop.id}
+            stop={stop}
+            transportData={transportData}
+            isOpen={openStopId === stop.id}
+            onToggle={() => handleToggleStop(stop.id)}
+            onClose={handleCloseStop}
+          />
         ))}
       </div>
 

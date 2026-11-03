@@ -1,31 +1,31 @@
 import { useCurrentTime } from '../../../../../../hooks/useCurrentTime';
-import type { StopRouteItem } from '../../../../../../utils/getStopRouteItems';
+import type { StopRouteItem } from '../../../../../../utils/buildStopRouteItems';
+import { getUpcomingDepartures } from '../../../../../../utils/getUpcomingDepartures';
 import { formatDayOffset, getDayType } from '../../../../../../utils/transportTime';
-import { upcomingDepartures } from '../../../../../../utils/upcomingDepartures';
 import { TransportBadge } from '../../../../../TransportBadge/TransportBadge';
 
 import styles from './RouteListItem.module.scss';
 
-interface Props {
-  item: StopRouteItem;
-  onSelect: (routeId: string) => void;
+interface RouteListItemProps {
+  routeItem: StopRouteItem;
+  onSelectRoute: (routeId: string) => void;
 }
 
-export const RouteListItem = ({ item, onSelect }: Props) => {
-  const { route, line, origin, destination, schedule } = item;
+export const RouteListItem = ({ routeItem, onSelectRoute }: RouteListItemProps) => {
+  const { route, line, origin, destination, schedule } = routeItem;
 
   const now = useCurrentTime();
   const times = schedule?.departures[getDayType(now)];
-  const upcoming = schedule ? upcomingDepartures(schedule, now) : [];
+  const nextDepartures = schedule ? getUpcomingDepartures(schedule, now) : [];
 
-  const handleSelect = () => onSelect(route.id);
+  const handleSelectRoute = () => onSelectRoute(route.id);
 
   return (
     <li data-transport={line.transportType} className={styles.routeItem}>
       <button
         className={styles.routeButton}
         type="button"
-        onClick={handleSelect}
+        onClick={handleSelectRoute}
         aria-label={`${line.transportType === 'bus' ? 'Автобус' : 'Троллейбус'} №${line.number}, ${origin} → ${destination}. Полное расписание`}
       >
         <TransportBadge line={line} />
@@ -40,11 +40,10 @@ export const RouteListItem = ({ item, onSelect }: Props) => {
           </span>
 
           <span className={styles.nextTimes}>
-            {upcoming.length > 0 ? (
-              upcoming.map((departure) => (
+            {nextDepartures.length > 0 ? (
+              nextDepartures.map((departure) => (
                 <span className={styles.nextTime} key={`${departure.dayOffset}:${departure.time}`}>
                   {departure.time}
-                  {departure.annotation ? <sup>{departure.annotation}</sup> : null}
 
                   {departure.dayOffset > 0 ? (
                     <small>{formatDayOffset(departure.dayOffset)}</small>
