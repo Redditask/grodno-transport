@@ -1,6 +1,6 @@
 import type { Schedule } from '../domain/schedule';
 
-export const getScheduleByRouteAndStopIds = (
+export const findStopSchedule = (
   schedules: Schedule[],
   routeId: string,
   stopId: string,

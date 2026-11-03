@@ -1,9 +1,10 @@
+import type { TransportData } from '../data/transportData';
 import type { Line } from '../domain/line';
 import type { Route } from '../domain/route';
 import type { Schedule } from '../domain/schedule';
 import type { Stop } from '../domain/stop';
-import { getRoutesByStopId } from './getRoutesByStopId';
-import { getScheduleByRouteAndStopIds } from './getScheduleByRouteAndStopIds';
+import { findStopSchedule } from './findStopSchedule';
+import { getStopRoutes } from './getStopRoutes';
 
 export interface StopRouteItem {
   route: Route;
@@ -13,18 +14,11 @@ export interface StopRouteItem {
   schedule: Schedule | undefined;
 }
 
-export interface TransportData {
-  lines: Line[];
-  routes: Route[];
-  stops: Stop[];
-  schedules: Schedule[];
-}
-
-export const getStopRouteItems = (
+export const buildStopRouteItems = (
   stop: Stop,
   { lines, routes, stops, schedules }: TransportData,
 ): StopRouteItem[] => {
-  return getRoutesByStopId(routes, stop.id).flatMap((route) => {
+  return getStopRoutes(routes, stop.id).flatMap((route) => {
     const line = lines.find(({ id }) => id === route.lineId);
     if (!line) return [];
 
@@ -32,7 +26,7 @@ export const getStopRouteItems = (
     const destination =
       stops.find(({ id }) => id === route.stopIds.at(-1))?.name ?? 'Конечная остановка';
 
-    const schedule = getScheduleByRouteAndStopIds(schedules, route.id, stop.id);
+    const schedule = findStopSchedule(schedules, route.id, stop.id);
 
     return [{ route, line, origin, destination, schedule }];
   });
