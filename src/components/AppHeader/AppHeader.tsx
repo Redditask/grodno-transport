@@ -1,5 +1,5 @@
-import { useCurrentTime } from '../../hooks/useCurrentTime';
-import { formatTransportTime } from '../../utils/transportTime';
+import { useCurrentTime } from '@/hooks/useCurrentTime';
+import { formatTransportTime } from '@/utils/transportTime';
 
 import styles from './AppHeader.module.scss';
 
@@ -18,7 +18,7 @@ export const AppHeader = () => {
 
       <h1>Транспорт Гродно</h1>
 
-      <p className={styles.description}>Выберите остановку — найдите ближайший транспорт.</p>
+      <p className={styles.description}>Найдите остановку или маршрут — посмотрите расписание.</p>
     </header>
   );
 };

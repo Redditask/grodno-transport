@@ -1,37 +1,52 @@
-import type { StopRouteItem } from '../../../../utils/buildStopRouteItems';
-import { groupDeparturesByHour } from '../../../../utils/groupDeparturesByHour';
-import type { DayType } from '../../../../utils/transportTime';
-import { TransportBadge } from '../../../TransportBadge/TransportBadge';
+import { useState } from 'react';
 
-import panel from '../../styles/StopPanel.module.scss';
-import styles from './RouteSchedulePanel.module.scss';
+import type { TransportData } from '@/data/transportData';
+import { useCurrentTime } from '@/hooks/useCurrentTime';
+import { buildRouteSummary } from '@/utils/buildRouteSummary';
+import { findStopSchedule } from '@/utils/findStopSchedule';
+import { groupDeparturesByHour } from '@/utils/groupDeparturesByHour';
+import type { DayType } from '@/utils/transportTime';
+import { getDayType } from '@/utils/transportTime';
 
-interface RouteSchedulePanelProps {
-  routeItem: StopRouteItem;
-  selectedDayType: DayType;
-  todayDayType: DayType;
-  onDayChange: (day: DayType) => void;
-  onBack: () => void;
+import { TransportBadge } from '../TransportBadge/TransportBadge';
+
+import panel from '../../styles/SearchPanel.module.scss';
+import styles from './SchedulePanel.module.scss';
+
+interface SchedulePanelProps {
+  routeId: string;
+  stopId: string;
+  transportData: TransportData;
 }
 
-export const RouteSchedulePanel = ({
-  routeItem,
-  selectedDayType,
-  todayDayType,
-  onDayChange,
-  onBack,
-}: RouteSchedulePanelProps) => {
+export const SchedulePanel = ({ routeId, stopId, transportData }: SchedulePanelProps) => {
+  const now = useCurrentTime();
+  const todayDayType = getDayType(now);
+  const [selectedDayType, setSelectedDayType] = useState<DayType>(todayDayType);
+
+  const stop = transportData.stops.find((stop) => stop.id === stopId);
+  const route = transportData.routes.find((route) => route.id === routeId);
+  const routeSummary = route ? buildRouteSummary(route, transportData) : undefined;
+
+  if (!stop || !routeSummary) return <p role="alert">Остановка или маршрут не найдены.</p>;
+
+  const routeItem = {
+    ...routeSummary,
+    schedule: findStopSchedule(transportData.schedules, routeId, stopId),
+  };
   const departures = routeItem.schedule?.departures[selectedDayType];
   const groupedDepartures = groupDeparturesByHour(departures ?? []);
 
-  const handleWeekday = () => onDayChange('weekday');
-  const handleWeekend = () => onDayChange('weekend');
+  const handleWeekday = () => setSelectedDayType('weekday');
+  const handleWeekend = () => setSelectedDayType('weekend');
 
   return (
     <div className={panel.panel} data-transport={routeItem.line.transportType}>
-      <button className={styles.backButton} type="button" data-panel-focus onClick={onBack}>
-        <span aria-hidden="true">←</span> К маршрутам
-      </button>
+      <h2 className={panel.heading} tabIndex={-1} data-screen-heading>
+        {stop.name}
+      </h2>
+
+      <p className={panel.caption}>Расписание на остановке</p>
 
       <div className={styles.scheduleHeading}>
         <TransportBadge line={routeItem.line} />
@@ -42,9 +57,9 @@ export const RouteSchedulePanel = ({
             {routeItem.line.number}
           </span>
 
-          <h2 className={styles.direction}>
+          <h3 className={styles.direction}>
             {routeItem.origin} → {routeItem.destination}
-          </h2>
+          </h3>
         </div>
       </div>
 

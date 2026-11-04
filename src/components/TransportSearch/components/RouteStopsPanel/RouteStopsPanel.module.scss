@@ -1,0 +1,23 @@
+.heading {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  margin-bottom: 12px;
+}
+
+.label {
+  margin: 0 0 4px;
+
+  color: var(--transport-color);
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.stops {
+  margin: 0;
+  padding: 0 0 0 8px;
+
+  list-style: none;
+}

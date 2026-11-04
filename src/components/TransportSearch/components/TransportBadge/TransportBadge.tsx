@@ -1,4 +1,4 @@
-import type { Line } from '../../domain/line';
+import type { Line } from '@/domain/line';
 
 import styles from './TransportBadge.module.scss';
 

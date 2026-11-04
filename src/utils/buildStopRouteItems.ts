@@ -1,33 +1,18 @@
-import type { TransportData } from '../data/transportData';
-import type { Line } from '../domain/line';
-import type { Route } from '../domain/route';
-import type { Schedule } from '../domain/schedule';
-import type { Stop } from '../domain/stop';
+import type { TransportData } from '@/data/transportData';
+import type { Stop } from '@/domain/stop';
+import type { StopRouteItem } from '@/models/route';
+
+import { buildRouteSummary } from './buildRouteSummary';
 import { findStopSchedule } from './findStopSchedule';
 import { getStopRoutes } from './getStopRoutes';
 
-export interface StopRouteItem {
-  route: Route;
-  line: Line;
-  origin: string;
-  destination: string;
-  schedule: Schedule | undefined;
-}
+export const buildStopRouteItems = (stop: Stop, transportData: TransportData): StopRouteItem[] => {
+  return getStopRoutes(transportData.routes, stop.id).flatMap((route) => {
+    const routeSummary = buildRouteSummary(route, transportData);
+    if (!routeSummary) return [];
 
-export const buildStopRouteItems = (
-  stop: Stop,
-  { lines, routes, stops, schedules }: TransportData,
-): StopRouteItem[] => {
-  return getStopRoutes(routes, stop.id).flatMap((route) => {
-    const line = lines.find(({ id }) => id === route.lineId);
-    if (!line) return [];
+    const schedule = findStopSchedule(transportData.schedules, route.id, stop.id);
 
-    const origin = stops.find(({ id }) => id === route.stopIds[0])?.name ?? 'Начальная остановка';
-    const destination =
-      stops.find(({ id }) => id === route.stopIds.at(-1))?.name ?? 'Конечная остановка';
-
-    const schedule = findStopSchedule(schedules, route.id, stop.id);
-
-    return [{ route, line, origin, destination, schedule }];
+    return [{ ...routeSummary, schedule }];
   });
 };

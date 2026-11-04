@@ -1,0 +1,90 @@
+.stop {
+  position: relative;
+
+  padding-left: 24px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: var(--transport-soft);
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: -3px;
+    top: 31px;
+
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid var(--transport-color);
+    border-radius: 50%;
+
+    background: var(--color-surface);
+  }
+
+  &:first-child::before {
+    top: 35px;
+  }
+
+  &:last-child::before {
+    bottom: calc(100% - 35px);
+  }
+}
+
+.stopButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  min-height: 70px;
+  padding: 14px 4px;
+
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+
+  background: transparent;
+  color: var(--color-text);
+
+  font: inherit;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.stopButton:hover {
+  background: var(--color-surface-hover);
+}
+
+.stopButton:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.name {
+  flex: 1;
+
+  min-width: 0;
+  overflow-wrap: anywhere;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.arrow {
+  color: var(--color-text-secondary);
+
+  font-size: 20px;
+}

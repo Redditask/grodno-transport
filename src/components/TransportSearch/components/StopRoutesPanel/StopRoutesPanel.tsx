@@ -1,26 +1,26 @@
-import type { StopRouteItem } from '../../../../utils/buildStopRouteItems';
+import type { Stop } from '@/domain/stop';
+import type { StopRouteItem } from '@/models/route';
+
 import { RouteListItem } from './components/RouteListItem/RouteListItem';
 
-import panel from '../../styles/StopPanel.module.scss';
+import panel from '../../styles/SearchPanel.module.scss';
 import styles from './StopRoutesPanel.module.scss';
 
 interface StopRoutesPanelProps {
+  stop: Stop;
   routeItems: StopRouteItem[];
   onSelectRoute: (routeId: string) => void;
 }
 
-export const StopRoutesPanel = ({ routeItems, onSelectRoute }: StopRoutesPanelProps) => (
+export const StopRoutesPanel = ({ stop, routeItems, onSelectRoute }: StopRoutesPanelProps) => (
   <div className={panel.panel}>
-    <div className={panel.panelHeading}>
-      <h2 tabIndex={-1} data-panel-focus>
-        Ближайший транспорт
-      </h2>
-      <span className={panel.caption}>По расписанию</span>
-    </div>
+    <h2 className={panel.heading} tabIndex={-1} data-screen-heading>
+      {stop.name}
+    </h2>
 
-    {routeItems.length === 0 ? (
-      <p className={panel.empty}>Для этой остановки пока нет маршрутов.</p>
-    ) : (
+    <p className={panel.caption}>Остановка · Ближайший транспорт по расписанию</p>
+
+    {routeItems.length ? (
       <ul className={styles.routes}>
         {routeItems.map((routeItem) => (
           <RouteListItem
@@ -30,6 +30,8 @@ export const StopRoutesPanel = ({ routeItems, onSelectRoute }: StopRoutesPanelPr
           />
         ))}
       </ul>
+    ) : (
+      <p className={panel.empty}>Для этой остановки пока нет маршрутов.</p>
     )}
 
     <p className={panel.panelFootnote}>Выберите маршрут, чтобы посмотреть все отправления.</p>
