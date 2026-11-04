@@ -1,10 +1,13 @@
 .footer {
   margin-top: 28px;
+
   text-align: center;
 
   p {
     margin: 8px 0 0;
+
     color: var(--color-text-secondary);
+
     font-size: 11px;
     line-height: 1.6;
   }
@@ -12,9 +15,12 @@
 
 .demoLabel {
   padding: 4px 8px;
+
   border: 1px solid var(--color-border);
   border-radius: 5px;
+
   color: var(--color-text-secondary);
+
   font-size: 10px;
   font-weight: 500;
 }

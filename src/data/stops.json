@@ -1,0 +1,4474 @@
+[
+  {
+    "id": "stop-546",
+    "name": "220-е управление",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-547",
+    "name": "220-е управление",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-313",
+    "name": "Автобусный парк г. Гродно",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-314",
+    "name": "Автобусный парк г. Гродно",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1060",
+    "name": "Автовокзал",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-303",
+    "name": "Автовокзал",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-335",
+    "name": "Автоучебный комбинат",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-475",
+    "name": "Автоучебный комбинат",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-431",
+    "name": "Аграрный университет",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1655",
+    "name": "Акционерное общество \"Бакалея\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-490",
+    "name": "Аптечный склад",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-492",
+    "name": "Аптечный склад",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-601",
+    "name": "Аульс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-706",
+    "name": "Аульс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-590",
+    "name": "База комплектации",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-591",
+    "name": "База комплектации",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-404",
+    "name": "Барановичи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1432",
+    "name": "Барановичи-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1682",
+    "name": "Барановичи-7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-418",
+    "name": "Белагропромбанк",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-592",
+    "name": "Белвторполимер",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-593",
+    "name": "Белвторполимер",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-308",
+    "name": "Белкард",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1558",
+    "name": "Богушевича-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1562",
+    "name": "Богушевича-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1720",
+    "name": "Больница скорой медицинской помощи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-417",
+    "name": "Больница скорой медицинской помощи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-704",
+    "name": "Больница скорой медицинской помощи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-465",
+    "name": "Бульвар Ленинского Комсомола",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-466",
+    "name": "Бульвар Ленинского Комсомола",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-333",
+    "name": "Вишневец",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-689",
+    "name": "Вишневец",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-325",
+    "name": "Вишневец-1",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-326",
+    "name": "Вишневец-1",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-701",
+    "name": "Вишневец-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-702",
+    "name": "Вишневец-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-699",
+    "name": "Вишневец-7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-700",
+    "name": "Вишневец-7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-415",
+    "name": "Воинская часть",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-416",
+    "name": "Воинская часть",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1662",
+    "name": "Восточный мост",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1663",
+    "name": "Восточный мост",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1030",
+    "name": "ГАП №1",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-713",
+    "name": "ГАП №1",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-575",
+    "name": "Гимназия №5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-576",
+    "name": "Гимназия №5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-341",
+    "name": "Гипермаркет \"Материк\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-666",
+    "name": "Городская больница №4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1440",
+    "name": "Городская клиническая больница №3",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-665",
+    "name": "Городская областная клиническая больница",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-484",
+    "name": "Городской центр культуры",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-342",
+    "name": "Госавтоинспекция",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-446",
+    "name": "Госавтоинспекция",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-428",
+    "name": "Госпиталь",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1445",
+    "name": "Гостиница \"Колбасино\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-317",
+    "name": "Гостиница \"Турист\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-318",
+    "name": "Гостиница \"Турист\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1067",
+    "name": "Грандичи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-506",
+    "name": "Грандичи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1675",
+    "name": "Грандичи-1",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1680",
+    "name": "Грандичи-1",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1673",
+    "name": "Грандичи-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1674",
+    "name": "Грандичи-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1759",
+    "name": "Грандичи-24",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1760",
+    "name": "Грандичи-24",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1678",
+    "name": "Грандичи-3",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1729",
+    "name": "Грандичи-3",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1723",
+    "name": "Грандичи-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1725",
+    "name": "Грандичи-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-261",
+    "name": "Гродно Азот",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-582",
+    "name": "Гродно Азот",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-581",
+    "name": "Гродно Азот",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-283",
+    "name": "Гродногаз",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-647",
+    "name": "Гродножилстрой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-649",
+    "name": "Гродножилстрой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-680",
+    "name": "Гроднозеленстрой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1070",
+    "name": "Гроднооблнефтепродукт",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1649",
+    "name": "Гроднооблнефтепродукт",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-624",
+    "name": "Гроднопромстрой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-458",
+    "name": "Гроднохлебпром",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-459",
+    "name": "Гроднохлебпром",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-530",
+    "name": "Гронитекс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-531",
+    "name": "Гронитекс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-344",
+    "name": "Гуманитарный колледж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1143",
+    "name": "д. Щечиново",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-631",
+    "name": "д. Щечиново",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-495",
+    "name": "Девятовка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-496",
+    "name": "Девятовка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1096",
+    "name": "Девятовка-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-372",
+    "name": "Девятовка-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-373",
+    "name": "Девятовка-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-374",
+    "name": "Девятовка-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-437",
+    "name": "Девятовка-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1097",
+    "name": "Девятовка-7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1654",
+    "name": "Девятовка-7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-435",
+    "name": "Девятовка-7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-616",
+    "name": "Детская больница",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-544",
+    "name": "Динамо Програм",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-545",
+    "name": "Динамо Програм",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-528",
+    "name": "Дом науки и техники",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-529",
+    "name": "Дом науки и техники",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-304",
+    "name": "Дом связи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-476",
+    "name": "Дорожно-строительный трест №6",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-477",
+    "name": "Дорожно-строительный трест №6",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-561",
+    "name": "Евроопт",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-562",
+    "name": "Евроопт",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-733",
+    "name": "Железнодорожный вокзал",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-681",
+    "name": "Железнодорожный переезд",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-682",
+    "name": "Железнодорожный переезд",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-362",
+    "name": "ЖЭС №19",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-363",
+    "name": "ЖЭС №19",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-328",
+    "name": "ЖЭС №20",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1098",
+    "name": "Заболоть",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-292",
+    "name": "Заводоуправление ОАО \"ГродноАзот\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-517",
+    "name": "Зарица",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-638",
+    "name": "Зарица",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1672",
+    "name": "Зарица-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1739",
+    "name": "Зарица-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1740",
+    "name": "Зарица-5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-703",
+    "name": "Зов",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-350",
+    "name": "Зоопарк",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-301",
+    "name": "Кинотеатр \"Восток\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-302",
+    "name": "Кинотеатр \"Восток\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-526",
+    "name": "Кинотеатр \"Космос\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-384",
+    "name": "Кинотеатр \"Октябрь\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-602",
+    "name": "Кладбище \"Аульс\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-549",
+    "name": "Колбасино",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-483",
+    "name": "Колледж техники, технологий и дизайна",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-566",
+    "name": "Колледж экономики и управления",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-550",
+    "name": "Консервный завод",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-551",
+    "name": "Консервный завод",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1441",
+    "name": "Конте Спа",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1442",
+    "name": "Конте Спа",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-537",
+    "name": "КСМ",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1643",
+    "name": "Лапенки",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-525",
+    "name": "Ледовый дворец",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1713",
+    "name": "Лесопарк \"Ольшанка\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1719",
+    "name": "Лесопарк \"Ольшанка\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-720",
+    "name": "Локомотивное депо",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1059",
+    "name": "Лососно",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-414",
+    "name": "Лососно",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1657",
+    "name": "Лососно-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-504",
+    "name": "Магазин",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-505",
+    "name": "Магазин",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-563",
+    "name": "Магазин \"1000 мелочей\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-564",
+    "name": "Магазин \"1000 мелочей\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-574",
+    "name": "Магазин \"ГроДар\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1661",
+    "name": "Магазин \"Дионис\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-322",
+    "name": "Магазин \"Квасовский\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-323",
+    "name": "Магазин \"Квасовский\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-436",
+    "name": "Магазин \"Родны кут\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1568",
+    "name": "Магазин \"Суворовский\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-281",
+    "name": "Магазин общества \"Гродно Культторг\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-282",
+    "name": "Магазин общества \"Гродно Культторг\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1676",
+    "name": "Макаровой-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1679",
+    "name": "Макаровой-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-636",
+    "name": "Малаховичи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-637",
+    "name": "Малаховичи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1126",
+    "name": "Малая Ольшанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-464",
+    "name": "Медицинский университет",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-507",
+    "name": "Меречская застава",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-508",
+    "name": "Меречская застава",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-290",
+    "name": "Механический завод",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-291",
+    "name": "Механический завод",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-377",
+    "name": "Мини-рынок",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1093",
+    "name": "Мини-рынок \"Девятовка\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-660",
+    "name": "Молочный мир",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-629",
+    "name": "Музыкальный колледж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-677",
+    "name": "МЧС",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-678",
+    "name": "МЧС",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-500",
+    "name": "Мясокомбинат",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-540",
+    "name": "Мясокомбинат",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-307",
+    "name": "Областная филармония",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-385",
+    "name": "Обувная фабрика \"Неман\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-419",
+    "name": "Обувная фабрика \"Неман\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-598",
+    "name": "Общество \"Биоком\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-599",
+    "name": "Общество \"Биоком\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-653",
+    "name": "Овощная фабрика",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-654",
+    "name": "Овощная фабрика",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-572",
+    "name": "Оздоровительный комплекс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1120",
+    "name": "Ольшанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1125",
+    "name": "Ольшанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1650",
+    "name": "Отделение Беларусбанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1651",
+    "name": "Отделение Беларусбанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-536",
+    "name": "Очистные сооружения",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-427",
+    "name": "Парк Жилибера",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-613",
+    "name": "Переулок Победы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-673",
+    "name": "Переулок Подольный четвёртый",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-705",
+    "name": "Переулок Поповича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-707",
+    "name": "Переулок Поповича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1751",
+    "name": "Переулок Фолюш",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1752",
+    "name": "Переулок Фолюш",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-380",
+    "name": "Площадь Декабристов",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-381",
+    "name": "Площадь Декабристов",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1061",
+    "name": "Площадь Советская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-305",
+    "name": "Площадь Советская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1132",
+    "name": "пов. Береговой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-594",
+    "name": "Поворот на Аульс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-595",
+    "name": "Поворот на Аульс",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1659",
+    "name": "Поворот на Погораны",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1660",
+    "name": "Поворот на Погораны",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1046",
+    "name": "Погораны",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1076",
+    "name": "Погораны",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-472",
+    "name": "Поликлиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-679",
+    "name": "Поликлиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-620",
+    "name": "Поликлиника №4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-727",
+    "name": "Поликлиника №5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-728",
+    "name": "Поликлиника №5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-331",
+    "name": "Поликлиника №7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-332",
+    "name": "Поликлиника №7",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-630",
+    "name": "Поселок Береговой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-327",
+    "name": "Почта",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-633",
+    "name": "Почта",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-661",
+    "name": "Производство \"Автоагрегатов\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-662",
+    "name": "Производство \"Автоагрегатов\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-320",
+    "name": "Проспект Клецкова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-321",
+    "name": "Проспект Клецкова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1722",
+    "name": "Проспект Курловича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1724",
+    "name": "Проспект Курловича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1567",
+    "name": "Проспект Лебедева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-339",
+    "name": "Проспект Румлёвский",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-340",
+    "name": "Проспект Румлёвский",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1761",
+    "name": "Проспект Санфировой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1094",
+    "name": "Проспект Янки Купалы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-319",
+    "name": "Проспект Янки Купалы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-663",
+    "name": "Радиоволна",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-360",
+    "name": "Районные электрические сети",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-361",
+    "name": "Районные электрические сети",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-449",
+    "name": "Райсельхозтехника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-480",
+    "name": "Роддом",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-614",
+    "name": "РСУ-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-337",
+    "name": "Румлево",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-338",
+    "name": "Румлево",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-693",
+    "name": "Рынок Южный",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1664",
+    "name": "с. т. \"Химик-Азот\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1665",
+    "name": "с. т. \"Химик-Азот\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1383",
+    "name": "с/т \"Доблесть\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1446",
+    "name": "с/т \"Доблесть\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-535",
+    "name": "Санаторий \"Неман-72\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-596",
+    "name": "Сельхозтехника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-597",
+    "name": "Сельхозтехника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1133",
+    "name": "Сивково",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-481",
+    "name": "Сквер памяти воинов Афганцев",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1066",
+    "name": "Следственный комитет",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-534",
+    "name": "Следственный комитет",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-588",
+    "name": "СМУ-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-589",
+    "name": "СМУ-4",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-518",
+    "name": "Собор",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-509",
+    "name": "Сортировочный участок",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-510",
+    "name": "Сортировочный участок",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-584",
+    "name": "Союзпроммонтаж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-583",
+    "name": "Союзпроммонтаж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-657",
+    "name": "СП \"Теста\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-672",
+    "name": "Средняя школа №11",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-626",
+    "name": "Средняя школа №13",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-715",
+    "name": "Средняя школа №13",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-522",
+    "name": "Средняя школа №2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-370",
+    "name": "Средняя школа №27",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-371",
+    "name": "Средняя школа №27",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-442",
+    "name": "Средняя школа №27",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-364",
+    "name": "Средняя школа №28",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-365",
+    "name": "Средняя школа №28",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-621",
+    "name": "Средняя школа №28",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-623",
+    "name": "Средняя школа №3",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-639",
+    "name": "Средняя школа №35",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1092",
+    "name": "Средняя школа №36",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-366",
+    "name": "Средняя школа №36",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-367",
+    "name": "Средняя школа №36",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-557",
+    "name": "Средняя школа №37",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-722",
+    "name": "Средняя школа №37",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1123",
+    "name": "Средняя школа №39",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1128",
+    "name": "Средняя школа №39",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1564",
+    "name": "Средняя школа №39",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1734",
+    "name": "Средняя школа №41",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-716",
+    "name": "Средняя школа №5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-717",
+    "name": "Средняя школа №5",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1436",
+    "name": "Станция \"Аульс\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1686",
+    "name": "Станция переливания крови",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-668",
+    "name": "Станция переливания крови",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-309",
+    "name": "Стеклозавод",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-454",
+    "name": "Стоматологическая поликлиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-455",
+    "name": "Стоматологическая поликлиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-587",
+    "name": "СУ-178",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-586",
+    "name": "СУ-178",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-456",
+    "name": "Табачная фабрика",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-457",
+    "name": "Табачная фабрика",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1183",
+    "name": "Тарусичи",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-426",
+    "name": "Театр кукол",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-482",
+    "name": "Технологический колледж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1656",
+    "name": "Торгово-развлекательный комплекс \"Тринити\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-664",
+    "name": "Торгово-развлекательный центр \"Тринити\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-628",
+    "name": "Торговый центр \"Корона\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-460",
+    "name": "Торговый центр \"На Пушкина\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1711",
+    "name": "Торговый центр \"Парус\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1727",
+    "name": "Торговый центр \"Фолюш\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-558",
+    "name": "Торговый центр \"Фолюш\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1397",
+    "name": "Торговый центр \"OldCity\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1444",
+    "name": "Торговый центр \"OldCity\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1434",
+    "name": "ТЭЦ-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1435",
+    "name": "ТЭЦ-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-523",
+    "name": "Улица 17 Сентября",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-524",
+    "name": "Улица 17 Сентября",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1058",
+    "name": "Улица 8 Марта",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-695",
+    "name": "Улица 8 Марта",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1714",
+    "name": "Улица Аксамитная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1718",
+    "name": "Улица Аксамитная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1716",
+    "name": "Улица Александровича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1642",
+    "name": "Улица Асфальтная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-434",
+    "name": "Улица Асфальтная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1687",
+    "name": "Улица Аульская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-600",
+    "name": "Улица Аульская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1708",
+    "name": "Улица Белая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1709",
+    "name": "Улица Белая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-443",
+    "name": "Улица Белые росы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-497",
+    "name": "Улица Белые росы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-622",
+    "name": "Улица Белые Росы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1706",
+    "name": "Улица Боброва",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1707",
+    "name": "Улица Боброва",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1106",
+    "name": "Улица Бобровского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1110",
+    "name": "Улица Бобровского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-511",
+    "name": "Улица Богатая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-512",
+    "name": "Улица Богатая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-532",
+    "name": "Улица Богуцкого",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-533",
+    "name": "Улица Богуцкого",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-675",
+    "name": "Улица Богуцкого",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1121",
+    "name": "Улица Богушевича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1697",
+    "name": "Улица Богушовская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-928",
+    "name": "Улица Богушовская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-571",
+    "name": "Улица Болдина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-573",
+    "name": "Улица Болдина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-488",
+    "name": "Улица Брикеля",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-659",
+    "name": "Улица Брикеля",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1051",
+    "name": "Улица Буденного",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-346",
+    "name": "Улица Буденного",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1429",
+    "name": "Улица Васильковая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-405",
+    "name": "Улица Васильковая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-694",
+    "name": "Улица Великая Ольшанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-696",
+    "name": "Улица Великая Ольшанка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1447",
+    "name": "Улица Венечная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-358",
+    "name": "Улица Венечная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-567",
+    "name": "Улица Весенняя",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-568",
+    "name": "Улица Весенняя",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-634",
+    "name": "Улица Вишневецкая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-635",
+    "name": "Улица Вишневецкая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1565",
+    "name": "Улица Волкова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1566",
+    "name": "Улица Волкова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1614",
+    "name": "Улица Врублевского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-578",
+    "name": "Улица Врублевского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-579",
+    "name": "Улица Врублевского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-386",
+    "name": "Улица Гагарина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-387",
+    "name": "Улица Гагарина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-501",
+    "name": "Улица Гаспадарчая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-502",
+    "name": "Улица Гаспадарчая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1667",
+    "name": "Улица Глухова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1671",
+    "name": "Улица Глухова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-513",
+    "name": "Улица Гожская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-514",
+    "name": "Улица Гожская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-306",
+    "name": "Улица Горновых",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-539",
+    "name": "Улица Грандичская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-725",
+    "name": "Улица Данилова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-726",
+    "name": "Улица Данилова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1107",
+    "name": "Улица Деревенская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1109",
+    "name": "Улица Деревенская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-489",
+    "name": "Улица Дзержинского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-676",
+    "name": "Улица Дзержинского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-577",
+    "name": "Улица Домбровского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-580",
+    "name": "Улица Домбровского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1639",
+    "name": "Улица Домейко",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1640",
+    "name": "Улица Домейко",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-445",
+    "name": "Улица Друцк",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-463",
+    "name": "Улица Дубко",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1710",
+    "name": "Улица Заболоть",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-279",
+    "name": "Улица Заслонова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-280",
+    "name": "Улица Заслонова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-644",
+    "name": "Улица Звездная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-645",
+    "name": "Улица Звездная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1745",
+    "name": "Улица Издательская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-709",
+    "name": "Улица Издательская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1715",
+    "name": "Улица Изумрудная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1717",
+    "name": "Улица Изумрудная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1735",
+    "name": "Улица Июльская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1736",
+    "name": "Улица Июльская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-329",
+    "name": "Улица Кабяка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-330",
+    "name": "Улица Кабяка",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-609",
+    "name": "Улица Калинина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-610",
+    "name": "Улица Калинина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1652",
+    "name": "Улица Калиновая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1653",
+    "name": "Улица Калиновая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-345",
+    "name": "Улица Карбышева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-408",
+    "name": "Улица Каролинская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-409",
+    "name": "Улица Каролинская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1052",
+    "name": "Улица Карского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1438",
+    "name": "Улица Карского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1737",
+    "name": "Улица Колхозная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1738",
+    "name": "Улица Колхозная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1124",
+    "name": "Улица Короткевича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1127",
+    "name": "Улица Короткевича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-359",
+    "name": "Улица Кохановского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-611",
+    "name": "Улица Краснознаменная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-612",
+    "name": "Улица Краснознаменная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-515",
+    "name": "Улица Криничная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-516",
+    "name": "Улица Криничная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-552",
+    "name": "Улица Кстинская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1069",
+    "name": "Улица Куйбышева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-288",
+    "name": "Улица Куйбышева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-441",
+    "name": "Улица Курчатова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-519",
+    "name": "Улица Курчатова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-453",
+    "name": "Улица Кутузова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1742",
+    "name": "Улица Лапенковская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-498",
+    "name": "Улица Лапенковская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-499",
+    "name": "Улица Лапенковская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-391",
+    "name": "Улица Ленина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-478",
+    "name": "Улица Ленина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-343",
+    "name": "Улица Лидская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-444",
+    "name": "Улица Лидская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-378",
+    "name": "Улица Лизы Чайкиной",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-379",
+    "name": "Улица Лизы Чайкиной",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-368",
+    "name": "Улица Лиможа",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-369",
+    "name": "Улица Лиможа",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-729",
+    "name": "Улица Магистральная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-730",
+    "name": "Улица Магистральная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1668",
+    "name": "Улица Макаровой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-491",
+    "name": "Улица Макаровой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1726",
+    "name": "Улица Маслакова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1557",
+    "name": "Улица Минденская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1563",
+    "name": "Улица Минденская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1099",
+    "name": "Улица Мирная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1100",
+    "name": "Улица Мирная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1048",
+    "name": "Улица Молодая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-632",
+    "name": "Улица Молодежная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1696",
+    "name": "Улица Мытная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1698",
+    "name": "Улица Мытная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1443",
+    "name": "Улица Мясницкая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-538",
+    "name": "Улица Мясницкая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-697",
+    "name": "Улица Наполеона Орды",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-732",
+    "name": "Улица Наполеона Орды",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-669",
+    "name": "Улица Николаева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-670",
+    "name": "Улица Николаева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1101",
+    "name": "Улица Обрембского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1102",
+    "name": "Улица Обрембского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1044",
+    "name": "Улица Огинского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1118",
+    "name": "Улица Огинского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1712",
+    "name": "Улица Огинского-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-9999",
+    "name": "Улица Огинского-2",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1555",
+    "name": "Улица Одельская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1620",
+    "name": "Улица Одельская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-711",
+    "name": "Улица Окульная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-712",
+    "name": "Улица Окульная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-555",
+    "name": "Улица Ольги Соломовой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-556",
+    "name": "Улица Ольги Соломовой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-698",
+    "name": "Улица Ольшанская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1105",
+    "name": "Улица Осенняя",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1111",
+    "name": "Улица Осенняя",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-617",
+    "name": "Улица Островского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-618",
+    "name": "Улица Островского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1104",
+    "name": "Улица Отечественная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1560",
+    "name": "Улица Отечественная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-423",
+    "name": "Улица Парижской Коммуны",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-298",
+    "name": "Улица Победоносная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-300",
+    "name": "Улица Победоносная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-312",
+    "name": "Улица Победы",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-439",
+    "name": "Улица Подкрыжакская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-440",
+    "name": "Улица Подкрыжакская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-447",
+    "name": "Улица Понемуньская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-448",
+    "name": "Улица Понемуньская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-382",
+    "name": "Улица Поповича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-383",
+    "name": "Улица Поповича",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-674",
+    "name": "Улица Пригородная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-718",
+    "name": "Улица Пролетарская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-607",
+    "name": "Улица Пучкова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-608",
+    "name": "Улица Пучкова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-461",
+    "name": "Улица Пушкина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-462",
+    "name": "Улица Пушкина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-604",
+    "name": "Улица Репина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-691",
+    "name": "Улица Рогачевского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-692",
+    "name": "Улица Рогачевского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1103",
+    "name": "Улица Рожанского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-406",
+    "name": "Улица Рябиновая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-407",
+    "name": "Улица Рябиновая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-640",
+    "name": "Улица Садакова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-641",
+    "name": "Улица Садакова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-433",
+    "name": "Улица Саяпина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-424",
+    "name": "Улица Свердлова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-650",
+    "name": "Улица Славинского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-651",
+    "name": "Улица Славинского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-420",
+    "name": "Улица Советских Пограничников",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-421",
+    "name": "Улица Советских Пограничников",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-450",
+    "name": "Улица Соколовского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-451",
+    "name": "Улица Соколовского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1064",
+    "name": "Улица Социалистическая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-425",
+    "name": "Улица Социалистическая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1293",
+    "name": "Улица Старомалыщинская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1677",
+    "name": "Улица Старомалыщинская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-452",
+    "name": "Улица Суворова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-438",
+    "name": "Улица Тавлая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-615",
+    "name": "Улица Тавлая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1430",
+    "name": "Улица Тарусичская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1431",
+    "name": "Улица Тарусичская",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-429",
+    "name": "Улица Терешковой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-430",
+    "name": "Улица Терешковой",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-357",
+    "name": "Улица Тимирязева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-422",
+    "name": "Улица Титова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-334",
+    "name": "Улица Томина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-474",
+    "name": "Улица Томина",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1047",
+    "name": "Улица Умелая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1433",
+    "name": "Улица Умелая",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-605",
+    "name": "Улица Усова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-606",
+    "name": "Улица Усова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-569",
+    "name": "Улица Фестивальная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-570",
+    "name": "Улица Фестивальная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1757",
+    "name": "Улица Фолюш",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-315",
+    "name": "Улица Фомичева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-316",
+    "name": "Улица Фомичева",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-553",
+    "name": "Улица Хвойная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-554",
+    "name": "Улица Хвойная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1559",
+    "name": "Улица Центральная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1741",
+    "name": "Улица Чюрлениса",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-642",
+    "name": "Улица Шарипова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-643",
+    "name": "Улица Шарипова",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1683",
+    "name": "Улица Юбилейная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1684",
+    "name": "Улица Юбилейная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-667",
+    "name": "Улица Южная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-688",
+    "name": "Улица Южная",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1556",
+    "name": "Улица Юрия Олеши",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1561",
+    "name": "Улица Юрия Олеши",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1755",
+    "name": "Улица Якубовского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1756",
+    "name": "Улица Якубовского",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-390",
+    "name": "Университет",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-479",
+    "name": "Университет",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-470",
+    "name": "Университетская клиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-471",
+    "name": "Университетская клиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-658",
+    "name": "УПП \"Дорожник\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-619",
+    "name": "Управление статистики",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1646",
+    "name": "Урочище \"Форт\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-687",
+    "name": "Урочище \"Форт\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-469",
+    "name": "Учебный корпус медицинского университета",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-565",
+    "name": "Училище Олимпийского резерва",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-655",
+    "name": "Фабричный",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-656",
+    "name": "Фабричный",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-559",
+    "name": "Фламинго",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-560",
+    "name": "Фламинго",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-376",
+    "name": "Фолюш",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1063",
+    "name": "Форты",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-468",
+    "name": "Форты",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1065",
+    "name": "Химволокно",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-652",
+    "name": "Химволокно",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-527",
+    "name": "Центр мебели \"Пинскдрев\"",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-388",
+    "name": "Центральная поликлиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-389",
+    "name": "Центральная поликлиника",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-336",
+    "name": "Церковь всех святых",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1119",
+    "name": "Церковь Святителя Спиридона",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-1122",
+    "name": "Церковь Святителя Спиридона",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-412",
+    "name": "Школа",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-413",
+    "name": "Школа",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-324",
+    "name": "Шоссе Индурское",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-719",
+    "name": "Шоссе Озерское",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-486",
+    "name": "Электротехнический колледж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-487",
+    "name": "Электротехнический колледж",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "id": "stop-646",
+    "name": "Южный",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  }
+]

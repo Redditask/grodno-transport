@@ -1,6 +1,7 @@
-import type { Schedule } from '../domain/schedule';
+import type { Schedule } from '@/domain/schedule';
 
 export type DayType = keyof Schedule['departures'];
+
 const timeZone = 'Europe/Minsk';
 const timeFormatter = new Intl.DateTimeFormat('en-GB', {
   timeZone,
@@ -11,8 +12,10 @@ const timeFormatter = new Intl.DateTimeFormat('en-GB', {
 const dayFormatter = new Intl.DateTimeFormat('en-US', { timeZone, weekday: 'short' });
 
 export const formatTransportTime = (now: Date): string => timeFormatter.format(now);
+
 export const getDayType = (now: Date, dayOffset = 0): DayType => {
   const day = dayFormatter.format(new Date(now.getTime() + dayOffset * 86_400_000));
+
   return day === 'Sat' || day === 'Sun' ? 'weekend' : 'weekday';
 };
 

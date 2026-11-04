@@ -4,7 +4,6 @@ import type { Stop } from './stop';
 export interface Departure {
   time: string;
   serviceMinutes: number;
-  annotation?: string;
 }
 
 export interface UpcomingDeparture extends Departure {
@@ -18,5 +17,4 @@ export interface Schedule {
     weekday: Departure[];
     weekend: Departure[];
   };
-  notes: string[];
 }

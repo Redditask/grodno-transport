@@ -1,0 +1,23 @@
+.details {
+  display: flex;
+  flex: 1;
+
+  min-width: 0;
+
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label {
+  font-size: 11px;
+
+  color: var(--transport-color);
+}
+
+.direction {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+
+  overflow-wrap: anywhere;
+}

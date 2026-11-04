@@ -1,8 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
+import { CurrentTimeProvider } from '@/providers/CurrentTimeProvider';
+
 import { App } from './App';
-import { CurrentTimeProvider } from './providers/CurrentTimeProvider';
 
 import './styles.scss';
 

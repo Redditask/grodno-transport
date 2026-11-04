@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { CurrentTimeContext } from '../providers/currentTimeContext';
+import { CurrentTimeContext } from '@/providers/currentTimeContext';
 
 export const useCurrentTime = (): Date => {
   const now = useContext(CurrentTimeContext);

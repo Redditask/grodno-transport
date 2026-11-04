@@ -1,0 +1,129 @@
+.transportName {
+  color: var(--transport-color);
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.scheduleHeading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 22px;
+}
+
+.direction {
+  margin: 3px 0;
+  overflow-wrap: anywhere;
+
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: -0.4px;
+}
+
+.daySwitch {
+  display: flex;
+  gap: 4px;
+
+  margin-bottom: 24px;
+  padding: 4px;
+
+  border-radius: 11px;
+
+  background: var(--color-background);
+
+  button {
+    flex: 1;
+
+    min-height: 34px;
+    padding: 7px 12px;
+
+    border: 0;
+    border-radius: 8px;
+
+    color: var(--color-text-secondary);
+    background: transparent;
+
+    font: inherit;
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    &[aria-pressed='true'] {
+      color: var(--color-text);
+      background: var(--color-surface);
+
+      box-shadow: 0 1px 5px rgb(0 0 0 / 8%);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+    }
+  }
+}
+
+.timetable {
+  margin: 0;
+}
+
+.hourRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  min-height: 52px;
+
+  border-top: 1px solid var(--color-border);
+
+  dt {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+
+    width: 39px;
+
+    flex-shrink: 0;
+
+    font-size: 17px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+
+    span {
+      color: var(--color-text-secondary);
+
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  dd {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin: 0;
+    padding-block: 10px;
+  }
+
+  time {
+    min-width: 36px;
+    padding: 6px 8px;
+
+    border-radius: 7px;
+
+    color: var(--transport-color);
+    background: var(--transport-soft);
+
+    font-size: 13px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+  }
+}
+
+.hourRow dt {
+  width: 58px;
+}
