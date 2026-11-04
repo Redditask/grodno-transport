@@ -1,4 +1,4 @@
-import type { Schedule } from '../domain/schedule';
+import type { Schedule } from '@/domain/schedule';
 
 export const findStopSchedule = (
   schedules: Schedule[],

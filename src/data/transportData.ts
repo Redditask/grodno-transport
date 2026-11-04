@@ -1,7 +1,8 @@
-import type { Line } from '../domain/line';
-import type { Route } from '../domain/route';
-import type { Schedule } from '../domain/schedule';
-import type { Stop } from '../domain/stop';
+import type { Line } from '@/domain/line';
+import type { Route } from '@/domain/route';
+import type { Schedule } from '@/domain/schedule';
+import type { Stop } from '@/domain/stop';
+
 import lines from './lines.json';
 import routes from './routes.json';
 import schedules from './schedules.json';

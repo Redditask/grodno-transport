@@ -1,4 +1,5 @@
-import type { Schedule, UpcomingDeparture } from '../domain/schedule';
+import type { Schedule, UpcomingDeparture } from '@/domain/schedule';
+
 import { formatTransportTime, getDayType, timeToMinutes } from './transportTime';
 
 export const getUpcomingDepartures = (schedule: Schedule, now: Date): UpcomingDeparture[] => {

@@ -1,4 +1,4 @@
-import type { Departure } from '../domain/schedule';
+import type { Departure } from '@/domain/schedule';
 
 export interface DepartureHour {
   hour: string;
