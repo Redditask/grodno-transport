@@ -1,4 +1,4 @@
-import type { StopRouteItem } from '@/models/route';
+import type { StopRouteItem } from '@/types/route';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
 
 import { NextDepartures } from '../../../NextDepartures/NextDepartures';

@@ -1,5 +1,5 @@
 import type { TransportData } from '@/data/transportData';
-import type { RouteSummary } from '@/models/route';
+import type { RouteSummary } from '@/types/route';
 import { findStopSchedule } from '@/utils/findStopSchedule';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
 

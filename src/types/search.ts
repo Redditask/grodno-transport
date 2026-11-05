@@ -1,6 +1,8 @@
 import type { Route } from '@/domain/route';
 import type { Stop } from '@/domain/stop';
 
+import type { RouteSummary } from './route';
+
 export type SearchScreen =
   | { kind: 'results' }
   | { kind: 'stopRoutes'; stopId: Stop['id'] }
@@ -13,6 +15,12 @@ export interface SearchHistoryEntry {
   focusId?: string;
 }
 
-export const createSearchHistory = (): SearchHistoryEntry[] => [
-  { screen: { kind: 'results' }, scrollTop: 0 },
-];
+export interface TransportSearchResults {
+  routes: RouteSummary[];
+  stops: Stop[];
+}
+
+export interface ResultLimits {
+  routes: number;
+  stops: number;
+}

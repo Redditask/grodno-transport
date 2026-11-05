@@ -1,9 +1,7 @@
 import type { TransportData } from '@/data/transportData';
+import type { ResultLimits, SearchScreen, TransportSearchResults } from '@/types/search';
 import { buildRouteSummary } from '@/utils/buildRouteSummary';
 import { buildStopRouteItems } from '@/utils/buildStopRouteItems';
-import type { SearchScreen } from '@/utils/searchNavigation';
-import type { TransportSearchResults } from '@/utils/searchTransport';
-import type { ResultLimits } from '@/utils/searchTransport';
 
 import { RouteStopsPanel } from '../RouteStopsPanel/RouteStopsPanel';
 import { SchedulePanel } from '../SchedulePanel/SchedulePanel';

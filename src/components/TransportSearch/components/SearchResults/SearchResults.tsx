@@ -1,6 +1,5 @@
+import type { ResultLimits, TransportSearchResults } from '@/types/search';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
-import type { ResultLimits } from '@/utils/searchTransport';
-import type { TransportSearchResults } from '@/utils/searchTransport';
 
 import { SearchResultButton } from '../SearchResultButton/SearchResultButton';
 import { TransportBadge } from '../TransportBadge/TransportBadge';

@@ -1,19 +1,8 @@
 import type { TransportData } from '@/data/transportData';
 import type { TransportType } from '@/domain/line';
-import type { Stop } from '@/domain/stop';
-import type { RouteSummary } from '@/models/route';
+import type { TransportSearchResults } from '@/types/search';
 
 import { buildRouteSummary } from './buildRouteSummary';
-
-export interface TransportSearchResults {
-  routes: RouteSummary[];
-  stops: Stop[];
-}
-
-export interface ResultLimits {
-  routes: number;
-  stops: number;
-}
 
 const normalizeSearchText = (text: string): string =>
   text.trim().toLocaleLowerCase('ru').replaceAll('ё', 'е').replace(/\s+/g, ' ');

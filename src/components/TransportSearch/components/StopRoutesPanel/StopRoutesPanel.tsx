@@ -1,5 +1,5 @@
 import type { Stop } from '@/domain/stop';
-import type { StopRouteItem } from '@/models/route';
+import type { StopRouteItem } from '@/types/route';
 
 import { RouteListItem } from './components/RouteListItem/RouteListItem';
 
