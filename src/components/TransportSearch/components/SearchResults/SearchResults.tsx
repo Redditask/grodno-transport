@@ -4,6 +4,7 @@ import { formatTransportLabel } from '@/utils/formatTransportLabel';
 import { SearchResultButton } from '../SearchResultButton/SearchResultButton';
 import { TransportBadge } from '../TransportBadge/TransportBadge';
 
+import panel from '../../styles/SearchPanel.module.scss';
 import styles from './SearchResults.module.scss';
 
 interface SearchResultsProps {
@@ -77,7 +78,12 @@ export const SearchResults = ({
                         <span className={styles.details}>
                           <span className={styles.label}>Остановка</span>
 
-                          <span className={styles.title}>{stop.name}</span>
+                          <span className={styles.title}>
+                            {stop.name}{' '}
+                            {stop.directionHint ? (
+                              <span className={panel.directionHint}>{stop.directionHint}</span>
+                            ) : null}
+                          </span>
                         </span>
                       </SearchResultButton>
                     </li>

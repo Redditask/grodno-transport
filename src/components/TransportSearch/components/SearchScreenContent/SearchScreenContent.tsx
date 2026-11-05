@@ -47,7 +47,9 @@ export const SearchScreenContent = ({
     return (
       <StopRoutesPanel
         stop={stop}
+        stops={transportData.stops}
         routeItems={buildStopRouteItems(stop, transportData)}
+        onSwitchStop={(stopId) => onReplaceScreen({ kind: 'stopRoutes', stopId })}
         onSelectRoute={(routeId) => onOpenScreen({ kind: 'schedule', routeId, stopId: stop.id })}
       />
     );
