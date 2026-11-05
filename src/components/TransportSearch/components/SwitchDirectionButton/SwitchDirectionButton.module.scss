@@ -1,0 +1,50 @@
+.button {
+  --switch-color: var(--color-accent);
+  --switch-background: var(--color-accent-soft);
+
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+
+  min-height: 44px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+
+  border: 1px solid var(--switch-color);
+  border-radius: 12px;
+
+  background: transparent;
+  color: var(--switch-color);
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  &[data-transport='bus'] {
+    --switch-color: var(--color-bus);
+    --switch-background: var(--color-bus-soft);
+  }
+
+  &[data-transport='trolleybus'] {
+    --switch-color: var(--color-trolleybus);
+    --switch-background: var(--color-trolleybus-soft);
+  }
+
+  &:hover {
+    background: var(--switch-background);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--switch-color);
+    outline-offset: 3px;
+  }
+
+  svg {
+    flex-shrink: 0;
+
+    width: 20px;
+    height: 20px;
+  }
+}

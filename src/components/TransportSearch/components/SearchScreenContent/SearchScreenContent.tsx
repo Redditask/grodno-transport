@@ -15,6 +15,7 @@ interface SearchScreenContentProps {
   limits: ResultLimits;
   onShowMore: (group: keyof ResultLimits) => void;
   onOpenScreen: (screen: SearchScreen) => void;
+  onReplaceScreen: (screen: SearchScreen) => void;
 }
 
 export const SearchScreenContent = ({
@@ -24,6 +25,7 @@ export const SearchScreenContent = ({
   limits,
   onShowMore,
   onOpenScreen,
+  onReplaceScreen,
 }: SearchScreenContentProps) => {
   if (screen.kind === 'results') {
     return (
@@ -61,6 +63,7 @@ export const SearchScreenContent = ({
       <RouteStopsPanel
         routeSummary={routeSummary}
         transportData={transportData}
+        onSwitchRoute={(routeId) => onReplaceScreen({ kind: 'routeStops', routeId })}
         onSelectStop={(stopId) =>
           onOpenScreen({ kind: 'schedule', routeId: screen.routeId, stopId })
         }

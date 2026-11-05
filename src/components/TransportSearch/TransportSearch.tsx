@@ -64,6 +64,9 @@ export const TransportSearch = () => {
     ]);
   };
 
+  const replaceScreen = (screen: SearchScreen) =>
+    setScreenHistory((history) => [...history.slice(0, -1), { screen, scrollTop: 0 }]);
+
   const handleBack = () =>
     setScreenHistory((history) => (history.length > 1 ? history.slice(0, -1) : history));
 
@@ -145,6 +148,7 @@ export const TransportSearch = () => {
             limits={limits}
             onShowMore={handleShowMore}
             onOpenScreen={openScreen}
+            onReplaceScreen={replaceScreen}
           />
         </div>
       ) : null}
