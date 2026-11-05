@@ -1,9 +1,7 @@
 import type { TransportData } from '@/data/transportData';
+import type { ResultLimits, SearchScreen, TransportSearchResults } from '@/types/search';
 import { buildRouteSummary } from '@/utils/buildRouteSummary';
 import { buildStopRouteItems } from '@/utils/buildStopRouteItems';
-import type { SearchScreen } from '@/utils/searchNavigation';
-import type { TransportSearchResults } from '@/utils/searchTransport';
-import type { ResultLimits } from '@/utils/searchTransport';
 
 import { RouteStopsPanel } from '../RouteStopsPanel/RouteStopsPanel';
 import { SchedulePanel } from '../SchedulePanel/SchedulePanel';
@@ -17,6 +15,7 @@ interface SearchScreenContentProps {
   limits: ResultLimits;
   onShowMore: (group: keyof ResultLimits) => void;
   onOpenScreen: (screen: SearchScreen) => void;
+  onReplaceScreen: (screen: SearchScreen) => void;
 }
 
 export const SearchScreenContent = ({
@@ -26,6 +25,7 @@ export const SearchScreenContent = ({
   limits,
   onShowMore,
   onOpenScreen,
+  onReplaceScreen,
 }: SearchScreenContentProps) => {
   if (screen.kind === 'results') {
     return (
@@ -47,7 +47,9 @@ export const SearchScreenContent = ({
     return (
       <StopRoutesPanel
         stop={stop}
+        stops={transportData.stops}
         routeItems={buildStopRouteItems(stop, transportData)}
+        onSwitchStop={(stopId) => onReplaceScreen({ kind: 'stopRoutes', stopId })}
         onSelectRoute={(routeId) => onOpenScreen({ kind: 'schedule', routeId, stopId: stop.id })}
       />
     );
@@ -63,6 +65,7 @@ export const SearchScreenContent = ({
       <RouteStopsPanel
         routeSummary={routeSummary}
         transportData={transportData}
+        onSwitchRoute={(routeId) => onReplaceScreen({ kind: 'routeStops', routeId })}
         onSelectStop={(stopId) =>
           onOpenScreen({ kind: 'schedule', routeId: screen.routeId, stopId })
         }

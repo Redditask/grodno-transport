@@ -1,10 +1,10 @@
+import type { ResultLimits, TransportSearchResults } from '@/types/search';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
-import type { ResultLimits } from '@/utils/searchTransport';
-import type { TransportSearchResults } from '@/utils/searchTransport';
 
 import { SearchResultButton } from '../SearchResultButton/SearchResultButton';
 import { TransportBadge } from '../TransportBadge/TransportBadge';
 
+import panel from '../../styles/SearchPanel.module.scss';
 import styles from './SearchResults.module.scss';
 
 interface SearchResultsProps {
@@ -78,7 +78,12 @@ export const SearchResults = ({
                         <span className={styles.details}>
                           <span className={styles.label}>Остановка</span>
 
-                          <span className={styles.title}>{stop.name}</span>
+                          <span className={styles.title}>
+                            {stop.name}{' '}
+                            {stop.directionHint ? (
+                              <span className={panel.directionHint}>{stop.directionHint}</span>
+                            ) : null}
+                          </span>
                         </span>
                       </SearchResultButton>
                     </li>

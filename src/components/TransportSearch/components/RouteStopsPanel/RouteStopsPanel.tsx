@@ -1,8 +1,9 @@
 import type { TransportData } from '@/data/transportData';
-import type { RouteSummary } from '@/models/route';
+import type { RouteSummary } from '@/types/route';
 import { findStopSchedule } from '@/utils/findStopSchedule';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
 
+import { SwitchDirectionButton } from '../SwitchDirectionButton/SwitchDirectionButton';
 import { TransportBadge } from '../TransportBadge/TransportBadge';
 import { StopListItem } from './components/StopListItem/StopListItem';
 
@@ -12,15 +13,21 @@ import styles from './RouteStopsPanel.module.scss';
 interface RouteStopsPanelProps {
   routeSummary: RouteSummary;
   transportData: TransportData;
+  onSwitchRoute: (routeId: string) => void;
   onSelectStop: (stopId: string) => void;
 }
 
 export const RouteStopsPanel = ({
   routeSummary,
   transportData,
+  onSwitchRoute,
   onSelectStop,
 }: RouteStopsPanelProps) => {
   const { route, line, origin, destination } = routeSummary;
+
+  const oppositeRoute = transportData.routes.find(
+    (otherRoute) => otherRoute.lineId === route.lineId && otherRoute.id !== route.id,
+  );
 
   return (
     <div className={panel.panel} data-transport={line.transportType}>
@@ -35,6 +42,13 @@ export const RouteStopsPanel = ({
           </h2>
         </div>
       </div>
+
+      {oppositeRoute ? (
+        <SwitchDirectionButton
+          transportType={line.transportType}
+          onClick={() => onSwitchRoute(oppositeRoute.id)}
+        />
+      ) : null}
 
       <p className={panel.caption}>Остановки по порядку · Ближайшие отправления по расписанию</p>
 

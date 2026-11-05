@@ -2,9 +2,7 @@ import type { ChangeEvent, KeyboardEvent } from 'react';
 import { useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { transportData } from '@/data/transportData';
-import type { SearchHistoryEntry, SearchScreen } from '@/utils/searchNavigation';
-import { createSearchHistory } from '@/utils/searchNavigation';
-import type { ResultLimits } from '@/utils/searchTransport';
+import type { ResultLimits, SearchHistoryEntry, SearchScreen } from '@/types/search';
 import { searchTransport } from '@/utils/searchTransport';
 
 import { SearchScreenContent } from './components/SearchScreenContent/SearchScreenContent';
@@ -15,7 +13,9 @@ import styles from './TransportSearch.module.scss';
 export const TransportSearch = () => {
   const [query, setQuery] = useState('');
   const [limits, setLimits] = useState<ResultLimits>({ routes: 10, stops: 10 });
-  const [screenHistory, setScreenHistory] = useState<SearchHistoryEntry[]>(createSearchHistory);
+  const [screenHistory, setScreenHistory] = useState<SearchHistoryEntry[]>([
+    { screen: { kind: 'results' }, scrollTop: 0 },
+  ]);
 
   const contentRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -64,13 +64,16 @@ export const TransportSearch = () => {
     ]);
   };
 
+  const replaceScreen = (screen: SearchScreen) =>
+    setScreenHistory((history) => [...history.slice(0, -1), { screen, scrollTop: 0 }]);
+
   const handleBack = () =>
     setScreenHistory((history) => (history.length > 1 ? history.slice(0, -1) : history));
 
   const updateQuery = (nextQuery: string) => {
     setQuery(nextQuery);
     setLimits({ routes: 10, stops: 10 });
-    setScreenHistory(createSearchHistory());
+    setScreenHistory([{ screen: { kind: 'results' }, scrollTop: 0 }]);
   };
 
   const handleQueryChange = (event: ChangeEvent<HTMLInputElement>) =>
@@ -145,6 +148,7 @@ export const TransportSearch = () => {
             limits={limits}
             onShowMore={handleShowMore}
             onOpenScreen={openScreen}
+            onReplaceScreen={replaceScreen}
           />
         </div>
       ) : null}

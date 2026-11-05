@@ -1,6 +1,6 @@
 import type { TransportData } from '@/data/transportData';
 import type { Route } from '@/domain/route';
-import type { RouteSummary } from '@/models/route';
+import type { RouteSummary } from '@/types/route';
 
 export const buildRouteSummary = (
   route: Route,
