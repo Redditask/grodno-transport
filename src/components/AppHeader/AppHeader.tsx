@@ -8,17 +8,12 @@ export const AppHeader = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.eyebrow}>
-        <span className={styles.city}>Гродно</span>
-        <span className={styles.liveTime}>
-          <span aria-hidden="true" />
-          {localTime}
-        </span>
-      </div>
-
       <h1>Транспорт Гродно</h1>
 
-      <p className={styles.description}>Найдите остановку или маршрут — посмотрите расписание.</p>
+      <span className={styles.liveTime}>
+        <span aria-hidden="true" />
+        {localTime}
+      </span>
     </header>
   );
 };
