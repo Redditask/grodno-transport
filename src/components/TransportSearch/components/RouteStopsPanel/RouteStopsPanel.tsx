@@ -31,7 +31,7 @@ export const RouteStopsPanel = ({
 
   return (
     <div className={panel.panel} data-transport={line.transportType}>
-      <div className={styles.heading}>
+      <div className={panel.screenHeading}>
         <TransportBadge line={line} />
 
         <div>
