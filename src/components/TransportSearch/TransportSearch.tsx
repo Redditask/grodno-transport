@@ -1,5 +1,5 @@
 import type { ChangeEvent, Dispatch, KeyboardEvent, SetStateAction } from 'react';
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { transportData } from '@/data/transportData';
 import type { ResultLimits, SearchHistoryEntry, SearchScreen } from '@/types/search';
@@ -18,7 +18,9 @@ interface TransportSearchProps {
 export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: TransportSearchProps) => {
   const [query, setQuery] = useState('');
   const [limits, setLimits] = useState<ResultLimits>({ routes: 10, stops: 10 });
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
+  const contentId = useId();
   const contentRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -77,6 +79,7 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
 
   const updateQuery = (nextQuery: string) => {
     setQuery(nextQuery);
+    setIsCollapsed(false);
     setLimits({ routes: 10, stops: 10 });
     onScreenHistoryChange([{ screen: { kind: 'results' }, scrollTop: 0 }]);
   };
@@ -101,6 +104,8 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
 
   const handleShowMore = (group: keyof ResultLimits) =>
     setLimits((current) => ({ ...current, [group]: current[group] + 10 }));
+
+  const handleTogglePanel = () => setIsCollapsed((collapsed) => !collapsed);
 
   return (
     <section
@@ -135,10 +140,36 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
             ×
           </button>
         ) : null}
+
+        {hasContent ? (
+          <button
+            className={styles.togglePanel}
+            type="button"
+            aria-controls={contentId}
+            aria-expanded={!isCollapsed}
+            aria-label={isCollapsed ? 'Развернуть панель поиска' : 'Свернуть панель поиска'}
+            onClick={handleTogglePanel}
+          >
+            <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true">
+              <path
+                d="m5 12 5-5 5 5"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        ) : null}
       </div>
 
       {hasContent ? (
-        <div className={styles.content} ref={contentRef}>
+        <div
+          className={styles.content}
+          id={contentId}
+          data-collapsed={isCollapsed}
+          ref={contentRef}
+        >
           {screen.kind !== 'results' ? (
             <button className={panel.back} type="button" onClick={handleBack}>
               <span aria-hidden="true">←</span>
