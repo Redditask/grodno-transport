@@ -3,4906 +3,5265 @@
     "id": "stop-546",
     "name": "220-е управление",
     "directionHint": "В сторону «Улица Репина»",
+    "osmNodeId": 4421796294,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6585565,
+      "longitude": 23.7895867
     }
   },
   {
     "id": "stop-547",
     "name": "220-е управление",
     "directionHint": "В сторону «Динамо Програм»",
+    "osmNodeId": 2365478950,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6595362,
+      "longitude": 23.7905084
     }
   },
   {
     "id": "stop-313",
     "name": "Автобусный парк г. Гродно",
     "directionHint": "В сторону «Белкард»",
+    "osmNodeId": 769847387,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6617488,
+      "longitude": 23.8318717
     }
   },
   {
     "id": "stop-314",
     "name": "Автобусный парк г. Гродно",
     "directionHint": "В сторону «Улица Фомичева»",
+    "osmNodeId": 769847380,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6591345,
+      "longitude": 23.836291
     }
   },
   {
     "id": "stop-1060",
     "name": "Автовокзал",
     "directionHint": "В сторону «Площадь Советская»",
+    "osmNodeId": 13666094940,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6766735,
+      "longitude": 23.8434139
     }
   },
   {
     "id": "stop-303",
     "name": "Автовокзал",
     "directionHint": "В сторону «Кинотеатр \"Восток\"»",
+    "osmNodeId": 969186916,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6763488,
+      "longitude": 23.8432417
     }
   },
   {
     "id": "stop-335",
     "name": "Автоучебный комбинат",
     "directionHint": "В сторону «Дорожно-строительный трест №6»",
+    "osmNodeId": 771956997,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6553408,
+      "longitude": 23.8310971
     }
   },
   {
     "id": "stop-475",
     "name": "Автоучебный комбинат",
     "directionHint": "В сторону «Улица Томина»",
+    "osmNodeId": 771956595,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6545082,
+      "longitude": 23.8307448
     }
   },
   {
     "id": "stop-431",
     "name": "Аграрный университет",
+    "osmNodeId": 2194294116,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.695199,
+      "longitude": 23.845569
     }
   },
   {
     "id": "stop-1655",
     "name": "Акционерное общество \"Бакалея\"",
+    "osmNodeId": 7176208242,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.651141,
+      "longitude": 23.7878647
     }
   },
   {
     "id": "stop-490",
     "name": "Аптечный склад",
     "directionHint": "В сторону «Улица Брикеля»",
+    "osmNodeId": 1638426900,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7064701,
+      "longitude": 23.8396371
     }
   },
   {
     "id": "stop-492",
     "name": "Аптечный склад",
     "directionHint": "В сторону «Девятовка»",
+    "osmNodeId": 6426831032,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7050452,
+      "longitude": 23.8401523
     }
   },
   {
     "id": "stop-601",
     "name": "Аульс",
     "directionHint": "В сторону «Кладбище \"Аульс\"»",
+    "osmNodeId": 5011409906,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6835364,
+      "longitude": 23.9564427
     }
   },
   {
     "id": "stop-706",
     "name": "Аульс",
     "directionHint": "В сторону «Станция \"Аульс\"»",
+    "osmNodeId": 3948378098,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6835357,
+      "longitude": 23.9562848
     }
   },
   {
     "id": "stop-590",
     "name": "База комплектации",
     "directionHint": "В сторону «СМУ-4»",
+    "osmNodeId": 2343901435,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6632129,
+      "longitude": 23.938172
     }
   },
   {
     "id": "stop-591",
     "name": "База комплектации",
     "directionHint": "В сторону «Белвторполимер»",
+    "osmNodeId": 2343901434,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6627892,
+      "longitude": 23.9401753
     }
   },
   {
     "id": "stop-404",
     "name": "Барановичи",
+    "osmNodeId": 1326288764,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6721248,
+      "longitude": 23.7393211
     }
   },
   {
     "id": "stop-1432",
     "name": "Барановичи-5",
+    "osmNodeId": 12003484440,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6606092,
+      "longitude": 23.7344626
     }
   },
   {
     "id": "stop-1682",
-    "name": "Барановичи-7",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Барановичи-7"
   },
   {
     "id": "stop-418",
     "name": "Белагропромбанк",
+    "osmNodeId": 2194294117,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6727796,
+      "longitude": 23.7951941
     }
   },
   {
     "id": "stop-592",
     "name": "Белвторполимер",
     "directionHint": "В сторону «Поселок Береговой»",
+    "osmNodeId": 2495997350,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6605714,
+      "longitude": 23.9547354
     }
   },
   {
     "id": "stop-593",
     "name": "Белвторполимер",
     "directionHint": "В сторону «База комплектации»",
+    "osmNodeId": 2343901436,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.661053,
+      "longitude": 23.9540158
     }
   },
   {
     "id": "stop-308",
     "name": "Белкард",
+    "osmNodeId": 769847376,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6665851,
+      "longitude": 23.8258636
     }
   },
   {
     "id": "stop-1558",
     "name": "Богушевича-2",
     "directionHint": "В сторону «Улица Одельская»",
+    "osmNodeId": 5154891441,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6121573,
+      "longitude": 23.8141447
     }
   },
   {
     "id": "stop-1562",
     "name": "Богушевича-2",
     "directionHint": "В сторону «Улица Минденская»",
+    "osmNodeId": 5154891439,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6109205,
+      "longitude": 23.8194687
     }
   },
   {
     "id": "stop-1720",
     "name": "Больница скорой медицинской помощи",
-    "directionHint": "В сторону «Магазин \"1000 мелочей\"»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Магазин \"1000 мелочей\"»"
   },
   {
     "id": "stop-417",
     "name": "Больница скорой медицинской помощи",
     "directionHint": "В сторону «Воинская часть»",
+    "osmNodeId": 2194294118,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.673468,
+      "longitude": 23.7928303
     }
   },
   {
     "id": "stop-704",
     "name": "Больница скорой медицинской помощи",
     "directionHint": "В сторону «Переулок Поповича»",
+    "osmNodeId": 457714321,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6741758,
+      "longitude": 23.795551
     }
   },
   {
     "id": "stop-465",
     "name": "Бульвар Ленинского Комсомола",
     "directionHint": "В сторону «Улица Дубко»",
+    "osmNodeId": 483675942,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6980942,
+      "longitude": 23.8077979
     }
   },
   {
     "id": "stop-466",
     "name": "Бульвар Ленинского Комсомола",
     "directionHint": "В сторону «Форты»",
+    "osmNodeId": 352929480,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6981199,
+      "longitude": 23.8099963
     }
   },
   {
     "id": "stop-333",
     "name": "Вишневец",
     "directionHint": "Конечная",
+    "osmNodeId": 1523495751,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6400278,
+      "longitude": 23.8645148
     }
   },
   {
     "id": "stop-689",
     "name": "Вишневец",
-    "directionHint": "В сторону «Купалы»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Купалы»"
   },
   {
     "id": "stop-325",
     "name": "Вишневец-1",
     "directionHint": "В сторону «Почта»",
+    "osmNodeId": 969186897,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.643687,
+      "longitude": 23.8402999
     }
   },
   {
     "id": "stop-326",
     "name": "Вишневец-1",
     "directionHint": "В сторону «Магазин \"Квасовский\"»",
+    "osmNodeId": 969186914,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6449779,
+      "longitude": 23.8392903
     }
   },
   {
     "id": "stop-701",
     "name": "Вишневец-5",
     "directionHint": "В сторону «Вишневец»",
+    "osmNodeId": 2712199749,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6372841,
+      "longitude": 23.8571582
     }
   },
   {
     "id": "stop-702",
     "name": "Вишневец-5",
     "directionHint": "В сторону «Вишневец-7»",
+    "osmNodeId": 2623160552,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6401493,
+      "longitude": 23.8625273
     }
   },
   {
     "id": "stop-699",
     "name": "Вишневец-7",
     "directionHint": "В сторону «Вишневец-5»",
+    "osmNodeId": 2276410568,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6349015,
+      "longitude": 23.8519369
     }
   },
   {
     "id": "stop-700",
     "name": "Вишневец-7",
     "directionHint": "В сторону «Малаховичи»",
+    "osmNodeId": 1523494869,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6369876,
+      "longitude": 23.8558022
     }
   },
   {
     "id": "stop-415",
     "name": "Воинская часть",
     "directionHint": "В сторону «Лососно»",
+    "osmNodeId": 2194294120,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6745958,
+      "longitude": 23.7844439
     }
   },
   {
     "id": "stop-416",
     "name": "Воинская часть",
     "directionHint": "В сторону «БСМП»",
+    "osmNodeId": 2194294119,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6742234,
+      "longitude": 23.7853568
     }
   },
   {
     "id": "stop-1662",
     "name": "Восточный мост",
     "directionHint": "В сторону «Азоту»",
+    "osmNodeId": 8788443128,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6512903,
+      "longitude": 23.886045
     }
   },
   {
     "id": "stop-1663",
     "name": "Восточный мост",
     "directionHint": "В сторону «Южной»",
+    "osmNodeId": 8919986263,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6513602,
+      "longitude": 23.8854559
     }
   },
   {
     "id": "stop-1030",
     "name": "ГАП №1",
     "directionHint": "В сторону «Гродножилстрой»",
+    "osmNodeId": 2369278302,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.652587,
+      "longitude": 23.7909421
     }
   },
   {
     "id": "stop-713",
     "name": "ГАП №1",
     "directionHint": "В сторону «Улица Окульная»",
+    "osmNodeId": 1731282240,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6524272,
+      "longitude": 23.7944309
     }
   },
   {
     "id": "stop-575",
     "name": "Гимназия №5",
     "directionHint": "В сторону «Улица Домбровского»",
+    "osmNodeId": 387715382,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7023125,
+      "longitude": 23.7970409
     }
   },
   {
     "id": "stop-576",
     "name": "Гимназия №5",
     "directionHint": "В сторону «Форты»",
+    "osmNodeId": 387715380,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7034245,
+      "longitude": 23.7966269
     }
   },
   {
     "id": "stop-341",
     "name": "Гипермаркет \"Материк\"",
+    "osmNodeId": 421950815,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.671553,
+      "longitude": 23.8615027
     }
   },
   {
     "id": "stop-666",
     "name": "Городская больница №4",
+    "osmNodeId": 2072145229,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6498134,
+      "longitude": 23.8589453
     }
   },
   {
     "id": "stop-1440",
     "name": "Городская клиническая больница №3",
+    "osmNodeId": 390970665,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6986378,
+      "longitude": 23.7880858
     }
   },
   {
     "id": "stop-665",
     "name": "Городская областная клиническая больница",
+    "osmNodeId": 471704481,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6505083,
+      "longitude": 23.8597677
     }
   },
   {
     "id": "stop-484",
     "name": "Городской центр культуры",
+    "osmNodeId": 558675966,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7040792,
+      "longitude": 23.8065827
     }
   },
   {
     "id": "stop-342",
     "name": "Госавтоинспекция",
     "directionHint": "В сторону «Проспект Румлевский»",
+    "osmNodeId": 517535527,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6700041,
+      "longitude": 23.8605638
     }
   },
   {
     "id": "stop-446",
     "name": "Госавтоинспекция",
     "directionHint": "В сторону «Средняя школа №11»",
+    "osmNodeId": 517535531,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6711054,
+      "longitude": 23.8600723
     }
   },
   {
     "id": "stop-428",
     "name": "Госпиталь",
+    "osmNodeId": 2072145228,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6916511,
+      "longitude": 23.8377259
     }
   },
   {
     "id": "stop-1445",
     "name": "Гостиница \"Колбасино\"",
+    "osmNodeId": 5150037653,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6380013,
+      "longitude": 23.8032246
     }
   },
   {
     "id": "stop-317",
     "name": "Гостиница \"Турист\"",
     "directionHint": "В сторону «Улица Фомичева»",
+    "osmNodeId": 769817043,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6548939,
+      "longitude": 23.8479285
     }
   },
   {
     "id": "stop-318",
     "name": "Гостиница \"Турист\"",
     "directionHint": "В сторону «Проспект Янки Купалы»",
+    "osmNodeId": 769817042,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6540794,
+      "longitude": 23.8489765
     }
   },
   {
     "id": "stop-1067",
     "name": "Грандичи",
     "directionHint": "В сторону «Магазин»",
+    "osmNodeId": 540450801,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.72934,
+      "longitude": 23.8169673
     }
   },
   {
     "id": "stop-506",
     "name": "Грандичи",
     "directionHint": "В сторону «Меречская застава»",
+    "osmNodeId": 540450800,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7296194,
+      "longitude": 23.8174151
     }
   },
   {
     "id": "stop-1675",
     "name": "Грандичи-1",
     "directionHint": "В сторону «Макаровой-2»",
+    "osmNodeId": 8827133392,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7198415,
+      "longitude": 23.8718357
     }
   },
   {
     "id": "stop-1680",
     "name": "Грандичи-1",
     "directionHint": "В сторону «Улица Макаровой»",
+    "osmNodeId": 8827133391,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7197534,
+      "longitude": 23.8772907
     }
   },
   {
     "id": "stop-1673",
     "name": "Грандичи-2",
     "directionHint": "В сторону «Улица Панченко»",
+    "osmNodeId": 9363750347,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7167781,
+      "longitude": 23.8669128
     }
   },
   {
     "id": "stop-1674",
     "name": "Грандичи-2",
     "directionHint": "В сторону «Магазин \"Родны кут\"»",
+    "osmNodeId": 9051225971,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7167445,
+      "longitude": 23.8666307
     }
   },
   {
     "id": "stop-1759",
     "name": "Грандичи-24",
     "directionHint": "Конечная",
+    "osmNodeId": 10679172912,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7274014,
+      "longitude": 23.8891214
     }
   },
   {
     "id": "stop-1760",
     "name": "Грандичи-24",
     "directionHint": "В сторону «Грандичи-3»",
+    "osmNodeId": 13043788108,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7265207,
+      "longitude": 23.8887808
     }
   },
   {
     "id": "stop-1678",
     "name": "Грандичи-3",
-    "directionHint": "В сторону Грандичей-24",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону Грандичей-24"
   },
   {
     "id": "stop-1729",
     "name": "Грандичи-3",
-    "directionHint": "В сторону Заболоти",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону Заболоти"
   },
   {
     "id": "stop-1723",
     "name": "Грандичи-4",
-    "directionHint": "В сторону «Проспект Курловича»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Проспект Курловича»"
   },
   {
     "id": "stop-1725",
     "name": "Грандичи-4",
-    "directionHint": "Конечная — прибытие со стороны «Проспект Курловича»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "Конечная — прибытие со стороны «Проспект Курловича»"
   },
   {
     "id": "stop-261",
     "name": "Гродно Азот",
-    "directionHint": "В сторону улицы Карского",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону улицы Карского"
   },
   {
     "id": "stop-582",
     "name": "Гродно Азот",
     "directionHint": "В сторону Аульса",
+    "osmNodeId": 2347003865,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6689465,
+      "longitude": 23.8917615
     }
   },
   {
     "id": "stop-581",
     "name": "Гродно Азот",
     "directionHint": "В сторону Грандичей",
+    "osmNodeId": 506553732,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6691273,
+      "longitude": 23.8915464
     }
   },
   {
     "id": "stop-283",
     "name": "Гродногаз",
+    "osmNodeId": 506553532,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6903079,
+      "longitude": 23.8768731
     }
   },
   {
     "id": "stop-647",
     "name": "Гродножилстрой",
     "directionHint": "В сторону «Улица Хвойная»",
+    "osmNodeId": 1523252489,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6513104,
+      "longitude": 23.7874974
     }
   },
   {
     "id": "stop-649",
     "name": "Гродножилстрой",
     "directionHint": "В сторону «Строительный лицей»",
+    "osmNodeId": 1523251556,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6494825,
+      "longitude": 23.7833383
     }
   },
   {
     "id": "stop-680",
     "name": "Гроднозеленстрой",
+    "osmNodeId": 2079132685,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.690215,
+      "longitude": 23.7884031
     }
   },
   {
     "id": "stop-1070",
     "name": "Гроднооблнефтепродукт",
     "directionHint": "В сторону «Производство \"Автоагрегатов\"»",
+    "osmNodeId": 571727605,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7072087,
+      "longitude": 23.8390848
     }
   },
   {
     "id": "stop-1649",
     "name": "Гроднооблнефтепродукт",
     "directionHint": "В сторону «Девятовка»",
+    "osmNodeId": 660629167,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7077644,
+      "longitude": 23.8401007
     }
   },
   {
     "id": "stop-624",
     "name": "Гроднопромстрой",
+    "osmNodeId": 2090886205,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6753027,
+      "longitude": 23.8618432
     }
   },
   {
     "id": "stop-458",
     "name": "Гроднохлебпром",
     "directionHint": "В сторону «Улица Островского»",
+    "osmNodeId": 431341287,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6910746,
+      "longitude": 23.8363438
     }
   },
   {
     "id": "stop-459",
     "name": "Гроднохлебпром",
     "directionHint": "В сторону «Парк Жилибера»",
+    "osmNodeId": 660628859,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6923259,
+      "longitude": 23.8348546
     }
   },
   {
     "id": "stop-530",
     "name": "Гронитекс",
     "directionHint": "В сторону «Технологический колледж»",
+    "osmNodeId": 540468194,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7066361,
+      "longitude": 23.8158803
     }
   },
   {
     "id": "stop-531",
     "name": "Гронитекс",
     "directionHint": "В сторону «Улица Богуцкого»",
+    "osmNodeId": 540468193,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7076157,
+      "longitude": 23.8162003
     }
   },
   {
     "id": "stop-344",
     "name": "Гуманитарный колледж",
+    "osmNodeId": 387627658,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6781906,
+      "longitude": 23.8411909
     }
   },
   {
     "id": "stop-1143",
     "name": "д. Щечиново",
     "directionHint": "В город",
+    "osmNodeId": 2495997359,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.65531,
+      "longitude": 23.9647852
     }
   },
   {
     "id": "stop-631",
     "name": "д. Щечиново",
     "directionHint": "Из города",
+    "osmNodeId": 2495997355,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6538347,
+      "longitude": 23.9646773
     }
   },
   {
     "id": "stop-495",
     "name": "Девятовка",
     "directionHint": "В сторону «Улица Белые Росы»",
+    "osmNodeId": 1290401320,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7116511,
+      "longitude": 23.8401156
     }
   },
   {
     "id": "stop-496",
     "name": "Девятовка",
-    "directionHint": "В сторону «Брикеля»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Брикеля»"
   },
   {
     "id": "stop-1096",
     "name": "Девятовка-4",
     "directionHint": "В сторону «Девятовка-7»",
+    "osmNodeId": 2645279075,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7146799,
+      "longitude": 23.8597169
     }
   },
   {
     "id": "stop-372",
     "name": "Девятовка-4",
     "directionHint": "В сторону «Средняя школа №27»",
+    "osmNodeId": 2343656190,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7153163,
+      "longitude": 23.8575338
     }
   },
   {
     "id": "stop-373",
     "name": "Девятовка-4",
     "directionHint": "В сторону «Девятовка-5»",
+    "osmNodeId": 969358856,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.714422,
+      "longitude": 23.8584413
     }
   },
   {
     "id": "stop-374",
     "name": "Девятовка-5",
     "directionHint": "В сторону Грандичей",
+    "osmNodeId": 969358849,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7113414,
+      "longitude": 23.8594652
     }
   },
   {
     "id": "stop-437",
     "name": "Девятовка-5",
     "directionHint": "В сторону улицы Тавлая",
+    "osmNodeId": 3643501538,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7104732,
+      "longitude": 23.8598595
     }
   },
   {
     "id": "stop-1097",
     "name": "Девятовка-7",
-    "directionHint": "В сторону «Грандичи-2»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Грандичи-2»"
   },
   {
     "id": "stop-1654",
     "name": "Девятовка-7",
     "directionHint": "В сторону «Заболоть»",
+    "osmNodeId": 2660413107,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7135961,
+      "longitude": 23.8658119
     }
   },
   {
     "id": "stop-435",
     "name": "Девятовка-7",
     "directionHint": "В сторону «Магазин \"Родны кут\"»",
+    "osmNodeId": 2342024681,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7133391,
+      "longitude": 23.8719436
     }
   },
   {
     "id": "stop-616",
     "name": "Детская больница",
+    "osmNodeId": 2075107695,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6905621,
+      "longitude": 23.8339363
     }
   },
   {
     "id": "stop-544",
     "name": "Динамо Програм",
     "directionHint": "В сторону «220-е управление»",
+    "osmNodeId": 4322891491,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6624243,
+      "longitude": 23.7921805
     }
   },
   {
     "id": "stop-545",
     "name": "Динамо Програм",
     "directionHint": "В сторону «Площадь Декабристов»",
+    "osmNodeId": 11859264789,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6627462,
+      "longitude": 23.7926462
     }
   },
   {
     "id": "stop-528",
     "name": "Дом науки и техники",
     "directionHint": "В сторону «Центр мебели \"Пинскдрев\"»",
+    "osmNodeId": 352676263,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6979803,
+      "longitude": 23.8195924
     }
   },
   {
     "id": "stop-529",
     "name": "Дом науки и техники",
     "directionHint": "В сторону «Роддом»",
+    "osmNodeId": 353051092,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6973566,
+      "longitude": 23.8205644
     }
   },
   {
     "id": "stop-304",
     "name": "Дом связи",
+    "osmNodeId": 445394323,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6769241,
+      "longitude": 23.8379979
     }
   },
   {
     "id": "stop-476",
     "name": "Дорожно-строительный трест №6",
     "directionHint": "В сторону «Белкард»",
+    "osmNodeId": 917139972,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6609902,
+      "longitude": 23.830408
     }
   },
   {
     "id": "stop-477",
     "name": "Дорожно-строительный трест №6",
     "directionHint": "В сторону «Автоучебный комбинат»",
+    "osmNodeId": 969358888,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6602473,
+      "longitude": 23.8300394
     }
   },
   {
     "id": "stop-561",
     "name": "Евроопт",
     "directionHint": "В сторону «Магазин \"1000 мелочей\"»",
+    "osmNodeId": 2296311715,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6663548,
+      "longitude": 23.7874716
     }
   },
   {
     "id": "stop-562",
     "name": "Евроопт",
     "directionHint": "В сторону «Фолюш»",
+    "osmNodeId": 810018765,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.669159,
+      "longitude": 23.7901073
     }
   },
   {
     "id": "stop-733",
     "name": "Железнодорожный вокзал",
+    "osmNodeId": 431335369,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6861085,
+      "longitude": 23.845256
     }
   },
   {
     "id": "stop-681",
     "name": "Железнодорожный переезд",
     "directionHint": "В сторону «Овощная фабрика»",
+    "osmNodeId": 2270966736,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6358985,
+      "longitude": 23.823108
     }
   },
   {
     "id": "stop-682",
     "name": "Железнодорожный переезд",
     "directionHint": "В сторону «Улица 8 Марта»",
+    "osmNodeId": 2270966737,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6351879,
+      "longitude": 23.8229255
     }
   },
   {
     "id": "stop-362",
     "name": "ЖЭС №19",
     "directionHint": "В сторону «СШ №28»",
+    "osmNodeId": 571697067,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6993434,
+      "longitude": 23.8542449
     }
   },
   {
     "id": "stop-363",
     "name": "ЖЭС №19",
     "directionHint": "В сторону «Районные электрические сети»",
+    "osmNodeId": 571697053,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6984087,
+      "longitude": 23.8552198
     }
   },
   {
     "id": "stop-328",
     "name": "ЖЭС №20",
+    "osmNodeId": 550195828,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6412277,
+      "longitude": 23.8448097
     }
   },
   {
     "id": "stop-1098",
     "name": "Заболоть",
+    "osmNodeId": 3596106953,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7141495,
+      "longitude": 23.8750643
     }
   },
   {
     "id": "stop-292",
-    "name": "Заводоуправление ОАО \"ГродноАзот\"",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Заводоуправление ОАО \"ГродноАзот\""
   },
   {
     "id": "stop-517",
     "name": "Зарица",
     "directionHint": "В сторону «Зарица-4»",
+    "osmNodeId": 5000041077,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7515514,
+      "longitude": 23.8441223
     }
   },
   {
     "id": "stop-638",
     "name": "Зарица",
     "directionHint": "В сторону «Улица Криничная»",
+    "osmNodeId": 12099131762,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7520681,
+      "longitude": 23.8446178
     }
   },
   {
     "id": "stop-1672",
-    "name": "Зарица-4",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Зарица-4"
   },
   {
     "id": "stop-1739",
     "name": "Зарица-5",
     "directionHint": "В сторону «Улица Июльская»",
+    "osmNodeId": 13012390406,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7311875,
+      "longitude": 23.8358872
     }
   },
   {
     "id": "stop-1740",
     "name": "Зарица-5",
     "directionHint": "В сторону «Улица Чюрлениса»",
+    "osmNodeId": 13012390407,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7336898,
+      "longitude": 23.8349191
     }
   },
   {
     "id": "stop-703",
     "name": "Зов",
+    "osmNodeId": 2360729268,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7196216,
+      "longitude": 23.8234482
     }
   },
   {
     "id": "stop-350",
     "name": "Зоопарк",
+    "osmNodeId": 431335367,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6870281,
+      "longitude": 23.8476509
     }
   },
   {
     "id": "stop-301",
     "name": "Кинотеатр \"Восток\"",
     "directionHint": "В сторону «Улица Победоносная»",
+    "osmNodeId": 524212287,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6752018,
+      "longitude": 23.8517113
     }
   },
   {
     "id": "stop-302",
     "name": "Кинотеатр \"Восток\"",
     "directionHint": "В сторону «Автовокзал»",
+    "osmNodeId": 483668126,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.675557,
+      "longitude": 23.8509825
     }
   },
   {
     "id": "stop-526",
     "name": "Кинотеатр \"Космос\"",
+    "osmNodeId": 353052064,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6911698,
+      "longitude": 23.8251368
     }
   },
   {
     "id": "stop-384",
     "name": "Кинотеатр \"Октябрь\"",
+    "osmNodeId": 1015286531,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6707675,
+      "longitude": 23.8025831
     }
   },
   {
     "id": "stop-602",
     "name": "Кладбище \"Аульс\"",
+    "osmNodeId": 5011409907,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6856522,
+      "longitude": 23.9560379
     }
   },
   {
     "id": "stop-549",
     "name": "Колбасино",
+    "osmNodeId": 2296296897,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.643684,
+      "longitude": 23.7835125
     }
   },
   {
     "id": "stop-483",
     "name": "Колледж техники, технологий и дизайна",
+    "osmNodeId": 558676030,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7034641,
+      "longitude": 23.8080639
     }
   },
   {
     "id": "stop-566",
     "name": "Колледж экономики и управления",
+    "osmNodeId": 457699017,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6742918,
+      "longitude": 23.8045118
     }
   },
   {
     "id": "stop-550",
     "name": "Консервный завод",
     "directionHint": "В сторону «Улица Кстинская»",
+    "osmNodeId": 2296296898,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6442901,
+      "longitude": 23.7792364
     }
   },
   {
     "id": "stop-551",
     "name": "Консервный завод",
     "directionHint": "В сторону «Колбасино»",
+    "osmNodeId": 2453208155,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6445238,
+      "longitude": 23.7772737
     }
   },
   {
     "id": "stop-1441",
     "name": "Конте Спа",
     "directionHint": "В сторону «ЗОВу»",
+    "osmNodeId": 4972390023,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7185416,
+      "longitude": 23.8172462
     }
   },
   {
     "id": "stop-1442",
     "name": "Конте Спа",
     "directionHint": "В сторону «Магазин»",
+    "osmNodeId": 5002939016,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7185414,
+      "longitude": 23.8158277
     }
   },
   {
     "id": "stop-537",
-    "name": "КСМ",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "КСМ"
   },
   {
     "id": "stop-1643",
     "name": "Лапенки",
+    "osmNodeId": 5009601514,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.719378,
+      "longitude": 23.8475908
     }
   },
   {
     "id": "stop-525",
     "name": "Ледовый дворец",
+    "osmNodeId": 2270953861,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6895077,
+      "longitude": 23.8257646
     }
   },
   {
     "id": "stop-1713",
     "name": "Лесопарк \"Ольшанка\"",
-    "directionHint": "В сторону «Улица Аксамитная»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Аксамитная»"
   },
   {
     "id": "stop-1719",
     "name": "Лесопарк \"Ольшанка\"",
-    "directionHint": "В сторону «Улица Центральная»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Центральная»"
   },
   {
     "id": "stop-720",
     "name": "Локомотивное депо",
+    "osmNodeId": 969186910,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6895808,
+      "longitude": 23.8572233
     }
   },
   {
     "id": "stop-1059",
     "name": "Лососно",
     "directionHint": "В сторону «Воинская часть»",
+    "osmNodeId": 559488479,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6747765,
+      "longitude": 23.7745424
     }
   },
   {
     "id": "stop-414",
     "name": "Лососно",
     "directionHint": "В сторону «Школа»",
+    "osmNodeId": 810327445,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6750173,
+      "longitude": 23.7743765
     }
   },
   {
     "id": "stop-1657",
     "name": "Лососно-4",
+    "osmNodeId": 11983718482,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6598702,
+      "longitude": 23.7582708
     }
   },
   {
     "id": "stop-504",
     "name": "Магазин",
     "directionHint": "В сторону «Грандичи»",
+    "osmNodeId": 540450802,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7231085,
+      "longitude": 23.8145683
     }
   },
   {
     "id": "stop-505",
     "name": "Магазин",
     "directionHint": "В сторону «Улица Горького»",
+    "osmNodeId": 540450803,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7224492,
+      "longitude": 23.8139446
     }
   },
   {
     "id": "stop-563",
     "name": "Магазин \"1000 мелочей\"",
     "directionHint": "В сторону «Больница скорой медицинской помощи»",
+    "osmNodeId": 2277560662,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6700881,
+      "longitude": 23.7915003
     }
   },
   {
     "id": "stop-564",
     "name": "Магазин \"1000 мелочей\"",
     "directionHint": "В сторону «Евроопт»",
+    "osmNodeId": 810018790,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6724547,
+      "longitude": 23.7931838
     }
   },
   {
     "id": "stop-574",
     "name": "Магазин \"ГроДар\"",
+    "osmNodeId": 391427241,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6981997,
+      "longitude": 23.8001769
     }
   },
   {
     "id": "stop-1661",
     "name": "Магазин \"Дионис\"",
+    "osmNodeId": 8870307706,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6437252,
+      "longitude": 23.8730599
     }
   },
   {
     "id": "stop-322",
     "name": "Магазин \"Квасовский\"",
     "directionHint": "В сторону «Улица Славинского»",
+    "osmNodeId": 468000488,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.648641,
+      "longitude": 23.8395033
     }
   },
   {
     "id": "stop-323",
     "name": "Магазин \"Квасовский\"",
     "directionHint": "В сторону «Проспект Клецкова»",
+    "osmNodeId": 468000466,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6479887,
+      "longitude": 23.8374874
     }
   },
   {
     "id": "stop-436",
     "name": "Магазин \"Родны кут\"",
+    "osmNodeId": 2342024542,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7136929,
+      "longitude": 23.8665244
     }
   },
   {
     "id": "stop-1568",
     "name": "Магазин \"Суворовский\"",
+    "osmNodeId": 5750254648,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6629293,
+      "longitude": 23.8176225
     }
   },
   {
     "id": "stop-281",
     "name": "Магазин общества \"Гродно Культторг\"",
     "directionHint": "В сторону «Улица Заслонова»",
+    "osmNodeId": 2304012841,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6906121,
+      "longitude": 23.8689653
     }
   },
   {
     "id": "stop-282",
     "name": "Магазин общества \"Гродно Культторг\"",
     "directionHint": "В сторону «Гродногаз»",
+    "osmNodeId": 2304012840,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6905,
+      "longitude": 23.8711054
     }
   },
   {
     "id": "stop-1676",
     "name": "Макаровой-2",
     "directionHint": "В сторону «Улица Богушовская»",
+    "osmNodeId": 8827133390,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7194645,
+      "longitude": 23.8793518
     }
   },
   {
     "id": "stop-1679",
     "name": "Макаровой-2",
     "directionHint": "В сторону «Грандичи-1»",
+    "osmNodeId": 9251264617,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7192176,
+      "longitude": 23.8825412
     }
   },
   {
     "id": "stop-636",
     "name": "Малаховичи",
     "directionHint": "В сторону «Улица Вишневецкая»",
+    "osmNodeId": 1030655685,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.635148,
+      "longitude": 23.8507282
     }
   },
   {
     "id": "stop-637",
     "name": "Малаховичи",
     "directionHint": "В сторону «Улица Рогачевского»",
+    "osmNodeId": 2281093776,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6340642,
+      "longitude": 23.8513674
     }
   },
   {
     "id": "stop-1126",
     "name": "Малая Ольшанка",
+    "osmNodeId": 3649492665,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6201915,
+      "longitude": 23.7982759
     }
   },
   {
     "id": "stop-464",
     "name": "Медицинский университет",
+    "osmNodeId": 431346173,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.699337,
+      "longitude": 23.8172257
     }
   },
   {
     "id": "stop-507",
     "name": "Меречская застава",
     "directionHint": "К городу",
+    "osmNodeId": 2345811683,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7326706,
+      "longitude": 23.8185088
     }
   },
   {
     "id": "stop-508",
     "name": "Меречская застава",
     "directionHint": "В сторону «Сортировочный участок»",
+    "osmNodeId": 2345811687,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7334286,
+      "longitude": 23.8189971
     }
   },
   {
     "id": "stop-290",
     "name": "Механический завод",
     "directionHint": "Конечная",
+    "osmNodeId": 506553579,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6782243,
+      "longitude": 23.887833
     }
   },
   {
     "id": "stop-291",
     "name": "Механический завод",
-    "directionHint": "В сторону «Азот»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Азот»"
   },
   {
     "id": "stop-377",
     "name": "Мини-рынок",
+    "osmNodeId": 2365478997,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6654514,
+      "longitude": 23.7870792
     }
   },
   {
     "id": "stop-1093",
     "name": "Мини-рынок \"Девятовка\"",
+    "osmNodeId": 2947311921,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7069417,
+      "longitude": 23.8409506
     }
   },
   {
     "id": "stop-660",
     "name": "Молочный мир",
+    "osmNodeId": 1638426916,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.70657,
+      "longitude": 23.8295485
     }
   },
   {
     "id": "stop-629",
     "name": "Музыкальный колледж",
+    "osmNodeId": 1326828671,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6581344,
+      "longitude": 23.8439998
     }
   },
   {
     "id": "stop-677",
     "name": "МЧС",
     "directionHint": "В сторону «Улица Брикеля»",
+    "osmNodeId": 674941480,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7004433,
+      "longitude": 23.8301178
     }
   },
   {
     "id": "stop-678",
     "name": "МЧС",
     "directionHint": "В сторону «Медицинский университет»",
+    "osmNodeId": 2079132692,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.700623,
+      "longitude": 23.8284736
     }
   },
   {
     "id": "stop-500",
     "name": "Мясокомбинат",
     "directionHint": "В сторону «Улица Лапенковская»",
+    "osmNodeId": 2272920736,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7217359,
+      "longitude": 23.827146
     }
   },
   {
     "id": "stop-540",
     "name": "Мясокомбинат",
     "directionHint": "Конечная",
+    "osmNodeId": 2264912747,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7241451,
+      "longitude": 23.8255581
     }
   },
   {
     "id": "stop-307",
     "name": "Областная филармония",
+    "osmNodeId": 769847377,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6678104,
+      "longitude": 23.8232635
     }
   },
   {
     "id": "stop-385",
     "name": "Обувная фабрика \"Неман\"",
     "directionHint": "В сторону «Улица Советских Пограничников»",
+    "osmNodeId": 1015286533,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6715705,
+      "longitude": 23.8040908
     }
   },
   {
     "id": "stop-419",
     "name": "Обувная фабрика \"Неман\"",
     "directionHint": "В сторону «Больница скорой медицинской помощи»",
+    "osmNodeId": 418977869,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6715279,
+      "longitude": 23.8062824
     }
   },
   {
     "id": "stop-598",
     "name": "Общество \"Биоком\"",
     "directionHint": "В сторону «Сельхозтехника»",
+    "osmNodeId": 3948292173,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6653464,
+      "longitude": 23.9598301
     }
   },
   {
     "id": "stop-599",
     "name": "Общество \"Биоком\"",
     "directionHint": "В сторону «Станция \"Аульс\"»",
+    "osmNodeId": 3948292174,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6658328,
+      "longitude": 23.9572156
     }
   },
   {
     "id": "stop-653",
     "name": "Овощная фабрика",
     "directionHint": "В сторону «Химволокно»",
+    "osmNodeId": 2270966738,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6394637,
+      "longitude": 23.8154361
     }
   },
   {
     "id": "stop-654",
     "name": "Овощная фабрика",
     "directionHint": "В сторону «Фабричный»",
+    "osmNodeId": 2296368078,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6385809,
+      "longitude": 23.8137775
     }
   },
   {
     "id": "stop-572",
     "name": "Оздоровительный комплекс",
+    "osmNodeId": 429379288,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6928062,
+      "longitude": 23.8006532
     }
   },
   {
     "id": "stop-1120",
     "name": "Ольшанка",
     "directionHint": "В сторону «Малая Ольшанка»",
+    "osmNodeId": 3759090825,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.618119,
+      "longitude": 23.8023837
     }
   },
   {
     "id": "stop-1125",
     "name": "Ольшанка",
     "directionHint": "В сторону «Улица Богушевича»",
+    "osmNodeId": 3759090828,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6190506,
+      "longitude": 23.7982907
     }
   },
   {
     "id": "stop-1650",
     "name": "Отделение Беларусбанка",
-    "directionHint": "В сторону «Городская областная клиническая больница»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Городская областная клиническая больница»"
   },
   {
     "id": "stop-1651",
     "name": "Отделение Беларусбанка",
     "directionHint": "В сторону «Улица Южная»",
+    "osmNodeId": 6515418580,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6469193,
+      "longitude": 23.8671315
     }
   },
   {
     "id": "stop-536",
     "name": "Очистные сооружения",
+    "osmNodeId": 1176774196,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7399178,
+      "longitude": 23.8116672
     }
   },
   {
     "id": "stop-427",
     "name": "Парк Жилибера",
+    "osmNodeId": 445397980,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6875824,
+      "longitude": 23.8350452
     }
   },
   {
     "id": "stop-613",
     "name": "Переулок Победы",
+    "osmNodeId": 1523255315,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6524711,
+      "longitude": 23.8184103
     }
   },
   {
     "id": "stop-673",
     "name": "Переулок Подольный четвёртый",
+    "osmNodeId": 2897668489,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6687527,
+      "longitude": 23.845149
     }
   },
   {
     "id": "stop-705",
     "name": "Переулок Поповича",
     "directionHint": "В сторону «Магазин \"1000 мелочей\"»",
+    "osmNodeId": 457714319,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.675931,
+      "longitude": 23.8015029
     }
   },
   {
     "id": "stop-707",
     "name": "Переулок Поповича",
     "directionHint": "В сторону «Улица Весенняя»",
+    "osmNodeId": 457714320,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6754512,
+      "longitude": 23.8029384
     }
   },
   {
     "id": "stop-1751",
     "name": "Переулок Фолюш",
     "directionHint": "В сторону «улица Якубовского»",
+    "osmNodeId": 12394256889,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6614819,
+      "longitude": 23.7772317
     }
   },
   {
     "id": "stop-1752",
     "name": "Переулок Фолюш",
     "directionHint": "В сторону «Фолюш»",
+    "osmNodeId": 12394256890,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6621488,
+      "longitude": 23.7780076
     }
   },
   {
     "id": "stop-380",
     "name": "Площадь Декабристов",
     "directionHint": "В сторону «Улица Лизы Чайкиной»",
+    "osmNodeId": 320409848,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.663654,
+      "longitude": 23.7990015
     }
   },
   {
     "id": "stop-381",
     "name": "Площадь Декабристов",
     "directionHint": "В сторону «Улица Поповича»",
+    "osmNodeId": 320409845,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6636504,
+      "longitude": 23.8009358
     }
   },
   {
     "id": "stop-1061",
     "name": "Площадь Советская",
     "directionHint": "В сторону «Областная филармония»",
+    "osmNodeId": 816814535,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6777435,
+      "longitude": 23.8300794
     }
   },
   {
     "id": "stop-305",
     "name": "Площадь Советская",
     "directionHint": "В сторону «Дом связи»",
+    "osmNodeId": 969186894,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6772992,
+      "longitude": 23.8303693
     }
   },
   {
     "id": "stop-1132",
-    "name": "пов. Береговой",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "пов. Береговой"
   },
   {
     "id": "stop-594",
     "name": "Поворот на Аульс",
     "directionHint": "В сторону «Белвторполимер»",
+    "osmNodeId": 2495997364,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6593804,
+      "longitude": 23.9611232
     }
   },
   {
     "id": "stop-595",
     "name": "Поворот на Аульс",
     "directionHint": "В сторону «Сельхозтехника»",
+    "osmNodeId": 2651575220,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.659721,
+      "longitude": 23.9629757
     }
   },
   {
     "id": "stop-1659",
     "name": "Поворот на Погораны",
     "directionHint": "В сторону «Улица Южная»",
+    "osmNodeId": 8729134080,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6341109,
+      "longitude": 23.8835323
     }
   },
   {
     "id": "stop-1660",
     "name": "Поворот на Погораны",
     "directionHint": "От города",
+    "osmNodeId": 8729134081,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6334451,
+      "longitude": 23.8837273
     }
   },
   {
     "id": "stop-1046",
     "name": "Погораны",
     "directionHint": "В сторону «Улица Умелая»",
+    "osmNodeId": 3018684261,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6318478,
+      "longitude": 23.8932772
     }
   },
   {
     "id": "stop-1076",
     "name": "Погораны",
     "directionHint": "В сторону «Улица Южная»",
+    "osmNodeId": 721265675,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6323456,
+      "longitude": 23.8911167
     }
   },
   {
     "id": "stop-472",
     "name": "Поликлиника",
     "directionHint": "В сторону «Городская клиническая больница №3»",
+    "osmNodeId": 2281093779,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6953571,
+      "longitude": 23.7883766
     }
   },
   {
     "id": "stop-679",
     "name": "Поликлиника",
     "directionHint": "В сторону «Гроднозеленстрой»",
+    "osmNodeId": 1648213200,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6945118,
+      "longitude": 23.7880155
     }
   },
   {
     "id": "stop-620",
     "name": "Поликлиника №4",
+    "osmNodeId": 558676018,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7025897,
+      "longitude": 23.8067841
     }
   },
   {
     "id": "stop-727",
     "name": "Поликлиника №5",
     "directionHint": "В сторону «Улица Магистральная»",
+    "osmNodeId": 2090886207,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.680356,
+      "longitude": 23.863034
     }
   },
   {
     "id": "stop-728",
     "name": "Поликлиника №5",
     "directionHint": "В сторону «Торговый центр \"Корона\"»",
+    "osmNodeId": 2090886206,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.679154,
+      "longitude": 23.8623705
     }
   },
   {
     "id": "stop-331",
     "name": "Поликлиника №7",
     "directionHint": "В сторону «Улица Кабяка»",
+    "osmNodeId": 598298392,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6431765,
+      "longitude": 23.8599367
     }
   },
   {
     "id": "stop-332",
     "name": "Поликлиника №7",
     "directionHint": "В сторону «Вишневец»",
+    "osmNodeId": 598298393,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6423625,
+      "longitude": 23.8605443
     }
   },
   {
     "id": "stop-630",
     "name": "Поселок Береговой",
+    "osmNodeId": 2567082204,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6470329,
+      "longitude": 23.987403
     }
   },
   {
     "id": "stop-327",
     "name": "Почта",
     "directionHint": "В сторону «Вишневец-1»",
+    "osmNodeId": 2079132714,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6417213,
+      "longitude": 23.8430421
     }
   },
   {
     "id": "stop-633",
     "name": "Почта",
     "directionHint": "В сторону «Улица Вишневецкая»",
+    "osmNodeId": 550172056,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.640367,
+      "longitude": 23.8440639
     }
   },
   {
     "id": "stop-661",
     "name": "Производство \"Автоагрегатов\"",
     "directionHint": "В сторону «Сквер памяти воинов Афганцев»",
+    "osmNodeId": 1638426925,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7064591,
+      "longitude": 23.8274704
     }
   },
   {
     "id": "stop-662",
     "name": "Производство \"Автоагрегатов\"",
     "directionHint": "В сторону «Молочный мир»",
+    "osmNodeId": 1850620819,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7055922,
+      "longitude": 23.8227621
     }
   },
   {
     "id": "stop-320",
     "name": "Проспект Клецкова",
     "directionHint": "К проспекту Янки Купалы",
+    "osmNodeId": 522814962,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6492548,
+      "longitude": 23.8459297
     }
   },
   {
     "id": "stop-321",
     "name": "Проспект Клецкова",
     "directionHint": "К магазину «Квасовский»",
+    "osmNodeId": 700322741,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6494098,
+      "longitude": 23.8445314
     }
   },
   {
     "id": "stop-1722",
     "name": "Проспект Курловича",
     "directionHint": "В сторону «Грандичи-3»",
+    "osmNodeId": 10601961586,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7256011,
+      "longitude": 23.8802617
     }
   },
   {
     "id": "stop-1724",
     "name": "Проспект Курловича",
     "directionHint": "В сторону «Грандичи-4»",
+    "osmNodeId": 10167498089,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7258003,
+      "longitude": 23.8802441
     }
   },
   {
     "id": "stop-1567",
     "name": "Проспект Лебедева",
+    "osmNodeId": 5109755601,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6433888,
+      "longitude": 23.8174409
     }
   },
   {
     "id": "stop-339",
     "name": "Проспект Румлёвский",
     "directionHint": "В сторону «Гипермаркет \"Материк\"»",
+    "osmNodeId": 648549185,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6649582,
+      "longitude": 23.8610346
     }
   },
   {
     "id": "stop-340",
     "name": "Проспект Румлёвский",
     "directionHint": "В сторону «Румлево»",
+    "osmNodeId": 421962534,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.663856,
+      "longitude": 23.8603503
     }
   },
   {
     "id": "stop-1761",
     "name": "Проспект Санфировой",
+    "osmNodeId": 10679173109,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7311288,
+      "longitude": 23.884972
     }
   },
   {
     "id": "stop-1094",
     "name": "Проспект Янки Купалы",
     "directionHint": "В сторону «Проспект Клецкова»",
+    "osmNodeId": 724399827,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.652783,
+      "longitude": 23.8521592
     }
   },
   {
     "id": "stop-319",
     "name": "Проспект Янки Купалы",
     "directionHint": "В сторону «Гостиница \"Турист\"»",
+    "osmNodeId": 522934860,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6529324,
+      "longitude": 23.8527638
     }
   },
   {
     "id": "stop-663",
     "name": "Радиоволна",
+    "osmNodeId": 661079466,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7049814,
+      "longitude": 23.8181557
     }
   },
   {
     "id": "stop-360",
     "name": "Районные электрические сети",
     "directionHint": "В сторону «Улица Тимирязева»",
+    "osmNodeId": 571696980,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6950673,
+      "longitude": 23.8542744
     }
   },
   {
     "id": "stop-361",
     "name": "Районные электрические сети",
     "directionHint": "В сторону «ЖЭС №19»",
+    "osmNodeId": 969358852,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6954318,
+      "longitude": 23.8554112
     }
   },
   {
     "id": "stop-449",
     "name": "Райсельхозтехника",
+    "osmNodeId": 5020361903,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6616852,
+      "longitude": 23.8706539
     }
   },
   {
     "id": "stop-480",
     "name": "Роддом",
+    "osmNodeId": 1017096351,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7005838,
+      "longitude": 23.8191926
     }
   },
   {
     "id": "stop-614",
     "name": "РСУ-2",
+    "osmNodeId": 772146718,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6554627,
+      "longitude": 23.8197773
     }
   },
   {
     "id": "stop-337",
     "name": "Румлево",
     "directionHint": "В сторону «Проспект Румлевский»",
+    "osmNodeId": 769817041,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6572242,
+      "longitude": 23.8582971
     }
   },
   {
     "id": "stop-338",
     "name": "Румлево",
     "directionHint": "В сторону «Проспект Клецкова»",
+    "osmNodeId": 724447433,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6564821,
+      "longitude": 23.8574208
     }
   },
   {
     "id": "stop-693",
     "name": "Рынок Южный",
+    "osmNodeId": 993522297,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6221497,
+      "longitude": 23.865948
     }
   },
   {
     "id": "stop-1664",
     "name": "с. т. \"Химик-Азот\"",
     "directionHint": "В сторону «Южной»",
+    "osmNodeId": 8852592328,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6582066,
+      "longitude": 23.8872164
     }
   },
   {
     "id": "stop-1665",
     "name": "с. т. \"Химик-Азот\"",
     "directionHint": "В сторону «Карского»",
+    "osmNodeId": 8852592327,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6592473,
+      "longitude": 23.8877723
     }
   },
   {
     "id": "stop-1383",
     "name": "с/т \"Доблесть\"",
     "directionHint": "В сторону «Тарусичи»",
+    "osmNodeId": 1326432634,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6521381,
+      "longitude": 23.7344086
     }
   },
   {
     "id": "stop-1446",
     "name": "с/т \"Доблесть\"",
     "directionHint": "К городу",
+    "osmNodeId": 1326302637,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6525099,
+      "longitude": 23.7347239
     }
   },
   {
     "id": "stop-535",
     "name": "Санаторий \"Неман-72\"",
+    "osmNodeId": 2199954877,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7300311,
+      "longitude": 23.7953411
     }
   },
   {
     "id": "stop-596",
     "name": "Сельхозтехника",
     "directionHint": "В сторону «Поворот на Аульс»",
+    "osmNodeId": 3948292171,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6623241,
+      "longitude": 23.9641261
     }
   },
   {
     "id": "stop-597",
     "name": "Сельхозтехника",
     "directionHint": "В сторону «Общество \"Биоком\"»",
+    "osmNodeId": 3948292172,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6635135,
+      "longitude": 23.965001
     }
   },
   {
     "id": "stop-1133",
-    "name": "Сивково",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Сивково"
   },
   {
     "id": "stop-481",
     "name": "Сквер памяти воинов Афганцев",
+    "osmNodeId": 540468199,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7048157,
+      "longitude": 23.8157375
     }
   },
   {
     "id": "stop-1066",
     "name": "Следственный комитет",
     "directionHint": "В сторону «Магазин»",
+    "osmNodeId": 566477282,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7156606,
+      "longitude": 23.8129338
     }
   },
   {
     "id": "stop-534",
     "name": "Следственный комитет",
     "directionHint": "В сторону «Улица Богуцкого»",
+    "osmNodeId": 566474014,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7156855,
+      "longitude": 23.8123651
     }
   },
   {
     "id": "stop-588",
     "name": "СМУ-4",
     "directionHint": "В сторону «База комплектации»",
+    "osmNodeId": 2343901439,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6638389,
+      "longitude": 23.9318832
     }
   },
   {
     "id": "stop-589",
     "name": "СМУ-4",
     "directionHint": "В сторону «ТЭЦ-2»",
+    "osmNodeId": 2207492010,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6642085,
+      "longitude": 23.9309704
     }
   },
   {
     "id": "stop-518",
     "name": "Собор",
+    "osmNodeId": 2690057477,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6850408,
+      "longitude": 23.841992
     }
   },
   {
     "id": "stop-509",
     "name": "Сортировочный участок",
     "directionHint": "В сторону «Меречская застава»",
+    "osmNodeId": 540450799,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7395939,
+      "longitude": 23.8215182
     }
   },
   {
     "id": "stop-510",
     "name": "Сортировочный участок",
     "directionHint": "В сторону «Улица Мирная»",
+    "osmNodeId": 540450798,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7409778,
+      "longitude": 23.8224204
     }
   },
   {
     "id": "stop-584",
     "name": "Союзпроммонтаж",
     "directionHint": "В сторону «СУ-178»",
+    "osmNodeId": 3662389325,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6665546,
+      "longitude": 23.9107326
     }
   },
   {
     "id": "stop-583",
     "name": "Союзпроммонтаж",
     "directionHint": "В сторону «Азот»",
+    "osmNodeId": 2207492012,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6670491,
+      "longitude": 23.9080299
     }
   },
   {
     "id": "stop-657",
     "name": "СП \"Теста\"",
+    "osmNodeId": 5028930031,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6419487,
+      "longitude": 23.8056105
     }
   },
   {
     "id": "stop-672",
-    "name": "Средняя школа №11",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Средняя школа №11"
   },
   {
     "id": "stop-626",
     "name": "Средняя школа №13",
     "directionHint": "В сторону «Средняя школа №5»",
+    "osmNodeId": 492603180,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6804979,
+      "longitude": 23.8550355
     }
   },
   {
     "id": "stop-715",
     "name": "Средняя школа №13",
     "directionHint": "В сторону «Кинотеатр \"Восток\"»",
+    "osmNodeId": 969186904,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6796215,
+      "longitude": 23.8544678
     }
   },
   {
     "id": "stop-522",
     "name": "Средняя школа №2",
+    "osmNodeId": 1256784537,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6895994,
+      "longitude": 23.8458191
     }
   },
   {
     "id": "stop-370",
     "name": "Средняя школа №27",
     "directionHint": "В сторону «Улица Лиможа»",
+    "osmNodeId": 969358821,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7153329,
+      "longitude": 23.8494408
     }
   },
   {
     "id": "stop-371",
     "name": "Средняя школа №27",
     "directionHint": "В сторону «Девятовка-4»",
+    "osmNodeId": 969358897,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.715868,
+      "longitude": 23.8506385
     }
   },
   {
     "id": "stop-442",
     "name": "Средняя школа №27",
-    "directionHint": "В сторону «Улица Белые Росы»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Белые Росы»"
   },
   {
     "id": "stop-364",
     "name": "Средняя школа №28",
     "directionHint": "В сторону «ЖЭС №19»",
+    "osmNodeId": 571696879,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7006139,
+      "longitude": 23.8505033
     }
   },
   {
     "id": "stop-365",
     "name": "Средняя школа №28",
     "directionHint": "В сторону «Средняя школа №36»",
+    "osmNodeId": 571697087,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7012944,
+      "longitude": 23.8497652
     }
   },
   {
     "id": "stop-621",
     "name": "Средняя школа №28",
     "directionHint": "В сторону «Улица Дзержинского»",
+    "osmNodeId": 571696869,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7011811,
+      "longitude": 23.8489292
     }
   },
   {
     "id": "stop-623",
     "name": "Средняя школа №3",
+    "osmNodeId": 522934900,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6613069,
+      "longitude": 23.8472583
     }
   },
   {
     "id": "stop-639",
     "name": "Средняя школа №35",
+    "osmNodeId": 824217329,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6288318,
+      "longitude": 23.8539712
     }
   },
   {
     "id": "stop-1092",
     "name": "Средняя школа №36",
     "directionHint": "В сторону «Гроднооблнефтепродукт»",
+    "osmNodeId": 2931728291,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.707251,
+      "longitude": 23.8484697
     }
   },
   {
     "id": "stop-366",
     "name": "Средняя школа №36",
     "directionHint": "В сторону «Улица Лиможа»",
+    "osmNodeId": 571723353,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7076545,
+      "longitude": 23.8498571
     }
   },
   {
     "id": "stop-367",
     "name": "Средняя школа №36",
     "directionHint": "В сторону «Средняя школа №28»",
+    "osmNodeId": 571723336,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7064028,
+      "longitude": 23.8493072
     }
   },
   {
     "id": "stop-557",
     "name": "Средняя школа №37",
     "directionHint": "В сторону «Улица Ольги Соломовой»",
+    "osmNodeId": 810018755,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6567618,
+      "longitude": 23.7800947
     }
   },
   {
     "id": "stop-722",
     "name": "Средняя школа №37",
     "directionHint": "В сторону «Алми»",
+    "osmNodeId": 2211711899,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6566304,
+      "longitude": 23.7804671
     }
   },
   {
     "id": "stop-1123",
     "name": "Средняя школа №39",
     "directionHint": "В сторону «Улица Короткевича»",
+    "osmNodeId": 3649493190,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6264591,
+      "longitude": 23.8023145
     }
   },
   {
     "id": "stop-1128",
     "name": "Средняя школа №39",
     "directionHint": "В сторону «Улица 8 Марта»",
+    "osmNodeId": 1942475218,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6265648,
+      "longitude": 23.8041046
     }
   },
   {
     "id": "stop-1564",
     "name": "Средняя школа №39",
     "directionHint": "В сторону «Улица Волкова»",
+    "osmNodeId": 5110991046,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6273924,
+      "longitude": 23.8038003
     }
   },
   {
     "id": "stop-1734",
     "name": "Средняя школа №41",
+    "osmNodeId": 7714940050,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.616915,
+      "longitude": 23.8162161
     }
   },
   {
     "id": "stop-716",
     "name": "Средняя школа №5",
     "directionHint": "В сторону «Средняя школа №13»",
+    "osmNodeId": 969186915,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6834778,
+      "longitude": 23.8546632
     }
   },
   {
     "id": "stop-717",
     "name": "Средняя школа №5",
     "directionHint": "В сторону «Шоссе Озерское»",
+    "osmNodeId": 969186924,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6853376,
+      "longitude": 23.8543902
     }
   },
   {
     "id": "stop-1436",
     "name": "Станция \"Аульс\"",
+    "osmNodeId": 3948352301,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6743034,
+      "longitude": 23.9527823
     }
   },
   {
     "id": "stop-1686",
     "name": "Станция переливания крови",
     "directionHint": "В сторону «Улица Кабяка»",
+    "osmNodeId": 10594242605,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6450946,
+      "longitude": 23.856131
     }
   },
   {
     "id": "stop-668",
     "name": "Станция переливания крови",
     "directionHint": "В сторону «Урочище \"Форт\"»",
+    "osmNodeId": 2630823976,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.644965,
+      "longitude": 23.8586668
     }
   },
   {
     "id": "stop-309",
     "name": "Стеклозавод",
+    "osmNodeId": 347507534,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6655962,
+      "longitude": 23.8267775
     }
   },
   {
     "id": "stop-454",
     "name": "Стоматологическая поликлиника",
     "directionHint": "В сторону «Табачная фабрика»",
+    "osmNodeId": 769847378,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.661811,
+      "longitude": 23.8170321
     }
   },
   {
     "id": "stop-455",
     "name": "Стоматологическая поликлиника",
     "directionHint": "В сторону «Улица Суворова»",
+    "osmNodeId": 769847373,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6612348,
+      "longitude": 23.8150886
     }
   },
   {
     "id": "stop-587",
     "name": "СУ-178",
     "directionHint": "В сторону «ТЭЦ-2»",
+    "osmNodeId": 2343901440,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6654665,
+      "longitude": 23.9190127
     }
   },
   {
     "id": "stop-586",
     "name": "СУ-178",
     "directionHint": "В сторону «Союзпроммонтаж»",
+    "osmNodeId": 2207492011,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6658717,
+      "longitude": 23.9172388
     }
   },
   {
     "id": "stop-456",
     "name": "Табачная фабрика",
     "directionHint": "В сторону «Улица Горновых»",
+    "osmNodeId": 1523246676,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6653847,
+      "longitude": 23.8198628
     }
   },
   {
     "id": "stop-457",
     "name": "Табачная фабрика",
     "directionHint": "В сторону «Стоматологическая поликлиника»",
+    "osmNodeId": 769847375,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6668998,
+      "longitude": 23.8205726
     }
   },
   {
     "id": "stop-1183",
     "name": "Тарусичи",
+    "osmNodeId": 810198164,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.641189,
+      "longitude": 23.7417665
     }
   },
   {
     "id": "stop-426",
     "name": "Театр кукол",
+    "osmNodeId": 431340008,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6858452,
+      "longitude": 23.8353505
     }
   },
   {
     "id": "stop-482",
     "name": "Технологический колледж",
+    "osmNodeId": 661087659,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7041683,
+      "longitude": 23.8168697
     }
   },
   {
     "id": "stop-1656",
     "name": "Торгово-развлекательный комплекс \"Тринити\"",
+    "osmNodeId": 7176233689,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6514469,
+      "longitude": 23.8542031
     }
   },
   {
     "id": "stop-664",
     "name": "Торгово-развлекательный центр \"Тринити\"",
+    "osmNodeId": 471704609,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6517272,
+      "longitude": 23.8549394
     }
   },
   {
     "id": "stop-628",
     "name": "Торговый центр \"Корона\"",
+    "osmNodeId": 769847388,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6729343,
+      "longitude": 23.8606311
     }
   },
   {
     "id": "stop-460",
     "name": "Торговый центр \"На Пушкина\"",
+    "osmNodeId": 483668152,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6947181,
+      "longitude": 23.8351212
     }
   },
   {
     "id": "stop-1711",
     "name": "Торговый центр \"Парус\"",
+    "osmNodeId": 7714940049,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6167054,
+      "longitude": 23.8166787
     }
   },
   {
     "id": "stop-1727",
     "name": "Торговый центр \"Фолюш\"",
     "directionHint": "В сторону «Средняя школа №37»",
+    "osmNodeId": 12249231807,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6588597,
+      "longitude": 23.7814214
     }
   },
   {
     "id": "stop-558",
     "name": "Торговый центр \"Фолюш\"",
     "directionHint": "В сторону «Фламинго»",
+    "osmNodeId": 5110991044,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6585438,
+      "longitude": 23.7820372
     }
   },
   {
     "id": "stop-1397",
     "name": "Торговый центр \"OldCity\"",
     "directionHint": "Далее: улица Дзержинского / улица Брикеля",
+    "osmNodeId": 4712848291,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7008165,
+      "longitude": 23.8341442
     }
   },
   {
     "id": "stop-1444",
     "name": "Торговый центр \"OldCity\"",
     "directionHint": "В сторону «МЧС»",
+    "osmNodeId": 4712869989,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7012218,
+      "longitude": 23.8353446
     }
   },
   {
     "id": "stop-1434",
     "name": "ТЭЦ-2",
     "directionHint": "В сторону «СУ-178»",
+    "osmNodeId": 2264947714,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6652991,
+      "longitude": 23.9242086
     }
   },
   {
     "id": "stop-1435",
     "name": "ТЭЦ-2",
     "directionHint": "В сторону «СМУ-4»",
+    "osmNodeId": 2343901441,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6648785,
+      "longitude": 23.9238714
     }
   },
   {
     "id": "stop-523",
     "name": "Улица 17 Сентября",
     "directionHint": "В сторону «Улица Тимирязева»",
+    "osmNodeId": 2199954878,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6890477,
+      "longitude": 23.8377026
     }
   },
   {
     "id": "stop-524",
     "name": "Улица 17 Сентября",
     "directionHint": "В сторону «Кинотеатр \"Космос\"»",
+    "osmNodeId": 2199954879,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6891062,
+      "longitude": 23.8355098
     }
   },
   {
     "id": "stop-1058",
     "name": "Улица 8 Марта",
     "directionHint": "В сторону «Улица Великая Ольшанка»",
+    "osmNodeId": 1826098518,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6242159,
+      "longitude": 23.8134897
     }
   },
   {
     "id": "stop-695",
     "name": "Улица 8 Марта",
     "directionHint": "В сторону «Улица Наполеона Орды»",
+    "osmNodeId": 3649493203,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6230405,
+      "longitude": 23.8168913
     }
   },
   {
     "id": "stop-1714",
     "name": "Улица Аксамитная",
-    "directionHint": "В сторону «Улица Изумрудная»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Изумрудная»"
   },
   {
     "id": "stop-1718",
     "name": "Улица Аксамитная",
-    "directionHint": "В сторону «Лесопарк \"Ольшанка\"»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Лесопарк \"Ольшанка\"»"
   },
   {
     "id": "stop-1716",
-    "name": "Улица Александровича",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Улица Александровича"
   },
   {
     "id": "stop-1642",
     "name": "Улица Асфальтная",
     "directionHint": "В сторону «Лапенки»",
+    "osmNodeId": 10294899631,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7180446,
+      "longitude": 23.8588879
     }
   },
   {
     "id": "stop-434",
     "name": "Улица Асфальтная",
     "directionHint": "В сторону «Улица Панченко»",
+    "osmNodeId": 5009601752,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.717756,
+      "longitude": 23.8601679
     }
   },
   {
     "id": "stop-1687",
     "name": "Улица Аульская",
     "directionHint": "В сторону Аульса",
+    "osmNodeId": 9626791893,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6723753,
+      "longitude": 23.9534538
     }
   },
   {
     "id": "stop-600",
     "name": "Улица Аульская",
     "directionHint": "В сторону «Общество \"Биоком\"»",
+    "osmNodeId": 9817205542,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6705695,
+      "longitude": 23.9526988
     }
   },
   {
     "id": "stop-1708",
     "name": "Улица Белая",
-    "directionHint": "В сторону «Улица Заболоть»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Заболоть»"
   },
   {
     "id": "stop-1709",
     "name": "Улица Белая",
-    "directionHint": "В сторону «Улица Боброва»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Боброва»"
   },
   {
     "id": "stop-443",
     "name": "Улица Белые росы",
     "directionHint": "В сторону «Улица Лапенковская»",
+    "osmNodeId": 1290407694,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7167408,
+      "longitude": 23.8401163
     }
   },
   {
     "id": "stop-497",
     "name": "Улица Белые росы",
     "directionHint": "В сторону «Брикеля»",
+    "osmNodeId": 1290405083,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7154654,
+      "longitude": 23.8396828
     }
   },
   {
     "id": "stop-622",
     "name": "Улица Белые Росы",
     "directionHint": "Конечная некоторых маршрутов",
+    "osmNodeId": 1290407696,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7160317,
+      "longitude": 23.8408115
     }
   },
   {
     "id": "stop-1706",
     "name": "Улица Боброва",
-    "directionHint": "В сторону «Улица Белая»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Белая»"
   },
   {
     "id": "stop-1707",
     "name": "Улица Боброва",
-    "directionHint": "В сторону «Улица Стмаромалыщинская»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Стмаромалыщинская»"
   },
   {
     "id": "stop-1106",
     "name": "Улица Бобровского",
     "directionHint": "В сторону «Улица Деревенская»",
+    "osmNodeId": 4414980954,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6196939,
+      "longitude": 23.8328934
     }
   },
   {
     "id": "stop-1110",
     "name": "Улица Бобровского",
     "directionHint": "В сторону «Улица Осенняя»",
+    "osmNodeId": 5113616129,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6200192,
+      "longitude": 23.8285701
     }
   },
   {
     "id": "stop-511",
     "name": "Улица Богатая",
     "directionHint": "В сторону «Улица Гожская»",
+    "osmNodeId": 541216748,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7483141,
+      "longitude": 23.8237807
     }
   },
   {
     "id": "stop-512",
     "name": "Улица Богатая",
     "directionHint": "В сторону «Сортировочный участок»",
+    "osmNodeId": 541217396,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7473767,
+      "longitude": 23.8232818
     }
   },
   {
     "id": "stop-532",
     "name": "Улица Богуцкого",
     "directionHint": "В сторону «Гронитекс»",
+    "osmNodeId": 540468228,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7104013,
+      "longitude": 23.8143716
     }
   },
   {
     "id": "stop-533",
     "name": "Улица Богуцкого",
     "directionHint": "В сторону «Следственный комитет»",
+    "osmNodeId": 540468240,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7127743,
+      "longitude": 23.8141291
     }
   },
   {
     "id": "stop-675",
     "name": "Улица Богуцкого",
     "directionHint": "В сторону «Врублевского»",
+    "osmNodeId": 847177186,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7119922,
+      "longitude": 23.813781
     }
   },
   {
     "id": "stop-1121",
     "name": "Улица Богушевича",
+    "osmNodeId": 3759090827,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6172778,
+      "longitude": 23.8033742
     }
   },
   {
     "id": "stop-1697",
     "name": "Улица Богушовская",
     "directionHint": "В сторону «Мытная»",
+    "osmNodeId": 10044673397,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7183115,
+      "longitude": 23.8816606
     }
   },
   {
     "id": "stop-928",
     "name": "Улица Богушовская",
     "directionHint": "В сторону «Улица Старомалышинская»",
+    "osmNodeId": 9239969983,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7189561,
+      "longitude": 23.8840702
     }
   },
   {
     "id": "stop-571",
     "name": "Улица Болдина",
     "directionHint": "В сторону «Форты»",
+    "osmNodeId": 429379289,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6936675,
+      "longitude": 23.8012254
     }
   },
   {
     "id": "stop-573",
     "name": "Улица Болдина",
     "directionHint": "В сторону «Оздоровительный комплекс»",
+    "osmNodeId": 540085270,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6956399,
+      "longitude": 23.8007138
     }
   },
   {
     "id": "stop-488",
     "name": "Улица Брикеля",
     "directionHint": "В сторону «Электротехнический колледж»",
+    "osmNodeId": 890949690,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7002615,
+      "longitude": 23.8397069
     }
   },
   {
     "id": "stop-659",
     "name": "Улица Брикеля",
     "directionHint": "В сторону «Средняя школа №28»",
+    "osmNodeId": 1638426912,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7009549,
+      "longitude": 23.8414376
     }
   },
   {
     "id": "stop-1051",
     "name": "Улица Буденного",
     "directionHint": "В сторону «Зоопарк»",
+    "osmNodeId": 2574266485,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6829179,
+      "longitude": 23.8451479
     }
   },
   {
     "id": "stop-346",
     "name": "Улица Буденного",
     "directionHint": "В сторону «Гуманитарный колледж»",
+    "osmNodeId": 390154580,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6843614,
+      "longitude": 23.8458763
     }
   },
   {
     "id": "stop-1429",
     "name": "Улица Васильковая",
     "directionHint": "В сторону «Улица Тарусичская»",
+    "osmNodeId": 4593253890,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6693697,
+      "longitude": 23.7406441
     }
   },
   {
     "id": "stop-405",
     "name": "Улица Васильковая",
     "directionHint": "В сторону «Улица Рябиновая»",
+    "osmNodeId": 736634047,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6694056,
+      "longitude": 23.7416619
     }
   },
   {
     "id": "stop-694",
     "name": "Улица Великая Ольшанка",
     "directionHint": "В сторону «Улица 8 Марта»",
+    "osmNodeId": 1729333393,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6214513,
+      "longitude": 23.8209868
     }
   },
   {
     "id": "stop-696",
     "name": "Улица Великая Ольшанка",
     "directionHint": "В сторону «Улица Отечественная»",
+    "osmNodeId": 3505724729,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6222463,
+      "longitude": 23.8176313
     }
   },
   {
     "id": "stop-1447",
     "name": "Улица Венечная",
     "directionHint": "В сторону «Школа»",
+    "osmNodeId": 11983718484,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6654825,
+      "longitude": 23.7606278
     }
   },
   {
     "id": "stop-358",
     "name": "Улица Венечная",
     "directionHint": "В сторону «Лососно-4»",
+    "osmNodeId": 11983718483,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6653067,
+      "longitude": 23.7603473
     }
   },
   {
     "id": "stop-567",
     "name": "Улица Весенняя",
     "directionHint": "В сторону «Улица Фестивальная»",
+    "osmNodeId": 457640339,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6838764,
+      "longitude": 23.8056255
     }
   },
   {
     "id": "stop-568",
     "name": "Улица Весенняя",
     "directionHint": "В сторону «Училище Олимпийского резерва»",
+    "osmNodeId": 575962840,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6829136,
+      "longitude": 23.806805
     }
   },
   {
     "id": "stop-634",
     "name": "Улица Вишневецкая",
     "directionHint": "В сторону «Почта»",
+    "osmNodeId": 1523492652,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6387691,
+      "longitude": 23.8465698
     }
   },
   {
     "id": "stop-635",
     "name": "Улица Вишневецкая",
     "directionHint": "В сторону «Малаховичи»",
+    "osmNodeId": 1030655684,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6377427,
+      "longitude": 23.8471441
     }
   },
   {
     "id": "stop-1565",
     "name": "Улица Волкова",
     "directionHint": "В сторону «Овощная фабрика»",
+    "osmNodeId": 5110991039,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6333601,
+      "longitude": 23.8078183
     }
   },
   {
     "id": "stop-1566",
     "name": "Улица Волкова",
     "directionHint": "В сторону «Средняя школа №39»",
+    "osmNodeId": 5110991045,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6326796,
+      "longitude": 23.8063914
     }
   },
   {
     "id": "stop-1614",
     "name": "Улица Врублевского",
-    "directionHint": "Конечная",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "Конечная"
   },
   {
     "id": "stop-578",
     "name": "Улица Врублевского",
     "directionHint": "В сторону «4-я поликлиника»",
+    "osmNodeId": 721382302,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7082236,
+      "longitude": 23.8045148
     }
   },
   {
     "id": "stop-579",
     "name": "Улица Врублевского",
     "directionHint": "В сторону «Улица Домбровского»",
+    "osmNodeId": 2075107697,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7092353,
+      "longitude": 23.8045949
     }
   },
   {
     "id": "stop-386",
     "name": "Улица Гагарина",
     "directionHint": "В сторону «Обувная фабрика \"Неман\"»",
+    "osmNodeId": 1328437318,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6731748,
+      "longitude": 23.8122519
     }
   },
   {
     "id": "stop-387",
     "name": "Улица Гагарина",
     "directionHint": "В сторону «Центральная поликлиника»",
+    "osmNodeId": 1328437289,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6725347,
+      "longitude": 23.8157798
     }
   },
   {
     "id": "stop-501",
     "name": "Улица Гаспадарчая",
     "directionHint": "В сторону «Улица Грандичская»",
+    "osmNodeId": 2272920723,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.722553,
+      "longitude": 23.8220616
     }
   },
   {
     "id": "stop-502",
     "name": "Улица Гаспадарчая",
     "directionHint": "В сторону «Мясокомбинат»",
+    "osmNodeId": 2264912748,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7221597,
+      "longitude": 23.8231777
     }
   },
   {
     "id": "stop-1667",
     "name": "Улица Глухова",
     "directionHint": "В сторону «Улица Макаровой»",
+    "osmNodeId": 9051225969,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7174664,
+      "longitude": 23.8693534
     }
   },
   {
     "id": "stop-1671",
     "name": "Улица Глухова",
     "directionHint": "В сторону «Улица Асфальтная»",
+    "osmNodeId": 9051225968,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7183288,
+      "longitude": 23.8696928
     }
   },
   {
     "id": "stop-513",
     "name": "Улица Гожская",
     "directionHint": "В сторону «Улица Криничная»",
+    "osmNodeId": 2345811336,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.754357,
+      "longitude": 23.8247977
     }
   },
   {
     "id": "stop-514",
     "name": "Улица Гожская",
     "directionHint": "В сторону «Улица Богатая»",
+    "osmNodeId": 847177180,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7539455,
+      "longitude": 23.8240639
     }
   },
   {
     "id": "stop-306",
     "name": "Улица Горновых",
+    "osmNodeId": 769847386,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6694911,
+      "longitude": 23.8233649
     }
   },
   {
     "id": "stop-539",
     "name": "Улица Грандичская",
+    "osmNodeId": 847177176,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7212639,
+      "longitude": 23.813468
     }
   },
   {
     "id": "stop-725",
     "name": "Улица Данилова",
     "directionHint": "В сторону «ГАП №1»",
+    "osmNodeId": 2369278315,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6562776,
+      "longitude": 23.7831889
     }
   },
   {
     "id": "stop-726",
     "name": "Улица Данилова",
     "directionHint": "В сторону «Алми»",
+    "osmNodeId": 1715874572,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6557559,
+      "longitude": 23.7852081
     }
   },
   {
     "id": "stop-1107",
     "name": "Улица Деревенская",
     "directionHint": "В сторону «Улица Великая Ольшанка»",
+    "osmNodeId": 5113616128,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6204513,
+      "longitude": 23.8268267
     }
   },
   {
     "id": "stop-1109",
     "name": "Улица Деревенская",
     "directionHint": "В сторону «Улица Бобровского»",
+    "osmNodeId": 5110991038,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6208767,
+      "longitude": 23.8230908
     }
   },
   {
     "id": "stop-489",
     "name": "Улица Дзержинского",
     "directionHint": "В сторону «Аптечный склад»",
+    "osmNodeId": 1271367429,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7019768,
+      "longitude": 23.8400875
     }
   },
   {
     "id": "stop-676",
     "name": "Улица Дзержинского",
     "directionHint": "В сторону «МЧС»",
+    "osmNodeId": 2079132727,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7013102,
+      "longitude": 23.838135
     }
   },
   {
     "id": "stop-577",
     "name": "Улица Домбровского",
     "directionHint": "В сторону «Улица Врублевского»",
+    "osmNodeId": 574866391,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7053702,
+      "longitude": 23.7957977
     }
   },
   {
     "id": "stop-580",
     "name": "Улица Домбровского",
     "directionHint": "Конечная некоторых маршрутов",
+    "osmNodeId": 462597932,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.706691,
+      "longitude": 23.7956807
     }
   },
   {
     "id": "stop-1639",
     "name": "Улица Домейко",
     "directionHint": "В сторону «Улица Рогачевского»",
+    "osmNodeId": 6206634886,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.625837,
+      "longitude": 23.861497
     }
   },
   {
     "id": "stop-1640",
     "name": "Улица Домейко",
     "directionHint": "В сторону «Рынок \"Южный\"»",
+    "osmNodeId": 6206634887,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.62474,
+      "longitude": 23.8621191
     }
   },
   {
     "id": "stop-445",
     "name": "Улица Друцк",
+    "osmNodeId": 507052813,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6704789,
+      "longitude": 23.8620997
     }
   },
   {
     "id": "stop-463",
     "name": "Улица Дубко",
+    "osmNodeId": 483740204,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6995581,
+      "longitude": 23.8219578
     }
   },
   {
     "id": "stop-1710",
-    "name": "Улица Заболоть",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "name": "Улица Заболоть"
   },
   {
     "id": "stop-279",
     "name": "Улица Заслонова",
     "directionHint": "В сторону «Локомотивное депо»",
+    "osmNodeId": 969186903,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6904164,
+      "longitude": 23.8641057
     }
   },
   {
     "id": "stop-280",
     "name": "Улица Заслонова",
     "directionHint": "В сторону «Магазин общества \"Гродно Культторг\"»",
+    "osmNodeId": 969186900,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.690282,
+      "longitude": 23.8658789
     }
   },
   {
     "id": "stop-644",
     "name": "Улица Звездная",
     "directionHint": "В сторону «Улица Шарипова»",
+    "osmNodeId": 5113616126,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6234009,
+      "longitude": 23.8423118
     }
   },
   {
     "id": "stop-645",
     "name": "Улица Звездная",
     "directionHint": "В сторону «Улица Осенняя»",
+    "osmNodeId": 824217361,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6230996,
+      "longitude": 23.8413588
     }
   },
   {
     "id": "stop-1745",
     "name": "Улица Издательская",
     "directionHint": "В сторону Химволокно",
+    "osmNodeId": 1545785655,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6475488,
+      "longitude": 23.8099237
     }
   },
   {
     "id": "stop-709",
     "name": "Улица Издательская",
     "directionHint": "В сторону Фолюша",
+    "osmNodeId": 1523259844,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.64811,
+      "longitude": 23.8091209
     }
   },
   {
     "id": "stop-1715",
     "name": "Улица Изумрудная",
-    "directionHint": "В сторону «Улица Александровича»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Александровича»"
   },
   {
     "id": "stop-1717",
     "name": "Улица Изумрудная",
-    "directionHint": "В сторону «Улица Аксамитная»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Аксамитная»"
   },
   {
     "id": "stop-1735",
     "name": "Улица Июльская",
     "directionHint": "В сторону «Улица Колхозная»",
+    "osmNodeId": 13012390409,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7380869,
+      "longitude": 23.8356208
     }
   },
   {
     "id": "stop-1736",
     "name": "Улица Июльская",
     "directionHint": "В сторону «Зарица-5»",
+    "osmNodeId": 13012390408,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7381489,
+      "longitude": 23.8369187
     }
   },
   {
     "id": "stop-329",
     "name": "Улица Кабяка",
     "directionHint": "В сторону «Почта»",
+    "osmNodeId": 969186925,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6431905,
+      "longitude": 23.8489121
     }
   },
   {
     "id": "stop-330",
     "name": "Улица Кабяка",
     "directionHint": "В сторону «Станция переливания крови»",
+    "osmNodeId": 550400917,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6436593,
+      "longitude": 23.850626
     }
   },
   {
     "id": "stop-609",
     "name": "Улица Калинина",
     "directionHint": "В сторону «Улица Пучкова»",
+    "osmNodeId": 1523254494,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6512652,
+      "longitude": 23.8106996
     }
   },
   {
     "id": "stop-610",
     "name": "Улица Калинина",
     "directionHint": "В сторону «Улица Краснознаменная»",
+    "osmNodeId": 1523254861,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6505333,
+      "longitude": 23.8131234
     }
   },
   {
     "id": "stop-1652",
     "name": "Улица Калиновая",
     "directionHint": "В сторону «Улица Умелая»",
+    "osmNodeId": 13791126701,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6358449,
+      "longitude": 23.9029241
     }
   },
   {
     "id": "stop-1653",
     "name": "Улица Калиновая",
     "directionHint": "В сторону «Улица Молодая»",
+    "osmNodeId": 13791135601,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6362318,
+      "longitude": 23.9041311
     }
   },
   {
     "id": "stop-345",
     "name": "Улица Карбышева",
+    "osmNodeId": 431330918,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6792075,
+      "longitude": 23.8422316
     }
   },
   {
     "id": "stop-408",
     "name": "Улица Каролинская",
     "directionHint": "В сторону «Улица Рябиновая»",
+    "osmNodeId": 736634034,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6723527,
+      "longitude": 23.7477204
     }
   },
   {
     "id": "stop-409",
     "name": "Улица Каролинская",
     "directionHint": "В сторону «Школа»",
+    "osmNodeId": 736634023,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6734279,
+      "longitude": 23.7480385
     }
   },
   {
     "id": "stop-1052",
     "name": "Улица Карского",
     "directionHint": "В сторону «Механический завод»",
+    "osmNodeId": 836148496,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6845325,
+      "longitude": 23.8802135
     }
   },
   {
     "id": "stop-1438",
     "name": "Улица Карского",
     "directionHint": "В сторону «Улица Куйбышева»",
+    "osmNodeId": 836147035,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6851376,
+      "longitude": 23.8805223
     }
   },
   {
     "id": "stop-1737",
     "name": "Улица Колхозная",
     "directionHint": "В сторону «Улица Рожанского»",
+    "osmNodeId": 13012390410,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7380591,
+      "longitude": 23.8433563
     }
   },
   {
     "id": "stop-1738",
     "name": "Улица Колхозная",
     "directionHint": "В сторону «Улица Июльская»",
+    "osmNodeId": 13012390411,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7380022,
+      "longitude": 23.8428942
     }
   },
   {
     "id": "stop-1124",
     "name": "Улица Короткевича",
     "directionHint": "В сторону «Ольшанка»",
+    "osmNodeId": 3649492938,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.622666,
+      "longitude": 23.7994297
     }
   },
   {
     "id": "stop-1127",
     "name": "Улица Короткевича",
     "directionHint": "В сторону «Средняя школа №39»",
+    "osmNodeId": 3649492986,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6237615,
+      "longitude": 23.8009828
     }
   },
   {
     "id": "stop-359",
     "name": "Улица Кохановского",
+    "osmNodeId": 969358804,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6899993,
+      "longitude": 23.8468245
     }
   },
   {
     "id": "stop-611",
     "name": "Улица Краснознаменная",
     "directionHint": "В сторону «Переулок Победы»",
+    "osmNodeId": 1523255096,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6504697,
+      "longitude": 23.8150654
     }
   },
   {
     "id": "stop-612",
     "name": "Улица Краснознаменная",
     "directionHint": "В сторону «Улица Калинина»",
+    "osmNodeId": 1523255490,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6520395,
+      "longitude": 23.8159694
     }
   },
   {
     "id": "stop-515",
     "name": "Улица Криничная",
     "directionHint": "В сторону «Улица Гожская»",
+    "osmNodeId": 541317339,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7524049,
+      "longitude": 23.8384088
     }
   },
   {
     "id": "stop-516",
     "name": "Улица Криничная",
     "directionHint": "В сторону «Зарица»",
+    "osmNodeId": 541317153,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7521981,
+      "longitude": 23.8392305
     }
   },
   {
     "id": "stop-552",
     "name": "Улица Кстинская",
+    "osmNodeId": 810057025,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6459028,
+      "longitude": 23.7767137
     }
   },
   {
     "id": "stop-1069",
     "name": "Улица Куйбышева",
     "directionHint": "В сторону «Магазин общества \"Гродно Культторг\"»",
+    "osmNodeId": 506553533,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6885294,
+      "longitude": 23.8783017
     }
   },
   {
     "id": "stop-288",
     "name": "Улица Куйбышева",
     "directionHint": "В сторону «Улица Карского»",
+    "osmNodeId": 506553534,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6879691,
+      "longitude": 23.8782161
     }
   },
   {
     "id": "stop-441",
     "name": "Улица Курчатова",
     "directionHint": "В сторону «Средняя школа №36»",
+    "osmNodeId": 320676302,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7053062,
+      "longitude": 23.8580595
     }
   },
   {
     "id": "stop-519",
     "name": "Улица Курчатова",
     "directionHint": "В сторону «Улица Тавлая»",
+    "osmNodeId": 1703461238,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7067213,
+      "longitude": 23.8504604
     }
   },
   {
     "id": "stop-453",
     "name": "Улица Кутузова",
+    "osmNodeId": 769847384,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6592607,
+      "longitude": 23.8083655
     }
   },
   {
     "id": "stop-1742",
     "name": "Улица Лапенковская",
     "directionHint": "В сторону «Зарица-5»",
+    "osmNodeId": 11773973434,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7217175,
+      "longitude": 23.8400125
     }
   },
   {
     "id": "stop-498",
     "name": "Улица Лапенковская",
     "directionHint": "В сторону «ЖД переезду»",
+    "osmNodeId": 2272920729,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7197742,
+      "longitude": 23.8396627
     }
   },
   {
     "id": "stop-499",
     "name": "Улица Лапенковская",
     "directionHint": "В сторону «Мясокомбинату»",
+    "osmNodeId": 1782787378,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7206435,
+      "longitude": 23.8388313
     }
   },
   {
     "id": "stop-391",
     "name": "Улица Ленина",
     "directionHint": "В сторону «Гуманитарный колледж»",
+    "osmNodeId": 387618810,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6818078,
+      "longitude": 23.8404349
     }
   },
   {
     "id": "stop-478",
     "name": "Улица Ленина",
     "directionHint": "В сторону «Университет»",
+    "osmNodeId": 1015286535,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6807991,
+      "longitude": 23.840795
     }
   },
   {
     "id": "stop-343",
     "name": "Улица Лидская",
     "directionHint": "В сторону «Госавтоинспекция»",
+    "osmNodeId": 969358860,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6714712,
+      "longitude": 23.8545589
     }
   },
   {
     "id": "stop-444",
     "name": "Улица Лидская",
     "directionHint": "В сторону «Кинотеатр \"Восток\"»",
+    "osmNodeId": 969358884,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6721368,
+      "longitude": 23.853911
     }
   },
   {
     "id": "stop-378",
     "name": "Улица Лизы Чайкиной",
     "directionHint": "В сторону «Фолюш»",
+    "osmNodeId": 320409829,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6651341,
+      "longitude": 23.7889722
     }
   },
   {
     "id": "stop-379",
     "name": "Улица Лизы Чайкиной",
     "directionHint": "В сторону «Площадь Декабристов»",
+    "osmNodeId": 320409842,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.664239,
+      "longitude": 23.7907901
     }
   },
   {
     "id": "stop-368",
     "name": "Улица Лиможа",
     "directionHint": "В сторону «Средняя школа №36»",
+    "osmNodeId": 571724656,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7101872,
+      "longitude": 23.8494018
     }
   },
   {
     "id": "stop-369",
     "name": "Улица Лиможа",
     "directionHint": "В сторону «Парк Районнная»",
+    "osmNodeId": 571724659,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.712084,
+      "longitude": 23.8497376
     }
   },
   {
     "id": "stop-729",
     "name": "Улица Магистральная",
     "directionHint": "В сторону «ЖЭС №19»",
+    "osmNodeId": 1775264970,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6845253,
+      "longitude": 23.8605642
     }
   },
   {
     "id": "stop-730",
     "name": "Улица Магистральная",
     "directionHint": "В сторону «Поликлиника №5»",
+    "osmNodeId": 1775264966,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6834009,
+      "longitude": 23.8611472
     }
   },
   {
     "id": "stop-1668",
     "name": "Улица Макаровой",
     "directionHint": "В сторону «Улица Саяпина»",
+    "osmNodeId": 7500859018,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7206765,
+      "longitude": 23.8702665
     }
   },
   {
     "id": "stop-491",
     "name": "Улица Макаровой",
     "directionHint": "В сторону «Улица Глухова»",
+    "osmNodeId": 7500859019,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7221423,
+      "longitude": 23.8675939
     }
   },
   {
     "id": "stop-1726",
     "name": "Улица Маслакова",
+    "osmNodeId": 12215905749,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6513278,
+      "longitude": 23.7991326
     }
   },
   {
     "id": "stop-1557",
     "name": "Улица Минденская",
     "directionHint": "В сторону «Богушевича-2»",
+    "osmNodeId": 5154891442,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6153418,
+      "longitude": 23.8089535
     }
   },
   {
     "id": "stop-1563",
     "name": "Улица Минденская",
     "directionHint": "В сторону «Церковь Святителя Спиридона»",
+    "osmNodeId": 5154891440,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6132292,
+      "longitude": 23.8134358
     }
   },
   {
     "id": "stop-1099",
     "name": "Улица Мирная",
+    "osmNodeId": 540450810,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7430259,
+      "longitude": 23.8266453
     }
   },
   {
     "id": "stop-1100",
     "name": "Улица Мирная",
+    "osmNodeId": 540450812,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7430098,
+      "longitude": 23.8253393
     }
   },
   {
     "id": "stop-1048",
     "name": "Улица Молодая",
+    "osmNodeId": 12927273601,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6383143,
+      "longitude": 23.907102
     }
   },
   {
     "id": "stop-632",
     "name": "Улица Молодежная",
+    "osmNodeId": 445394314,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6781149,
+      "longitude": 23.8363237
     }
   },
   {
     "id": "stop-1696",
     "name": "Улица Мытная",
     "directionHint": "В сторону «Макаровой-2»",
+    "osmNodeId": 9892447783,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.716708,
+      "longitude": 23.8784041
     }
   },
   {
     "id": "stop-1698",
     "name": "Улица Мытная",
     "directionHint": "В сторону «Заболоть»",
+    "osmNodeId": 9829308424,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.716156,
+      "longitude": 23.8766568
     }
   },
   {
     "id": "stop-1443",
     "name": "Улица Мясницкая",
     "directionHint": "В сторону «ЗОВу»",
+    "osmNodeId": 5002939625,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7222605,
+      "longitude": 23.8242778
     }
   },
   {
     "id": "stop-538",
     "name": "Улица Мясницкая",
     "directionHint": "В сторону «Мясокомбинат»",
+    "osmNodeId": 5002939626,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7227199,
+      "longitude": 23.8234565
     }
   },
   {
     "id": "stop-697",
     "name": "Улица Наполеона Орды",
     "directionHint": "В сторону «Улица Огинского»",
+    "osmNodeId": 3759108017,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6240487,
+      "longitude": 23.8120344
     }
   },
   {
     "id": "stop-732",
     "name": "Улица Наполеона Орды",
     "directionHint": "В сторону «Средняя школа №39»",
+    "osmNodeId": 1826098520,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6249639,
+      "longitude": 23.8118261
     }
   },
   {
     "id": "stop-669",
     "name": "Улица Николаева",
     "directionHint": "В сторону «Табачная фабрика»",
+    "osmNodeId": 2305636872,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.665383,
+      "longitude": 23.8115341
     }
   },
   {
     "id": "stop-670",
     "name": "Улица Николаева",
     "directionHint": "В сторону «Площадь Декабристов»",
+    "osmNodeId": 2305636876,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6653367,
+      "longitude": 23.810072
     }
   },
   {
     "id": "stop-1101",
     "name": "Улица Обрембского",
     "directionHint": "В сторону «Улица Рожанского»",
+    "osmNodeId": 5000118850,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7438496,
+      "longitude": 23.8353775
     }
   },
   {
     "id": "stop-1102",
     "name": "Улица Обрембского",
     "directionHint": "В сторону «Улица Мирная»",
+    "osmNodeId": 5000118851,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7438621,
+      "longitude": 23.8334876
     }
   },
   {
     "id": "stop-1044",
     "name": "Улица Огинского",
     "directionHint": "В сторону «Улица 8 Марта»",
+    "osmNodeId": 3649492671,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6208034,
+      "longitude": 23.8102635
     }
   },
   {
     "id": "stop-1118",
     "name": "Улица Огинского",
     "directionHint": "В сторону «Церковь Святителя Спиридона»",
+    "osmNodeId": 3759108016,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.619842,
+      "longitude": 23.8092209
     }
   },
   {
     "id": "stop-1712",
     "name": "Улица Огинского-2",
-    "directionHint": "В сторону «Улица Короткевича»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Короткевича»"
   },
   {
     "id": "stop-9999",
     "name": "Улица Огинского-2",
-    "directionHint": "В сторону «Средняя школа №41»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Средняя школа №41»"
   },
   {
     "id": "stop-1555",
     "name": "Улица Одельская",
-    "directionHint": "В сторону «Богушевича-2»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Богушевича-2»"
   },
   {
     "id": "stop-1620",
     "name": "Улица Одельская",
-    "directionHint": "В сторону «Улица Центральная»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Центральная»"
   },
   {
     "id": "stop-711",
     "name": "Улица Окульная",
     "directionHint": "В сторону «СПМК-70»",
+    "osmNodeId": 1523259846,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6502003,
+      "longitude": 23.8025735
     }
   },
   {
     "id": "stop-712",
     "name": "Улица Окульная",
     "directionHint": "В сторону «Химволокно»",
+    "osmNodeId": 1523259849,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6494773,
+      "longitude": 23.8037765
     }
   },
   {
     "id": "stop-555",
     "name": "Улица Ольги Соломовой",
     "directionHint": "В сторону «Улица Хвойная»",
+    "osmNodeId": 810057067,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6533908,
+      "longitude": 23.7784701
     }
   },
   {
     "id": "stop-556",
     "name": "Улица Ольги Соломовой",
     "directionHint": "В сторону «Средняя школа №37»",
+    "osmNodeId": 1523251173,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6542444,
+      "longitude": 23.7792455
     }
   },
   {
     "id": "stop-698",
     "name": "Улица Ольшанская",
+    "osmNodeId": 1778441497,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6254639,
+      "longitude": 23.8073306
     }
   },
   {
     "id": "stop-1105",
     "name": "Улица Осенняя",
     "directionHint": "В сторону «Улица Бобровского»",
+    "osmNodeId": 5113616130,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6216067,
+      "longitude": 23.8388264
     }
   },
   {
     "id": "stop-1111",
     "name": "Улица Осенняя",
     "directionHint": "В сторону «Улица Звездная»",
+    "osmNodeId": 3401471833,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6196045,
+      "longitude": 23.8340726
     }
   },
   {
     "id": "stop-617",
     "name": "Улица Островского",
     "directionHint": "В сторону «Кинотеатр \"Космос\"»",
+    "osmNodeId": 2222979844,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6904942,
+      "longitude": 23.8291592
     }
   },
   {
     "id": "stop-618",
     "name": "Улица Островского",
     "directionHint": "В сторону «Детская больница»",
+    "osmNodeId": 1194420972,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.69018,
+      "longitude": 23.8267966
     }
   },
   {
     "id": "stop-1104",
     "name": "Улица Отечественная",
     "directionHint": "В сторону «Железнодорожный переезд»",
+    "osmNodeId": 3649492703,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6216211,
+      "longitude": 23.8225144
     }
   },
   {
     "id": "stop-1560",
     "name": "Улица Отечественная",
     "directionHint": "В сторону «Улица Юрия Олеши»",
+    "osmNodeId": 3649492668,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6205085,
+      "longitude": 23.8217295
     }
   },
   {
     "id": "stop-423",
     "name": "Улица Парижской Коммуны",
+    "osmNodeId": 523866088,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6752473,
+      "longitude": 23.8312292
     }
   },
   {
     "id": "stop-298",
     "name": "Улица Победоносная",
     "directionHint": "В сторону «Кинотеатр \"Восток\"»",
+    "osmNodeId": 769847385,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6748297,
+      "longitude": 23.8570954
     }
   },
   {
     "id": "stop-300",
     "name": "Улица Победоносная",
     "directionHint": "В сторону «Торговый центр \"Корона\"»",
+    "osmNodeId": 769847374,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6744497,
+      "longitude": 23.8584567
     }
   },
   {
     "id": "stop-312",
     "name": "Улица Победы",
+    "osmNodeId": 769847379,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6620591,
+      "longitude": 23.8310225
     }
   },
   {
     "id": "stop-439",
     "name": "Улица Подкрыжакская",
     "directionHint": "В сторону «Районные электрические сети»",
+    "osmNodeId": 572299808,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6999372,
+      "longitude": 23.8585044
     }
   },
   {
     "id": "stop-440",
     "name": "Улица Подкрыжакская",
     "directionHint": "В сторону «Улица Тавлая»",
+    "osmNodeId": 2198107909,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7006295,
+      "longitude": 23.8588095
     }
   },
   {
     "id": "stop-447",
     "name": "Улица Понемуньская",
     "directionHint": "В сторону «ГАИ»",
+    "osmNodeId": 507053247,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6668205,
+      "longitude": 23.8688395
     }
   },
   {
     "id": "stop-448",
     "name": "Улица Понемуньская",
     "directionHint": "В сторону «Райсельхозтехника»",
+    "osmNodeId": 507053096,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6641255,
+      "longitude": 23.8702271
     }
   },
   {
     "id": "stop-382",
     "name": "Улица Поповича",
     "directionHint": "В сторону «Площадь Декабристов»",
+    "osmNodeId": 1598365280,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6671462,
+      "longitude": 23.8012035
     }
   },
   {
     "id": "stop-383",
     "name": "Улица Поповича",
     "directionHint": "В сторону «Обувная фабрика \"Неман\"»",
+    "osmNodeId": 320409795,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6685516,
+      "longitude": 23.8021631
     }
   },
   {
     "id": "stop-674",
     "name": "Улица Пригородная",
+    "osmNodeId": 428642560,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6666476,
+      "longitude": 23.8483277
     }
   },
   {
     "id": "stop-718",
     "name": "Улица Пролетарская",
+    "osmNodeId": 492603221,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6876755,
+      "longitude": 23.8532089
     }
   },
   {
     "id": "stop-607",
     "name": "Улица Пучкова",
     "directionHint": "В сторону «Улица Усова»",
+    "osmNodeId": 1523253943,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6524819,
+      "longitude": 23.807523
     }
   },
   {
     "id": "stop-608",
     "name": "Улица Пучкова",
     "directionHint": "В сторону «Улица Калинина»",
+    "osmNodeId": 1523254214,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6539121,
+      "longitude": 23.8074414
     }
   },
   {
     "id": "stop-461",
     "name": "Улица Пушкина",
     "directionHint": "В сторону «Гроднохлебпром»",
+    "osmNodeId": 2222979850,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6963093,
+      "longitude": 23.8334443
     }
   },
   {
     "id": "stop-462",
     "name": "Улица Пушкина",
     "directionHint": "В сторону «Медицинский университет»",
+    "osmNodeId": 483668159,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6971223,
+      "longitude": 23.8317992
     }
   },
   {
     "id": "stop-604",
     "name": "Улица Репина",
+    "osmNodeId": 559614286,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6554305,
+      "longitude": 23.7876032
     }
   },
   {
     "id": "stop-691",
     "name": "Улица Рогачевского",
     "directionHint": "В сторону «Улица Домейко»",
+    "osmNodeId": 2198107910,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6293814,
+      "longitude": 23.8567187
     }
   },
   {
     "id": "stop-692",
     "name": "Улица Рогачевского",
     "directionHint": "В сторону «Малаховичи»",
+    "osmNodeId": 824217336,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6303857,
+      "longitude": 23.8562119
     }
   },
   {
     "id": "stop-1103",
     "name": "Улица Рожанского",
+    "osmNodeId": 5000118849,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7440857,
+      "longitude": 23.8386627
     }
   },
   {
     "id": "stop-406",
     "name": "Улица Рябиновая",
     "directionHint": "В сторону «Барановичи»",
+    "osmNodeId": 736634066,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6697802,
+      "longitude": 23.7453971
     }
   },
   {
     "id": "stop-407",
     "name": "Улица Рябиновая",
     "directionHint": "В сторону «Улица Каролинская»",
+    "osmNodeId": 736634019,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6702611,
+      "longitude": 23.7486052
     }
   },
   {
     "id": "stop-640",
     "name": "Улица Садакова",
     "directionHint": "В сторону «Улица Рогачевского»",
+    "osmNodeId": 824462246,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6279842,
+      "longitude": 23.8523772
     }
   },
   {
     "id": "stop-641",
     "name": "Улица Садакова",
     "directionHint": "В сторону «Улица Шарипова»",
+    "osmNodeId": 824217353,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6274816,
+      "longitude": 23.8506997
     }
   },
   {
     "id": "stop-433",
     "name": "Улица Саяпина",
+    "osmNodeId": 7501454652,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7209134,
+      "longitude": 23.8631707
     }
   },
   {
     "id": "stop-424",
     "name": "Улица Свердлова",
+    "osmNodeId": 1256779549,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6757847,
+      "longitude": 23.8328959
     }
   },
   {
     "id": "stop-650",
     "name": "Улица Славинского",
     "directionHint": "В сторону «Магазин \"Квасовский\"»",
+    "osmNodeId": 1523488166,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.647261,
+      "longitude": 23.8327254
     }
   },
   {
     "id": "stop-651",
     "name": "Улица Славинского",
     "directionHint": "В сторону «Химволокно»",
+    "osmNodeId": 1523488140,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6473635,
+      "longitude": 23.8309407
     }
   },
   {
     "id": "stop-420",
     "name": "Улица Советских Пограничников",
-    "directionHint": "В сторону «Обувная фабрика \"Неман\"»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Обувная фабрика \"Неман\"»"
   },
   {
     "id": "stop-421",
     "name": "Улица Советских Пограничников",
     "directionHint": "В сторону «Областная Филармония»",
+    "osmNodeId": 1256409910,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6705939,
+      "longitude": 23.8113306
     }
   },
   {
     "id": "stop-450",
     "name": "Улица Соколовского",
     "directionHint": "В сторону «Улица Суворова»",
+    "osmNodeId": 1523257240,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6619401,
+      "longitude": 23.8033849
     }
   },
   {
     "id": "stop-451",
     "name": "Улица Соколовского",
     "directionHint": "В сторону «Площадь Декабристов»",
+    "osmNodeId": 1523257242,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6629723,
+      "longitude": 23.8027091
     }
   },
   {
     "id": "stop-1064",
     "name": "Улица Социалистическая",
     "directionHint": "В сторону «Театр кукол»",
+    "osmNodeId": 3298249969,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6799956,
+      "longitude": 23.8352542
     }
   },
   {
     "id": "stop-425",
     "name": "Улица Социалистическая",
     "directionHint": "В сторону «Улица Парижской коммуны»",
+    "osmNodeId": 3298249968,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6796638,
+      "longitude": 23.8348109
     }
   },
   {
     "id": "stop-1293",
     "name": "Улица Старомалыщинская",
     "directionHint": "В сторону «Макаровой-2»",
+    "osmNodeId": 9062906561,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.720643,
+      "longitude": 23.8875347
     }
   },
   {
     "id": "stop-1677",
     "name": "Улица Старомалыщинская",
     "directionHint": "В сторону «Грандичи-3»",
+    "osmNodeId": 8827133383,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7216363,
+      "longitude": 23.8881694
     }
   },
   {
     "id": "stop-452",
     "name": "Улица Суворова",
+    "osmNodeId": 769847389,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6593566,
+      "longitude": 23.8107672
     }
   },
   {
     "id": "stop-438",
     "name": "Улица Тавлая",
     "directionHint": "В сторону «Улица Подкрыжакская»",
+    "osmNodeId": 572300012,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7042783,
+      "longitude": 23.8586752
     }
   },
   {
     "id": "stop-615",
     "name": "Улица Тавлая",
     "directionHint": "В сторону «Девятовка-5»",
+    "osmNodeId": 1703461189,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.7054695,
+      "longitude": 23.8591456
     }
   },
   {
     "id": "stop-1430",
     "name": "Улица Тарусичская",
-    "directionHint": "В сторону «Улица Васильковая»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Улица Васильковая»"
   },
   {
     "id": "stop-1431",
     "name": "Улица Тарусичская",
-    "directionHint": "В сторону «Барановичи-5»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Барановичи-5»"
   },
   {
     "id": "stop-429",
     "name": "Улица Терешковой",
     "directionHint": "В сторону «Электротехнический колледж»",
+    "osmNodeId": 2194294121,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6942767,
+      "longitude": 23.8393342
     }
   },
   {
     "id": "stop-430",
     "name": "Улица Терешковой",
     "directionHint": "В сторону «Парк Жилибера»",
+    "osmNodeId": 890949668,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6933979,
+      "longitude": 23.8384153
     }
   },
   {
     "id": "stop-357",
     "name": "Улица Тимирязева",
+    "osmNodeId": 969358826,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6889968,
+      "longitude": 23.8464087
     }
   },
   {
     "id": "stop-422",
     "name": "Улица Титова",
+    "osmNodeId": 769847382,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6699254,
+      "longitude": 23.8173508
     }
   },
   {
     "id": "stop-334",
     "name": "Улица Томина",
     "directionHint": "В сторону «Автоучебный комбинат»",
+    "osmNodeId": 769817040,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6516187,
+      "longitude": 23.832986
     }
   },
   {
     "id": "stop-474",
     "name": "Улица Томина",
     "directionHint": "В сторону «Шоссе Индурское»",
+    "osmNodeId": 467926933,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6517374,
+      "longitude": 23.83218
     }
   },
   {
     "id": "stop-1047",
     "name": "Улица Умелая",
     "directionHint": "В сторону «Погораны»",
+    "osmNodeId": 3868543057,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6324752,
+      "longitude": 23.8975598
     }
   },
   {
     "id": "stop-1433",
     "name": "Улица Умелая",
     "directionHint": "В сторону «Улица Молодая»",
+    "osmNodeId": 3868543257,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6343515,
+      "longitude": 23.8998868
     }
   },
   {
     "id": "stop-605",
     "name": "Улица Усова",
     "directionHint": "В сторону «Стоматологическая поликлиника»",
+    "osmNodeId": 1523253312,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6581911,
+      "longitude": 23.8142431
     }
   },
   {
     "id": "stop-606",
     "name": "Улица Усова",
     "directionHint": "В сторону «Улица Пучкова»",
+    "osmNodeId": 1523253307,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6569692,
+      "longitude": 23.8120149
     }
   },
   {
     "id": "stop-569",
     "name": "Улица Фестивальная",
     "directionHint": "В сторону «Улица Весенняя»",
+    "osmNodeId": 429379287,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6891282,
+      "longitude": 23.8004176
     }
   },
   {
     "id": "stop-570",
     "name": "Улица Фестивальная",
     "directionHint": "В сторону «Улица Болдина»",
+    "osmNodeId": 391056399,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6904349,
+      "longitude": 23.8010294
     }
   },
   {
     "id": "stop-1757",
     "name": "Улица Фолюш",
+    "osmNodeId": 14150137446,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6544671,
+      "longitude": 23.7739096
     }
   },
   {
     "id": "stop-315",
     "name": "Улица Фомичева",
     "directionHint": "В сторону «Гостиница \"Турист\"»",
+    "osmNodeId": 522934844,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6571341,
+      "longitude": 23.8413553
     }
   },
   {
     "id": "stop-316",
     "name": "Улица Фомичева",
     "directionHint": "В сторону «Автобусный парк г. Гродно»",
+    "osmNodeId": 522934882,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.657615,
+      "longitude": 23.8408998
     }
   },
   {
     "id": "stop-553",
     "name": "Улица Хвойная",
     "directionHint": "В сторону «Консервный завод»",
+    "osmNodeId": 5153922491,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6488524,
+      "longitude": 23.7811389
     }
   },
   {
     "id": "stop-554",
     "name": "Улица Хвойная",
     "directionHint": "В сторону «Улица Ольги Соломовой»",
+    "osmNodeId": 5153922490,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6502869,
+      "longitude": 23.7810977
     }
   },
   {
     "id": "stop-1559",
     "name": "Улица Центральная",
+    "osmNodeId": 3649475424,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6153857,
+      "longitude": 23.8216046
     }
   },
   {
     "id": "stop-1741",
     "name": "Улица Чюрлениса",
+    "osmNodeId": 13012390405,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.730798,
+      "longitude": 23.8360542
     }
   },
   {
     "id": "stop-642",
     "name": "Улица Шарипова",
     "directionHint": "В сторону «Улица Садакова»",
+    "osmNodeId": 999407759,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6259635,
+      "longitude": 23.8474319
     }
   },
   {
     "id": "stop-643",
     "name": "Улица Шарипова",
     "directionHint": "В сторону «Улица Звездная»",
+    "osmNodeId": 999272156,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6258405,
+      "longitude": 23.8467081
     }
   },
   {
     "id": "stop-1683",
     "name": "Улица Юбилейная",
     "directionHint": "В сторону «Барановичи-7»",
+    "osmNodeId": 12003484439,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6769046,
+      "longitude": 23.7257005
     }
   },
   {
     "id": "stop-1684",
     "name": "Улица Юбилейная",
     "directionHint": "В сторону «Барановичи»",
+    "osmNodeId": 11548242189,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6766764,
+      "longitude": 23.7279716
     }
   },
   {
     "id": "stop-667",
     "name": "Улица Южная",
     "directionHint": "В сторону «Вишневец»",
+    "osmNodeId": 752022868,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6431046,
+      "longitude": 23.8690711
     }
   },
   {
     "id": "stop-688",
     "name": "Улица Южная",
     "directionHint": "В сторону «Погораны»",
+    "osmNodeId": 2453208156,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6434019,
+      "longitude": 23.870382
     }
   },
   {
     "id": "stop-1556",
     "name": "Улица Юрия Олеши",
     "directionHint": "В сторону «Улица Отечественная»",
+    "osmNodeId": 3649492645,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6181613,
+      "longitude": 23.8220258
     }
   },
   {
     "id": "stop-1561",
     "name": "Улица Юрия Олеши",
     "directionHint": "В сторону «Улица Одельская»",
+    "osmNodeId": 3649492636,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6172564,
+      "longitude": 23.8212455
     }
   },
   {
     "id": "stop-1755",
     "name": "Улица Якубовского",
     "directionHint": "В сторону «пер. Фолюш»",
+    "osmNodeId": 12387345209,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6566453,
+      "longitude": 23.7749985
     }
   },
   {
     "id": "stop-1756",
     "name": "Улица Якубовского",
     "directionHint": "В сторону «улица Фолюш»",
+    "osmNodeId": 12387345210,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6576241,
+      "longitude": 23.7747244
     }
   },
   {
     "id": "stop-390",
     "name": "Университет",
     "directionHint": "В сторону «Улица Ленина»",
+    "osmNodeId": 1015286529,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6842957,
+      "longitude": 23.8403849
     }
   },
   {
     "id": "stop-479",
     "name": "Университет",
     "directionHint": "В сторону «Театр кукол»",
+    "osmNodeId": 1015286532,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.684294,
+      "longitude": 23.8387099
     }
   },
   {
     "id": "stop-470",
     "name": "Университетская клиника",
     "directionHint": "В сторону «Поликлиника»",
+    "osmNodeId": 429379290,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6958588,
+      "longitude": 23.7944971
     }
   },
   {
     "id": "stop-471",
     "name": "Университетская клиника",
     "directionHint": "В сторону «Учебный корпус медицинского университета»",
+    "osmNodeId": 2079132703,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6954153,
+      "longitude": 23.792853
     }
   },
   {
     "id": "stop-658",
     "name": "УПП \"Дорожник\"",
+    "osmNodeId": 1772031502,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6372991,
+      "longitude": 23.7978387
     }
   },
   {
     "id": "stop-619",
     "name": "Управление статистики",
+    "osmNodeId": 456382905,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6987316,
+      "longitude": 23.8088557
     }
   },
   {
     "id": "stop-1646",
     "name": "Урочище \"Форт\"",
     "directionHint": "В сторону «Городская областная клиническая больница»",
+    "osmNodeId": 6630511178,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6462565,
+      "longitude": 23.8644814
     }
   },
   {
     "id": "stop-687",
     "name": "Урочище \"Форт\"",
-    "directionHint": "В сторону «Поликлиника №7»",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
-    }
+    "directionHint": "В сторону «Поликлиника №7»"
   },
   {
     "id": "stop-469",
     "name": "Учебный корпус медицинского университета",
+    "osmNodeId": 577361981,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6960956,
+      "longitude": 23.7972793
     }
   },
   {
     "id": "stop-565",
     "name": "Училище Олимпийского резерва",
+    "osmNodeId": 457709643,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6736605,
+      "longitude": 23.803845
     }
   },
   {
     "id": "stop-655",
     "name": "Фабричный",
     "directionHint": "В сторону «Овощная фабрика»",
+    "osmNodeId": 1942546407,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6354709,
+      "longitude": 23.807806
     }
   },
   {
     "id": "stop-656",
     "name": "Фабричный",
     "directionHint": "В сторону «УПП \"Дорожник\"»",
+    "osmNodeId": 1751614949,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6358026,
+      "longitude": 23.8068147
     }
   },
   {
     "id": "stop-559",
     "name": "Фламинго",
     "directionHint": "В сторону «Улица Данилова»",
+    "osmNodeId": 1523250230,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6627238,
+      "longitude": 23.7832044
     }
   },
   {
     "id": "stop-560",
     "name": "Фламинго",
     "directionHint": "В сторону «Фолюш»",
+    "osmNodeId": 2364941426,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6635346,
+      "longitude": 23.7840929
     }
   },
   {
     "id": "stop-376",
     "name": "Фолюш",
+    "osmNodeId": 320409830,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6652295,
+      "longitude": 23.7834212
     }
   },
   {
     "id": "stop-1063",
     "name": "Форты",
     "directionHint": "В сторону «БЛК»",
+    "osmNodeId": 352929479,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6969682,
+      "longitude": 23.8026413
     }
   },
   {
     "id": "stop-468",
     "name": "Форты",
     "directionHint": "В сторону «Университетская клиника»",
+    "osmNodeId": 391427240,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6973069,
+      "longitude": 23.8028367
     }
   },
   {
     "id": "stop-1065",
     "name": "Химволокно",
     "directionHint": "В сторону «Улица Славинского»",
+    "osmNodeId": 1523488162,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6459731,
+      "longitude": 23.8241785
     }
   },
   {
     "id": "stop-652",
     "name": "Химволокно",
     "directionHint": "В сторону «Овощная фабрика»",
+    "osmNodeId": 1523488164,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6463999,
+      "longitude": 23.8243968
     }
   },
   {
     "id": "stop-527",
     "name": "Центр мебели \"Пинскдрев\"",
+    "osmNodeId": 527169340,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.692679,
+      "longitude": 23.823432
     }
   },
   {
     "id": "stop-388",
     "name": "Центральная поликлиника",
     "directionHint": "В сторону «Улица Гагарина»",
+    "osmNodeId": 2194105380,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6720714,
+      "longitude": 23.8193852
     }
   },
   {
     "id": "stop-389",
     "name": "Центральная поликлиника",
     "directionHint": "В сторону «Улица Горновых»",
+    "osmNodeId": 1256772885,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6712078,
+      "longitude": 23.8212776
     }
   },
   {
     "id": "stop-336",
     "name": "Церковь всех святых",
+    "osmNodeId": 471704412,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6532169,
+      "longitude": 23.8558982
     }
   },
   {
     "id": "stop-1119",
     "name": "Церковь Святителя Спиридона",
     "directionHint": "В сторону «Ольшанка»",
+    "osmNodeId": 3759090826,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6164088,
+      "longitude": 23.8072926
     }
   },
   {
     "id": "stop-1122",
     "name": "Церковь Святителя Спиридона",
     "directionHint": "В сторону «Улица Наполеона Орды»",
+    "osmNodeId": 3759090829,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6164798,
+      "longitude": 23.8087063
     }
   },
   {
     "id": "stop-412",
     "name": "Школа",
     "directionHint": "В сторону «Лососно»",
+    "osmNodeId": 559449960,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6718505,
+      "longitude": 23.7673669
     }
   },
   {
     "id": "stop-413",
     "name": "Школа",
     "directionHint": "В сторону «Улица Каролинская»",
+    "osmNodeId": 559449990,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6720507,
+      "longitude": 23.7664253
     }
   },
   {
     "id": "stop-324",
     "name": "Шоссе Индурское",
+    "osmNodeId": 769847383,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6468224,
+      "longitude": 23.836609
     }
   },
   {
     "id": "stop-719",
     "name": "Шоссе Озерское",
+    "osmNodeId": 2272091099,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6887975,
+      "longitude": 23.8552065
     }
   },
   {
     "id": "stop-486",
     "name": "Электротехнический колледж",
     "directionHint": "В сторону «Улица Дзержинского»",
+    "osmNodeId": 1256845828,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6991603,
+      "longitude": 23.8400373
     }
   },
   {
     "id": "stop-487",
     "name": "Электротехнический колледж",
     "directionHint": "В сторону «Улица Терешковой»",
+    "osmNodeId": 890949599,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6981876,
+      "longitude": 23.8396241
     }
   },
   {
     "id": "stop-646",
     "name": "Южный",
+    "osmNodeId": 824217358,
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 53.6212215,
+      "longitude": 23.8411415
     }
   }
 ]

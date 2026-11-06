@@ -1,0 +1,81 @@
+.viewport {
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
+
+  background: var(--color-background);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.map :global(.maplibregl-ctrl-bottom-left) {
+  bottom: 36px;
+}
+
+.map :global(.maplibregl-ctrl-group) button {
+  width: 44px;
+  height: 44px;
+}
+
+.map :global(.maplibregl-canvas):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+.clearStop {
+  position: absolute;
+  z-index: 1;
+  inset-inline-start: 50%;
+  inset-block-end: 44px;
+  transform: translateX(-50%);
+
+  min-width: 160px;
+  min-height: 44px;
+  padding-inline: 14px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+
+  color: var(--color-text);
+  background: var(--color-surface);
+
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.clearStop:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.status {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  padding: 16px;
+
+  pointer-events: none;
+
+  p {
+    margin: 0;
+    padding: 10px 14px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+
+    font-size: 13px;
+    text-align: center;
+  }
+}
