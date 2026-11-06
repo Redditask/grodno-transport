@@ -10,6 +10,7 @@ import { selectStopOnMap } from './layers/stopLayers';
 interface CityMapProps {
   selectedStopId?: string;
   onSelectStop: (stopId: string) => void;
+  onClearStop: () => void;
 }
 
 export const CityMap = ({
@@ -33,6 +34,16 @@ export const CityMap = ({
   return (
     <section className={styles.viewport} aria-label="Карта Гродно">
       <div className={styles.map} ref={containerRef} />
+
+      {selectedStopId ? (
+        <button
+          className={styles.clearStop}
+          type="button"
+          onClick={onClearStop}
+        >
+          Отменить выбор
+        </button>
+      ) : null}
 
       {status !== 'ready' ? (
         <div className={styles.status}>

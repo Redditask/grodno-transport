@@ -7,15 +7,25 @@ import { useTransportNavigation } from '@/hooks/useTransportNavigation';
 import styles from './App.module.scss';
 
 export const App = () => {
-  const { screenHistory, setScreenHistory, selectedStopId, handleOpenStopFromMap } =
-    useTransportNavigation();
+  const {
+    screenHistory,
+    setScreenHistory,
+    selectedStopId,
+    handleOpenStopFromMap,
+    handleDismissMapSelection,
+    handleMapStageKeyDown,
+  } = useTransportNavigation();
 
   return (
     <div className={styles.page}>
       <AppHeader />
 
-      <main className={styles.mapStage}>
-        <CityMap selectedStopId={selectedStopId} onSelectStop={handleOpenStopFromMap} />
+      <main className={styles.mapStage} onKeyDownCapture={handleMapStageKeyDown}>
+        <CityMap
+          selectedStopId={selectedStopId}
+          onSelectStop={handleOpenStopFromMap}
+          onClearStop={handleDismissMapSelection}
+        />
 
         <div className={styles.searchPanel}>
           <TransportSearch screenHistory={screenHistory} onScreenHistoryChange={setScreenHistory} />
