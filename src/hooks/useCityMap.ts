@@ -2,6 +2,8 @@ import type { Map } from 'maplibre-gl';
 import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';
 
+import { addStopLayers } from '@/components/CityMap/layers/stopLayers';
+
 type MapStatus = 'loading' | 'ready' | 'error';
 
 export const useCityMap = () => {
@@ -56,7 +58,10 @@ export const useCityMap = () => {
         map.keyboard.disableRotation();
         map.addControl(new NavigationControl({ showCompass: false }), 'bottom-left');
 
-        map.once('load', () => setStatus('ready'));
+        map.once('load', () => {
+          addStopLayers(map);
+          setStatus('ready');
+        });
         map.on('error', () => setStatus((current) => (current === 'loading' ? 'error' : current)));
       } catch {
         if (!isDisposed) setStatus('error');
