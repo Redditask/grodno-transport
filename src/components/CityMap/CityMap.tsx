@@ -1,14 +1,15 @@
-import { useEffect } from 'react';
+import type { RefObject } from 'react';
+import { useRef } from 'react';
 
 import { useCityMap } from '@/hooks/useCityMap';
+import { useMapSelectionView } from '@/hooks/useMapSelectionView';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
 import styles from './CityMap.module.scss';
 
-import { selectStopOnMap } from './layers/stopLayers';
-
 interface CityMapProps {
   selectedStopId?: string;
+  overlayRef: RefObject<HTMLDivElement | null>;
   onSelectStop: (stopId: string) => void;
   onClearStop: () => void;
 }
@@ -37,6 +38,7 @@ export const CityMap = ({
 
       {selectedStopId ? (
         <button
+          ref={clearButtonRef}
           className={styles.clearStop}
           type="button"
           onClick={onClearStop}
