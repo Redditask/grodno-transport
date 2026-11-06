@@ -1,4 +1,4 @@
-import type { ChangeEvent, KeyboardEvent } from 'react';
+import type { ChangeEvent, Dispatch, KeyboardEvent, SetStateAction } from 'react';
 import { useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { transportData } from '@/data/transportData';
@@ -10,12 +10,14 @@ import { SearchScreenContent } from './components/SearchScreenContent/SearchScre
 import panel from './styles/SearchPanel.module.scss';
 import styles from './TransportSearch.module.scss';
 
-export const TransportSearch = () => {
+interface TransportSearchProps {
+  screenHistory: SearchHistoryEntry[];
+  onScreenHistoryChange: Dispatch<SetStateAction<SearchHistoryEntry[]>>;
+}
+
+export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: TransportSearchProps) => {
   const [query, setQuery] = useState('');
   const [limits, setLimits] = useState<ResultLimits>({ routes: 10, stops: 10 });
-  const [screenHistory, setScreenHistory] = useState<SearchHistoryEntry[]>([
-    { screen: { kind: 'results' }, scrollTop: 0 },
-  ]);
 
   const contentRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -23,14 +25,17 @@ export const TransportSearch = () => {
   const activeEntry = screenHistory[screenHistory.length - 1];
   const screen = activeEntry.screen;
   const previousScreen = screenHistory.at(-2)?.screen;
+  const hasQuery = query.trim().length > 0;
+  const hasContent = hasQuery || screen.kind !== 'results';
   const backLabel =
     previousScreen?.kind === 'stopRoutes'
       ? 'К маршрутам'
       : previousScreen?.kind === 'routeStops'
         ? 'К остановкам'
-        : 'К результатам';
+        : hasQuery
+          ? 'К результатам'
+          : 'К карте';
 
-  const hasQuery = query.trim().length > 0;
   const results = useMemo(() => searchTransport(query, transportData), [query]);
 
   useLayoutEffect(() => {
@@ -57,7 +62,7 @@ export const TransportSearch = () => {
         ? document.activeElement.dataset.resultId
         : undefined;
 
-    setScreenHistory((history) => [
+    onScreenHistoryChange((history) => [
       ...history.slice(0, -1),
       { ...history[history.length - 1], scrollTop, focusId },
       { screen: nextScreen, scrollTop: 0 },
@@ -65,15 +70,15 @@ export const TransportSearch = () => {
   };
 
   const replaceScreen = (screen: SearchScreen) =>
-    setScreenHistory((history) => [...history.slice(0, -1), { screen, scrollTop: 0 }]);
+    onScreenHistoryChange((history) => [...history.slice(0, -1), { screen, scrollTop: 0 }]);
 
   const handleBack = () =>
-    setScreenHistory((history) => (history.length > 1 ? history.slice(0, -1) : history));
+    onScreenHistoryChange((history) => (history.length > 1 ? history.slice(0, -1) : history));
 
   const updateQuery = (nextQuery: string) => {
     setQuery(nextQuery);
     setLimits({ routes: 10, stops: 10 });
-    setScreenHistory([{ screen: { kind: 'results' }, scrollTop: 0 }]);
+    onScreenHistoryChange([{ screen: { kind: 'results' }, scrollTop: 0 }]);
   };
 
   const handleQueryChange = (event: ChangeEvent<HTMLInputElement>) =>
@@ -132,7 +137,7 @@ export const TransportSearch = () => {
         ) : null}
       </div>
 
-      {hasQuery ? (
+      {hasContent ? (
         <div className={styles.content} ref={contentRef}>
           {screen.kind !== 'results' ? (
             <button className={panel.back} type="button" onClick={handleBack}>

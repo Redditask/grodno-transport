@@ -6,7 +6,7 @@ import { addStopLayers } from '@/components/CityMap/layers/stopLayers';
 
 type MapStatus = 'loading' | 'ready' | 'error';
 
-export const useCityMap = () => {
+export const useCityMap = (onSelectStop: (stopId: string) => void) => {
   const [status, setStatus] = useState<MapStatus>('loading');
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -59,7 +59,7 @@ export const useCityMap = () => {
         map.addControl(new NavigationControl({ showCompass: false }), 'bottom-left');
 
         map.once('load', () => {
-          addStopLayers(map);
+          addStopLayers(map, onSelectStop);
           setStatus('ready');
         });
         map.on('error', () => setStatus((current) => (current === 'loading' ? 'error' : current)));
@@ -75,7 +75,7 @@ export const useCityMap = () => {
       mapRef.current?.remove();
       mapRef.current = null;
     };
-  }, []);
+  }, [onSelectStop]);
 
-  return { containerRef, status };
+  return { containerRef, mapRef, status };
 };
