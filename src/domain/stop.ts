@@ -2,8 +2,9 @@ export interface Stop {
   id: string;
   name: string;
   directionHint?: string;
+  osmNodeId?: number;
 
-  coordinates: {
+  coordinates?: {
     latitude: number;
     longitude: number;
   };
