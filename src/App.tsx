@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import type { KeyboardEvent } from 'react';
+import { useCallback, useRef } from 'react';
 
 import { AppFooter } from '@/components/AppFooter/AppFooter';
 import { AppHeader } from '@/components/AppHeader/AppHeader';
@@ -11,14 +12,24 @@ import styles from './App.module.scss';
 export const App = () => {
   const searchPanelRef = useRef<HTMLDivElement>(null);
 
-  const {
-    screenHistory,
-    setScreenHistory,
-    selectedStopId,
-    handleOpenStopFromMap,
-    handleDismissMapSelection,
-    handleMapStageKeyDown,
-  } = useTransportNavigation();
+  const navigation = useTransportNavigation();
+
+  const { openScreen, back, selectedStopId } = navigation;
+
+  const handleOpenStopFromMap = useCallback(
+    (stopId: string) => openScreen({ kind: 'stopRoutes', stopId }, 'results'),
+    [openScreen],
+  );
+  const handleDismissMapSelection = () => back('unselected');
+
+  const handleMapStageKeyDown = (event: KeyboardEvent<HTMLElement>) => {
+    if (event.key !== 'Escape' || !selectedStopId) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    handleDismissMapSelection();
+  };
 
   return (
     <div className={styles.page}>
@@ -33,7 +44,7 @@ export const App = () => {
         />
 
         <div className={styles.searchPanel} ref={searchPanelRef}>
-          <TransportSearch screenHistory={screenHistory} onScreenHistoryChange={setScreenHistory} />
+          <TransportSearch navigation={navigation} />
         </div>
       </main>
 

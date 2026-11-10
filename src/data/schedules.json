@@ -132331,7 +132331,7 @@
   },
   {
     "routeId": "bus-18-direction-1",
-    "stopId": "stop-1097",
+    "stopId": "stop-1654",
     "departures": {
       "weekday": [
         {
@@ -140073,7 +140073,7 @@
   },
   {
     "routeId": "bus-20-direction-0",
-    "stopId": "stop-291",
+    "stopId": "stop-290",
     "departures": {
       "weekday": [
         {
@@ -140311,7 +140311,7 @@
   },
   {
     "routeId": "bus-20-direction-1",
-    "stopId": "stop-291",
+    "stopId": "stop-290",
     "departures": {
       "weekday": [
         {
@@ -282602,7 +282602,7 @@
   },
   {
     "routeId": "bus-49-direction-1",
-    "stopId": "stop-1725",
+    "stopId": "stop-1723",
     "departures": {
       "weekday": [
         {

@@ -2,8 +2,8 @@ const assert = require('node:assert/strict');
 const { test } = require('node:test');
 
 const modules = Promise.all([
-  import('../src/utils/searchTransport.ts'),
-  import('../src/utils/buildStopRouteItems.ts'),
+  import('@/data/utils/searchTransport'),
+  import('@/data/transportData'),
   import('@/utils/getUpcomingDepartures'),
   import('../src/utils/groupDeparturesByHour.ts'),
 ]);
@@ -97,20 +97,6 @@ test('unmatched queries return no results and search never changes its inputs', 
   assert.equal(JSON.stringify(data), before);
 });
 
-test('stop route items keep routes with unknown schedules and resolve both endpoints', async () => {
-  const [, { buildStopRouteItems }] = await modules;
-
-  const result = buildStopRouteItems(stops[0], data);
-
-  const outbound = result.find((item) => item.route.id === 'bus-2-out');
-  const inbound = result.find((item) => item.route.id === 'bus-2-back');
-
-  assert.equal(outbound.origin, 'Центр');
-  assert.equal(outbound.destination, 'Рынок');
-  assert.equal(inbound.origin, 'Рынок');
-  assert.equal(outbound.schedule, undefined);
-});
-
 const makeSchedule = (weekday, weekend = []) => ({
   routeId: 'route',
   stopId: 'stop',
@@ -191,4 +177,38 @@ test('hour grouping sorts without mutation and separates midnight of different s
   );
 
   assert.equal(JSON.stringify(departures), before);
+});
+
+test('catalog keeps ordered stops and resolves the same timetable from each screen', async () => {
+  const [, { transportCatalog }] = await modules;
+  const routes = require('../src/data/routes.json');
+  const routeId = 'bus-18-direction-1';
+  const stopId = 'stop-1654';
+  const route = transportCatalog.getRouteDetails(routeId);
+  const stop = transportCatalog.getStopDetails(stopId);
+  const fullSchedule = transportCatalog.getScheduleDetails(routeId, stopId);
+  const schedule = route.routeStops.find(({ stop }) => stop.id === stopId).schedule;
+
+  assert.deepEqual(
+    route.routeStops.map(({ stop }) => stop.id),
+    routes.find(({ id }) => id === routeId).stopIds,
+  );
+  assert.equal(route.oppositeRoute.id, 'bus-18-direction-0');
+  assert.ok(schedule);
+  assert.equal(stop.routeItems.find((item) => item.route.id === routeId).schedule, schedule);
+  assert.equal(fullSchedule.routeItem.schedule, schedule);
+  assert.equal(
+    transportCatalog.getScheduleDetails(routeId, 'stop-1132').routeItem.schedule,
+    undefined,
+  );
+  assert.equal(transportCatalog.getScheduleDetails(routeId, 'missing-stop'), undefined);
+});
+
+test('a stop without coordinates stays searchable and has no map marker', async () => {
+  const [, { transportCatalog }] = await modules;
+  const stopId = 'stop-1132';
+
+  assert.ok(transportCatalog.search('Береговой').stops.some(({ id }) => id === stopId));
+  assert.equal(transportCatalog.getMappedStop(stopId), undefined);
+  assert.ok(transportCatalog.getMappedStop('stop-1654'));
 });

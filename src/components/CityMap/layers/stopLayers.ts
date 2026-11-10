@@ -1,6 +1,6 @@
 import type { GeoJSONSourceSpecification, Map } from 'maplibre-gl';
 
-import { transportData } from '@/data/transportData';
+import { transportCatalog } from '@/data/transportData';
 
 import { getNearestStopId } from './getNearestStopId';
 
@@ -10,24 +10,20 @@ const selectedStopLayerId = 'transport-selected-stop';
 
 const stops: GeoJSONSourceSpecification['data'] = {
   type: 'FeatureCollection',
-  features: transportData.stops.flatMap(({ id, coordinates }) => {
-    if (!coordinates) return [];
-
-    const { longitude, latitude } = coordinates;
-
-    return [
-      {
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [longitude, latitude] },
-        properties: { stopId: id },
-      },
-    ];
-  }),
+  features: transportCatalog.mappedStops.map(({ id, coordinates: { longitude, latitude } }) => ({
+    type: 'Feature',
+    geometry: { type: 'Point', coordinates: [longitude, latitude] },
+    properties: { stopId: id },
+  })),
 };
 
 export const selectStopOnMap = (map: Map, stopId?: string) => {
-  map.setLayoutProperty(stopLayerId, 'visibility', stopId ? 'none' : 'visible');
-  map.setFilter(selectedStopLayerId, ['==', ['get', 'stopId'], stopId ?? '']);
+  const selectedStop = stopId ? transportCatalog.getMappedStop(stopId) : undefined;
+
+  map.setLayoutProperty(stopLayerId, 'visibility', selectedStop ? 'none' : 'visible');
+  map.setFilter(selectedStopLayerId, ['==', ['get', 'stopId'], selectedStop?.id ?? '']);
+
+  return selectedStop?.coordinates;
 };
 
 export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) => {
@@ -44,7 +40,7 @@ export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) 
     source: stopSourceId,
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 4, 16, 7],
-      'circle-color': '#297bb0',
+      'circle-color': '#246f9b', //--color-stop
       'circle-stroke-color': '#fff',
       'circle-stroke-width': 1.5,
     },
@@ -57,7 +53,7 @@ export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) 
     filter: ['==', ['get', 'stopId'], ''],
     paint: {
       'circle-radius': 9,
-      'circle-color': '#004a9f',
+      'circle-color': '#246f9b', //--color-stop
       'circle-stroke-color': '#fff',
       'circle-stroke-width': 3,
     },

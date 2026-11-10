@@ -8,6 +8,32 @@
   }
 }
 
+.screenHeading {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+
+  width: 52px;
+  min-height: 66px;
+  padding: 10px 5px;
+
+  border-radius: 13px;
+}
+
+@media (max-width: 380px) {
+  .badge {
+    width: 46px;
+  }
+}
+
 .heading {
   margin: 0 0 5px;
 

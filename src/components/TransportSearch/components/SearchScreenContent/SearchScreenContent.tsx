@@ -1,7 +1,5 @@
-import type { TransportData } from '@/data/transportData';
+import { transportCatalog } from '@/data/transportData';
 import type { ResultLimits, SearchScreen, TransportSearchResults } from '@/types/search';
-import { buildRouteSummary } from '@/utils/buildRouteSummary';
-import { buildStopRouteItems } from '@/utils/buildStopRouteItems';
 
 import { RouteStopsPanel } from '../RouteStopsPanel/RouteStopsPanel';
 import { SchedulePanel } from '../SchedulePanel/SchedulePanel';
@@ -10,7 +8,6 @@ import { StopRoutesPanel } from '../StopRoutesPanel/StopRoutesPanel';
 
 interface SearchScreenContentProps {
   screen: SearchScreen;
-  transportData: TransportData;
   results: TransportSearchResults;
   limits: ResultLimits;
   onShowMore: (group: keyof ResultLimits) => void;
@@ -20,7 +17,6 @@ interface SearchScreenContentProps {
 
 export const SearchScreenContent = ({
   screen,
-  transportData,
   results,
   limits,
   onShowMore,
@@ -40,31 +36,29 @@ export const SearchScreenContent = ({
   }
 
   if (screen.kind === 'stopRoutes') {
-    const stop = transportData.stops.find((stop) => stop.id === screen.stopId);
+    const details = transportCatalog.getStopDetails(screen.stopId);
 
-    if (!stop) return <p role="alert">Остановка не найдена.</p>;
+    if (!details) return <p role="alert">Остановка не найдена.</p>;
 
     return (
       <StopRoutesPanel
-        stop={stop}
-        stops={transportData.stops}
-        routeItems={buildStopRouteItems(stop, transportData)}
+        {...details}
         onSwitchStop={(stopId) => onReplaceScreen({ kind: 'stopRoutes', stopId })}
-        onSelectRoute={(routeId) => onOpenScreen({ kind: 'schedule', routeId, stopId: stop.id })}
+        onSelectRoute={(routeId) =>
+          onOpenScreen({ kind: 'schedule', routeId, stopId: screen.stopId })
+        }
       />
     );
   }
 
   if (screen.kind === 'routeStops') {
-    const route = transportData.routes.find((route) => route.id === screen.routeId);
-    const routeSummary = route ? buildRouteSummary(route, transportData) : undefined;
+    const details = transportCatalog.getRouteDetails(screen.routeId);
 
-    if (!routeSummary) return <p role="alert">Маршрут не найден.</p>;
+    if (!details) return <p role="alert">Маршрут не найден.</p>;
 
     return (
       <RouteStopsPanel
-        routeSummary={routeSummary}
-        transportData={transportData}
+        {...details}
         onSwitchRoute={(routeId) => onReplaceScreen({ kind: 'routeStops', routeId })}
         onSelectStop={(stopId) =>
           onOpenScreen({ kind: 'schedule', routeId: screen.routeId, stopId })
@@ -73,12 +67,9 @@ export const SearchScreenContent = ({
     );
   }
 
-  return (
-    <SchedulePanel
-      key={`${screen.routeId}:${screen.stopId}`}
-      routeId={screen.routeId}
-      stopId={screen.stopId}
-      transportData={transportData}
-    />
-  );
+  const details = transportCatalog.getScheduleDetails(screen.routeId, screen.stopId);
+
+  if (!details) return <p role="alert">Остановка или маршрут не найдены.</p>;
+
+  return <SchedulePanel key={`${screen.routeId}:${screen.stopId}`} {...details} />;
 };

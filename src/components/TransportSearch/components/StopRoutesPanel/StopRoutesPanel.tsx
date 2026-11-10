@@ -1,7 +1,7 @@
 import type { Stop } from '@/domain/stop';
 import type { StopRouteItem } from '@/types/route';
-import { getOppositeStop } from '@/utils/getOppositeStop';
 
+import { StopBadge } from '../StopBadge/StopBadge';
 import { SwitchDirectionButton } from '../SwitchDirectionButton/SwitchDirectionButton';
 import { RouteListItem } from './components/RouteListItem/RouteListItem';
 
@@ -10,7 +10,7 @@ import styles from './StopRoutesPanel.module.scss';
 
 interface StopRoutesPanelProps {
   stop: Stop;
-  stops: Stop[];
+  oppositeStop: Stop | undefined;
   routeItems: StopRouteItem[];
   onSelectRoute: (routeId: string) => void;
   onSwitchStop: (stopId: string) => void;
@@ -18,27 +18,32 @@ interface StopRoutesPanelProps {
 
 export const StopRoutesPanel = ({
   stop,
-  stops,
+  oppositeStop,
   routeItems,
   onSelectRoute,
   onSwitchStop,
 }: StopRoutesPanelProps) => {
-  const oppositeStop = getOppositeStop(stops, stop);
-
   return (
     <div className={panel.panel}>
-      <h2 className={panel.heading} tabIndex={-1} data-screen-heading>
-        {stop.name}{' '}
-        {stop.directionHint ? (
-          <span className={panel.directionHint}>{stop.directionHint}</span>
-        ) : null}
-      </h2>
+      <div className={panel.screenHeading}>
+        <StopBadge />
 
-      <p className={panel.caption}>Остановка · Ближайший транспорт по расписанию</p>
+        <div>
+          <h2 className={`${panel.heading} ${styles.title}`} tabIndex={-1} data-screen-heading>
+            {stop.name}
+          </h2>
+
+          {stop.directionHint ? (
+            <span className={panel.directionHint}>{stop.directionHint}</span>
+          ) : null}
+        </div>
+      </div>
 
       {oppositeStop ? (
         <SwitchDirectionButton onClick={() => onSwitchStop(oppositeStop.id)} />
       ) : null}
+
+      <p className={panel.caption}>Остановка · Ближайший транспорт по расписанию</p>
 
       {routeItems.length ? (
         <ul className={styles.routes}>

@@ -2,6 +2,7 @@ import type { ResultLimits, TransportSearchResults } from '@/types/search';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
 
 import { SearchResultButton } from '../SearchResultButton/SearchResultButton';
+import { StopBadge } from '../StopBadge/StopBadge';
 import { TransportBadge } from '../TransportBadge/TransportBadge';
 
 import panel from '../../styles/SearchPanel.module.scss';
@@ -71,19 +72,18 @@ export const SearchResults = ({
                 : results.stops.slice(0, limits.stops).map((stop) => (
                     <li key={stop.id}>
                       <SearchResultButton resultId={stop.id} onClick={() => onSelectStop(stop.id)}>
-                        <span className={styles.stopIcon} aria-hidden="true">
-                          ◎
-                        </span>
+                        <StopBadge />
 
                         <span className={styles.details}>
                           <span className={styles.label}>Остановка</span>
 
-                          <span className={styles.title}>
-                            {stop.name}{' '}
-                            {stop.directionHint ? (
-                              <span className={panel.directionHint}>{stop.directionHint}</span>
-                            ) : null}
-                          </span>
+                          <span className={styles.title}>{stop.name}</span>
+
+                          {stop.directionHint ? (
+                            <span className={`${panel.directionHint} ${styles.stopDirection}`}>
+                              {stop.directionHint}
+                            </span>
+                          ) : null}
                         </span>
                       </SearchResultButton>
                     </li>

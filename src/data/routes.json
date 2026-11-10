@@ -543,7 +543,7 @@
       "stop-615",
       "stop-437",
       "stop-1096",
-      "stop-1097",
+      "stop-1654",
       "stop-1673",
       "stop-433",
       "stop-491",
@@ -706,14 +706,14 @@
       "stop-283",
       "stop-288",
       "stop-1052",
-      "stop-291"
+      "stop-290"
     ]
   },
   {
     "id": "bus-20-direction-1",
     "lineId": "bus-20",
     "stopIds": [
-      "stop-291",
+      "stop-290",
       "stop-1438",
       "stop-1069",
       "stop-281",
@@ -2218,7 +2218,7 @@
       "stop-1677",
       "stop-1678",
       "stop-1724",
-      "stop-1725"
+      "stop-1723"
     ]
   },
   {

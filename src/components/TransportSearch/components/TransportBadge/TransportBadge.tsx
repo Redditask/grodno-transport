@@ -1,5 +1,6 @@
 import type { Line } from '@/domain/line';
 
+import panel from '../../styles/SearchPanel.module.scss';
 import styles from './TransportBadge.module.scss';
 
 interface TransportBadgeProps {
@@ -7,7 +8,7 @@ interface TransportBadgeProps {
 }
 
 export const TransportBadge = ({ line }: TransportBadgeProps) => (
-  <span className={styles.badge} aria-hidden="true">
+  <span className={`${panel.badge} ${styles.badge}`} aria-hidden="true">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
       {line.transportType === 'trolleybus' ? (
         <path d="m9 5-3-4m9 4 3-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />

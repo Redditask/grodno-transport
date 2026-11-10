@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
-import type { TransportData } from '@/data/transportData';
+import type { Stop } from '@/domain/stop';
 import { useCurrentTime } from '@/hooks/useCurrentTime';
-import { buildRouteSummary } from '@/utils/buildRouteSummary';
-import { findStopSchedule } from '@/utils/findStopSchedule';
+import type { StopRouteItem } from '@/types/route';
 import { groupDeparturesByHour } from '@/utils/groupDeparturesByHour';
 import type { DayType } from '@/utils/transportTime';
 import { getDayType } from '@/utils/transportTime';
@@ -14,26 +13,15 @@ import panel from '../../styles/SearchPanel.module.scss';
 import styles from './SchedulePanel.module.scss';
 
 interface SchedulePanelProps {
-  routeId: string;
-  stopId: string;
-  transportData: TransportData;
+  stop: Stop;
+  routeItem: StopRouteItem;
 }
 
-export const SchedulePanel = ({ routeId, stopId, transportData }: SchedulePanelProps) => {
+export const SchedulePanel = ({ stop, routeItem }: SchedulePanelProps) => {
   const now = useCurrentTime();
   const todayDayType = getDayType(now);
   const [selectedDayType, setSelectedDayType] = useState<DayType>(todayDayType);
 
-  const stop = transportData.stops.find((stop) => stop.id === stopId);
-  const route = transportData.routes.find((route) => route.id === routeId);
-  const routeSummary = route ? buildRouteSummary(route, transportData) : undefined;
-
-  if (!stop || !routeSummary) return <p role="alert">Остановка или маршрут не найдены.</p>;
-
-  const routeItem = {
-    ...routeSummary,
-    schedule: findStopSchedule(transportData.schedules, routeId, stopId),
-  };
   const departures = routeItem.schedule?.departures[selectedDayType];
   const groupedDepartures = groupDeparturesByHour(departures ?? []);
 

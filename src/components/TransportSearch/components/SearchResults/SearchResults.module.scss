@@ -52,21 +52,8 @@
   overflow-wrap: anywhere;
 }
 
-.stopIcon {
-  display: grid;
-  place-items: center;
-
-  width: 42px;
-  height: 42px;
-
-  border-radius: 13px;
-
-  flex-shrink: 0;
-
-  color: var(--color-accent);
-  background: var(--color-accent-soft);
-
-  font-size: 27px;
+.stopDirection {
+  align-self: flex-start;
 }
 
 .more {

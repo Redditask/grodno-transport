@@ -1,9 +1,9 @@
-import type { ChangeEvent, Dispatch, KeyboardEvent, SetStateAction } from 'react';
+import type { ChangeEvent, KeyboardEvent } from 'react';
 import { useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
-import { transportData } from '@/data/transportData';
-import type { ResultLimits, SearchHistoryEntry, SearchScreen } from '@/types/search';
-import { searchTransport } from '@/utils/searchTransport';
+import { transportCatalog } from '@/data/transportData';
+import type { useTransportNavigation } from '@/hooks/useTransportNavigation';
+import type { ResultLimits, SearchScreen } from '@/types/search';
 
 import { SearchScreenContent } from './components/SearchScreenContent/SearchScreenContent';
 
@@ -11,11 +11,11 @@ import panel from './styles/SearchPanel.module.scss';
 import styles from './TransportSearch.module.scss';
 
 interface TransportSearchProps {
-  screenHistory: SearchHistoryEntry[];
-  onScreenHistoryChange: Dispatch<SetStateAction<SearchHistoryEntry[]>>;
+  navigation: ReturnType<typeof useTransportNavigation>;
 }
 
-export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: TransportSearchProps) => {
+export const TransportSearch = ({ navigation }: TransportSearchProps) => {
+  const { activeEntry, previousScreen, back, reset } = navigation;
   const [query, setQuery] = useState('');
   const [limits, setLimits] = useState<ResultLimits>({ routes: 10, stops: 10 });
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -24,9 +24,7 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
   const contentRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const activeEntry = screenHistory[screenHistory.length - 1];
   const screen = activeEntry.screen;
-  const previousScreen = screenHistory.at(-2)?.screen;
   const hasQuery = query.trim().length > 0;
   const hasContent = hasQuery || screen.kind !== 'results';
   const backLabel =
@@ -38,7 +36,7 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
           ? 'К результатам'
           : 'К карте';
 
-  const results = useMemo(() => searchTransport(query, transportData), [query]);
+  const results = useMemo(() => transportCatalog.search(query), [query]);
 
   useLayoutEffect(() => {
     const content = contentRef.current;
@@ -64,24 +62,14 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
         ? document.activeElement.dataset.resultId
         : undefined;
 
-    onScreenHistoryChange((history) => [
-      ...history.slice(0, -1),
-      { ...history[history.length - 1], scrollTop, focusId },
-      { screen: nextScreen, scrollTop: 0 },
-    ]);
+    navigation.openScreen(nextScreen, { scrollTop, focusId });
   };
-
-  const replaceScreen = (screen: SearchScreen) =>
-    onScreenHistoryChange((history) => [...history.slice(0, -1), { screen, scrollTop: 0 }]);
-
-  const handleBack = () =>
-    onScreenHistoryChange((history) => (history.length > 1 ? history.slice(0, -1) : history));
 
   const updateQuery = (nextQuery: string) => {
     setQuery(nextQuery);
     setIsCollapsed(false);
     setLimits({ routes: 10, stops: 10 });
-    onScreenHistoryChange([{ screen: { kind: 'results' }, scrollTop: 0 }]);
+    reset();
   };
 
   const handleQueryChange = (event: ChangeEvent<HTMLInputElement>) =>
@@ -98,7 +86,7 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
       event.preventDefault();
       event.stopPropagation();
 
-      if (screenHistory.length > 1) handleBack();
+      back();
     }
   };
 
@@ -171,7 +159,7 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
           ref={contentRef}
         >
           {screen.kind !== 'results' ? (
-            <button className={panel.back} type="button" onClick={handleBack}>
+            <button className={panel.back} type="button" onClick={() => back()}>
               <span aria-hidden="true">←</span>
               {backLabel}
             </button>
@@ -179,12 +167,11 @@ export const TransportSearch = ({ screenHistory, onScreenHistoryChange }: Transp
 
           <SearchScreenContent
             screen={screen}
-            transportData={transportData}
             results={results}
             limits={limits}
             onShowMore={handleShowMore}
             onOpenScreen={openScreen}
-            onReplaceScreen={replaceScreen}
+            onReplaceScreen={navigation.replace}
           />
         </div>
       ) : null}
