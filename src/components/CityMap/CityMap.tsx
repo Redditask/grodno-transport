@@ -9,6 +9,7 @@ import styles from './CityMap.module.scss';
 
 interface CityMapProps {
   selectedStopId?: string;
+  selectedRouteId?: string;
   overlayRef: RefObject<HTMLDivElement | null>;
   onSelectStop: (stopId: string) => void;
   onClearStop: () => void;
@@ -16,6 +17,7 @@ interface CityMapProps {
 
 export const CityMap = ({
   selectedStopId,
+  selectedRouteId,
   overlayRef,
   onSelectStop,
   onClearStop,
@@ -29,6 +31,7 @@ export const CityMap = ({
     overlayRef,
     clearButtonRef,
     selectedStopId,
+    selectedRouteId,
     isMapReady: status === 'ready',
   });
 

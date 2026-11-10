@@ -13,13 +13,16 @@ import {
 export const useTransportNavigation = () => {
   const [screenHistory, dispatch] = useReducer(updateSearchHistory, initialSearchHistory);
 
-  const openScreen = useCallback((screen: SearchScreen, from: OpenFrom) => {
+  const open = useCallback((screen: SearchScreen, from: OpenFrom) => {
     dispatch({ kind: 'open', screen, from });
   }, []);
 
   const activeEntry = getActiveSearchEntry(screenHistory);
+  const activeScreen = activeEntry.screen;
   const previousScreen = screenHistory.at(-2)?.screen;
+
   const selectedStopId = getSelectedStopId(screenHistory);
+  const selectedRouteId = activeScreen.kind === 'routeStops' ? activeScreen.routeId : undefined;
 
   const replace = (screen: SearchScreen) => dispatch({ kind: 'replace', screen });
   const back = (until?: 'unselected') => dispatch({ kind: 'back', until });
@@ -27,11 +30,13 @@ export const useTransportNavigation = () => {
 
   return {
     activeEntry,
+    activeScreen,
     previousScreen,
-    openScreen,
+    open,
     replace,
     back,
     reset,
     selectedStopId,
+    selectedRouteId,
   };
 };
