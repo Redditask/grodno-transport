@@ -1,6 +1,7 @@
-import type { TransportData } from '@/data/transportData';
+import type { Route } from '@/domain/route';
+import type { Schedule } from '@/domain/schedule';
+import type { Stop } from '@/domain/stop';
 import type { RouteSummary } from '@/types/route';
-import { findStopSchedule } from '@/utils/findStopSchedule';
 import { formatTransportLabel } from '@/utils/formatTransportLabel';
 
 import { SwitchDirectionButton } from '../SwitchDirectionButton/SwitchDirectionButton';
@@ -12,22 +13,20 @@ import styles from './RouteStopsPanel.module.scss';
 
 interface RouteStopsPanelProps {
   routeSummary: RouteSummary;
-  transportData: TransportData;
+  oppositeRoute: Route | undefined;
+  routeStops: { stop: Stop; index: number; schedule: Schedule | undefined }[];
   onSwitchRoute: (routeId: string) => void;
   onSelectStop: (stopId: string) => void;
 }
 
 export const RouteStopsPanel = ({
   routeSummary,
-  transportData,
+  oppositeRoute,
+  routeStops,
   onSwitchRoute,
   onSelectStop,
 }: RouteStopsPanelProps) => {
-  const { route, line, origin, destination } = routeSummary;
-
-  const oppositeRoute = transportData.routes.find(
-    (otherRoute) => otherRoute.lineId === route.lineId && otherRoute.id !== route.id,
-  );
+  const { line, origin, destination } = routeSummary;
 
   return (
     <div className={panel.panel} data-transport={line.transportType}>
@@ -53,22 +52,15 @@ export const RouteStopsPanel = ({
       <p className={panel.caption}>Остановки по порядку · Ближайшие отправления по расписанию</p>
 
       <ol className={styles.stops}>
-        {route.stopIds.map((stopId, index) => {
-          const stop = transportData.stops.find((stop) => stop.id === stopId);
-          if (!stop) return null;
-
-          const schedule = findStopSchedule(transportData.schedules, route.id, stopId);
-
-          return (
-            <StopListItem
-              key={`${index}:${stopId}`}
-              resultId={`${index}:${stopId}`}
-              stop={stop}
-              schedule={schedule}
-              onSelectStop={onSelectStop}
-            />
-          );
-        })}
+        {routeStops.map(({ stop, index, schedule }) => (
+          <StopListItem
+            key={`${index}:${stop.id}`}
+            resultId={`${index}:${stop.id}`}
+            stop={stop}
+            schedule={schedule}
+            onSelectStop={onSelectStop}
+          />
+        ))}
       </ol>
 
       <p className={panel.panelFootnote}>

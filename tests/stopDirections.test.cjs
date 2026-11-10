@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
 
-const modulePromise = import('@/utils/getOppositeStop');
+const modulePromise = import('@/data/utils/getOppositeStop');
 
 const makeStop = (id, name, directionHint) => ({
   id,

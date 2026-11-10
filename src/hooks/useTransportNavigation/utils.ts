@@ -1,0 +1,76 @@
+import type { SearchHistoryEntry, SearchScreen } from '@/types/search';
+
+export type OpenFrom = Pick<SearchHistoryEntry, 'scrollTop' | 'focusId'> | 'results';
+
+type NavigationAction =
+  | { kind: 'open'; screen: SearchScreen; from: OpenFrom }
+  | { kind: 'replace'; screen: SearchScreen }
+  | { kind: 'back'; until?: 'unselected' }
+  | { kind: 'reset' };
+
+type SearchHistory = [SearchHistoryEntry, ...SearchHistoryEntry[]];
+
+export const getActiveSearchEntry = (history: SearchHistory) => history.at(-1) ?? history[0];
+
+const getScreenStopId = (screen: SearchScreen) =>
+  screen.kind === 'stopRoutes' || screen.kind === 'schedule' ? screen.stopId : undefined;
+
+export const getSelectedStopId = (history: SearchHistory) =>
+  getScreenStopId(getActiveSearchEntry(history).screen);
+
+export const initialSearchHistory: SearchHistory = [{ screen: { kind: 'results' }, scrollTop: 0 }];
+
+export const updateSearchHistory = (
+  history: SearchHistory,
+  action: NavigationAction,
+): SearchHistory => {
+  switch (action.kind) {
+    case 'open': {
+      const nextEntry = { screen: action.screen, scrollTop: 0 };
+
+      if (action.from === 'results') {
+        if (
+          action.screen.kind === 'stopRoutes' &&
+          action.screen.stopId === getSelectedStopId(history)
+        ) {
+          return history;
+        }
+
+        return [history[0], nextEntry];
+      }
+
+      const nextHistory: SearchHistory = [...history];
+      nextHistory[nextHistory.length - 1] = {
+        ...getActiveSearchEntry(history),
+        ...action.from,
+      };
+      nextHistory.push(nextEntry);
+
+      return nextHistory;
+    }
+    case 'replace':
+      if (history.length === 1) return history;
+
+      return [history[0], ...history.slice(1, -1), { screen: action.screen, scrollTop: 0 }];
+    case 'back': {
+      let remainingLength = history.length;
+
+      if (action.until === 'unselected') {
+        while (
+          remainingLength > 1 &&
+          getScreenStopId(history[remainingLength - 1].screen) !== undefined
+        ) {
+          remainingLength -= 1;
+        }
+      } else {
+        remainingLength = Math.max(1, remainingLength - 1);
+      }
+
+      return remainingLength === history.length
+        ? history
+        : [history[0], ...history.slice(1, remainingLength)];
+    }
+    case 'reset':
+      return initialSearchHistory;
+  }
+};

@@ -1,6 +1,5 @@
 import type { Stop } from '@/domain/stop';
 import type { StopRouteItem } from '@/types/route';
-import { getOppositeStop } from '@/utils/getOppositeStop';
 
 import { StopBadge } from '../StopBadge/StopBadge';
 import { SwitchDirectionButton } from '../SwitchDirectionButton/SwitchDirectionButton';
@@ -11,7 +10,7 @@ import styles from './StopRoutesPanel.module.scss';
 
 interface StopRoutesPanelProps {
   stop: Stop;
-  stops: Stop[];
+  oppositeStop: Stop | undefined;
   routeItems: StopRouteItem[];
   onSelectRoute: (routeId: string) => void;
   onSwitchStop: (stopId: string) => void;
@@ -19,13 +18,11 @@ interface StopRoutesPanelProps {
 
 export const StopRoutesPanel = ({
   stop,
-  stops,
+  oppositeStop,
   routeItems,
   onSelectRoute,
   onSwitchStop,
 }: StopRoutesPanelProps) => {
-  const oppositeStop = getOppositeStop(stops, stop);
-
   return (
     <div className={panel.panel}>
       <div className={panel.screenHeading}>
