@@ -1,7 +1,8 @@
 import type { TransportData } from '@/data/transportData';
 import { buildRouteSummary } from '@/data/utils/buildRouteSummary';
 import { getOppositeStop } from '@/data/utils/getOppositeStop';
-import { searchTransport } from '@/data/utils/searchTransport';
+import { createTransportSearch } from '@/data/utils/searchTransport';
+import type { Schedule } from '@/domain/schedule';
 
 export const createTransportCatalog = (data: TransportData) => {
   const { stops, routes, schedules } = data;
@@ -9,17 +10,33 @@ export const createTransportCatalog = (data: TransportData) => {
     coordinates ? [{ id, name, coordinates }] : [],
   );
 
-  const getStop = (stopId: string) => stops.find(({ id }) => id === stopId);
-  const getRoute = (routeId: string) => routes.find(({ id }) => id === routeId);
+  const stopsById = new Map(stops.map((stop) => [stop.id, stop]));
+  const routesById = new Map(routes.map((route) => [route.id, route]));
+  const mappedStopsById = new Map(mappedStops.map((stop) => [stop.id, stop]));
+  const schedulesByRoute = new Map<string, Map<string, Schedule>>();
 
+  for (const schedule of schedules) {
+    let routeSchedules = schedulesByRoute.get(schedule.routeId);
+
+    if (!routeSchedules) {
+      routeSchedules = new Map();
+      schedulesByRoute.set(schedule.routeId, routeSchedules);
+    }
+
+    routeSchedules.set(schedule.stopId, schedule);
+  }
+
+  const getStop = (stopId: string) => stopsById.get(stopId);
+  const getRoute = (routeId: string) => routesById.get(routeId);
   const findStopSchedule = (routeId: string, stopId: string) =>
-    schedules.find((schedule) => schedule.routeId === routeId && schedule.stopId === stopId);
+    schedulesByRoute.get(routeId)?.get(stopId);
 
   return {
-    search: (query: string) => searchTransport(query, data),
+    search: createTransportSearch(data),
 
     mappedStops,
-    getMappedStop: (stopId?: string) => mappedStops.find(({ id }) => id === stopId),
+    getMappedStop: (stopId?: string) =>
+      stopId === undefined ? undefined : mappedStopsById.get(stopId),
 
     getStopDetails(stopId: string) {
       const stop = getStop(stopId);
