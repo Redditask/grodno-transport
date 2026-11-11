@@ -2,6 +2,7 @@ import type { Map } from 'maplibre-gl';
 import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';
 
+import { applyBasemapColors } from '@/components/CityMap/layers/applyBasemapColors';
 import { addStopLayers } from '@/components/CityMap/layers/stopLayers';
 
 type MapStatus = 'loading' | 'ready' | 'error';
@@ -59,6 +60,8 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
         map.addControl(new NavigationControl({ showCompass: false }), 'bottom-left');
 
         map.once('load', () => {
+          applyBasemapColors(map);
+
           const stopTooltip = new Popup({
             className: 'map-stop-tooltip',
             closeButton: false,

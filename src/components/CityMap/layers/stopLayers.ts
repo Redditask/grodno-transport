@@ -45,6 +45,8 @@ export const addStopLayers = (
   onSelectStop: (stopId: string) => void,
   stopTooltip: Popup,
 ) => {
+  const stopColor = getComputedStyle(map.getContainer()).getPropertyValue('--color-stop').trim();
+
   map.addSource(stopSourceId, {
     type: 'geojson',
     data: stops,
@@ -58,7 +60,7 @@ export const addStopLayers = (
     source: stopSourceId,
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 4, 16, 7],
-      'circle-color': '#246f9b', //--color-stop
+      'circle-color': stopColor,
       'circle-stroke-color': '#fff',
       'circle-stroke-width': 1.5,
     },
@@ -71,7 +73,7 @@ export const addStopLayers = (
     filter: ['==', ['get', 'stopId'], ''],
     paint: {
       'circle-radius': 9,
-      'circle-color': '#246f9b', //--color-stop
+      'circle-color': stopColor,
       'circle-stroke-color': '#fff',
       'circle-stroke-width': 3,
     },
