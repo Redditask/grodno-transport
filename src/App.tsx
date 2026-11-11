@@ -14,16 +14,20 @@ export const App = () => {
 
   const navigation = useTransportNavigation();
 
-  const { openScreen, back, selectedStopId } = navigation;
+  const { open, back, selectedStopId, selectedRouteId } = navigation;
 
   const handleOpenStopFromMap = useCallback(
-    (stopId: string) => openScreen({ kind: 'stopRoutes', stopId }, 'results'),
-    [openScreen],
+    (stopId: string) => open({ kind: 'stopRoutes', stopId }, 'map'),
+    [open],
   );
-  const handleDismissMapSelection = () => back('unselected');
+  const hasMapSelection = Boolean(selectedStopId || selectedRouteId);
+
+  const handleDismissMapSelection = () => {
+    back(selectedStopId ? 'unselected' : undefined);
+  };
 
   const handleMapStageKeyDown = (event: KeyboardEvent<HTMLElement>) => {
-    if (event.key !== 'Escape' || !selectedStopId) return;
+    if (event.key !== 'Escape' || !hasMapSelection) return;
 
     event.preventDefault();
     event.stopPropagation();
@@ -38,9 +42,10 @@ export const App = () => {
       <main className={styles.mapStage} onKeyDownCapture={handleMapStageKeyDown}>
         <CityMap
           selectedStopId={selectedStopId}
+          selectedRouteId={selectedRouteId}
           overlayRef={searchPanelRef}
           onSelectStop={handleOpenStopFromMap}
-          onClearStop={handleDismissMapSelection}
+          onClearSelection={handleDismissMapSelection}
         />
 
         <div className={styles.searchPanel} ref={searchPanelRef}>

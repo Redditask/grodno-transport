@@ -62,7 +62,7 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
         ? document.activeElement.dataset.resultId
         : undefined;
 
-    navigation.openScreen(nextScreen, { scrollTop, focusId });
+    navigation.open(nextScreen, { scrollTop, focusId });
   };
 
   const updateQuery = (nextQuery: string) => {

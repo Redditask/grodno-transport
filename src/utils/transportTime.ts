@@ -9,9 +9,16 @@ const timeFormatter = new Intl.DateTimeFormat('en-GB', {
   minute: '2-digit',
   hourCycle: 'h23',
 });
+const dateFormatter = new Intl.DateTimeFormat('ru-BY', {
+  timeZone,
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+});
 const dayFormatter = new Intl.DateTimeFormat('en-US', { timeZone, weekday: 'short' });
 
 export const formatTransportTime = (now: Date): string => timeFormatter.format(now);
+export const formatTransportDate = (now: Date): string => dateFormatter.format(now);
 
 export const getDayType = (now: Date, dayOffset = 0): DayType => {
   const day = dayFormatter.format(new Date(now.getTime() + dayOffset * 86_400_000));

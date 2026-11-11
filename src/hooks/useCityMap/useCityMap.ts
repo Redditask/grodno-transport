@@ -2,6 +2,7 @@ import type { Map } from 'maplibre-gl';
 import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';
 
+import { applyBasemapColors } from '@/components/CityMap/layers/applyBasemapColors';
 import { addStopLayers } from '@/components/CityMap/layers/stopLayers';
 
 type MapStatus = 'loading' | 'ready' | 'error';
@@ -20,7 +21,7 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
 
     const loadMap = async () => {
       try {
-        const { Map, NavigationControl, setWorkerUrl } = await import('maplibre-gl');
+        const { Map, NavigationControl, Popup, setWorkerUrl } = await import('maplibre-gl');
 
         if (isDisposed) return;
 
@@ -59,7 +60,18 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
         map.addControl(new NavigationControl({ showCompass: false }), 'bottom-left');
 
         map.once('load', () => {
-          addStopLayers(map, onSelectStop);
+          applyBasemapColors(map);
+
+          const stopTooltip = new Popup({
+            className: 'map-stop-tooltip',
+            closeButton: false,
+            closeOnClick: false,
+            closeOnMove: true,
+            focusAfterOpen: false,
+            offset: 12,
+          });
+
+          addStopLayers(map, onSelectStop, stopTooltip);
           setStatus('ready');
         });
         map.on('error', () => setStatus((current) => (current === 'loading' ? 'error' : current)));

@@ -9,16 +9,18 @@ import styles from './CityMap.module.scss';
 
 interface CityMapProps {
   selectedStopId?: string;
+  selectedRouteId?: string;
   overlayRef: RefObject<HTMLDivElement | null>;
   onSelectStop: (stopId: string) => void;
-  onClearStop: () => void;
+  onClearSelection: () => void;
 }
 
 export const CityMap = ({
   selectedStopId,
+  selectedRouteId,
   overlayRef,
   onSelectStop,
-  onClearStop,
+  onClearSelection,
 }: CityMapProps) => {
   const { containerRef, mapRef, status } = useCityMap(onSelectStop);
   const clearButtonRef = useRef<HTMLButtonElement>(null);
@@ -29,6 +31,7 @@ export const CityMap = ({
     overlayRef,
     clearButtonRef,
     selectedStopId,
+    selectedRouteId,
     isMapReady: status === 'ready',
   });
 
@@ -36,12 +39,12 @@ export const CityMap = ({
     <section className={styles.viewport} aria-label="Карта Гродно">
       <div className={styles.map} ref={containerRef} />
 
-      {selectedStopId ? (
+      {selectedStopId || selectedRouteId ? (
         <button
           ref={clearButtonRef}
           className={styles.clearStop}
           type="button"
-          onClick={onClearStop}
+          onClick={onClearSelection}
         >
           Отменить выбор
         </button>

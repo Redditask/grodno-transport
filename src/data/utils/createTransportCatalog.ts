@@ -5,11 +5,12 @@ import { searchTransport } from '@/data/utils/searchTransport';
 
 export const createTransportCatalog = (data: TransportData) => {
   const { stops, routes, schedules } = data;
-  const mappedStops = stops.flatMap(({ id, coordinates }) =>
-    coordinates ? [{ id, coordinates }] : [],
+  const mappedStops = stops.flatMap(({ id, name, coordinates }) =>
+    coordinates ? [{ id, name, coordinates }] : [],
   );
 
   const getStop = (stopId: string) => stops.find(({ id }) => id === stopId);
+  const getRoute = (routeId: string) => routes.find(({ id }) => id === routeId);
 
   const findStopSchedule = (routeId: string, stopId: string) =>
     schedules.find((schedule) => schedule.routeId === routeId && schedule.stopId === stopId);
@@ -38,8 +39,10 @@ export const createTransportCatalog = (data: TransportData) => {
       };
     },
 
+    getRouteStopIds: (routeId: string) => getRoute(routeId)?.stopIds,
+
     getRouteDetails(routeId: string) {
-      const route = routes.find(({ id }) => id === routeId);
+      const route = getRoute(routeId);
       const routeSummary = route ? buildRouteSummary(route, data) : undefined;
       if (!route || !routeSummary) return undefined;
 
@@ -58,7 +61,7 @@ export const createTransportCatalog = (data: TransportData) => {
 
     getScheduleDetails(routeId: string, stopId: string) {
       const stop = getStop(stopId);
-      const route = routes.find(({ id }) => id === routeId);
+      const route = getRoute(routeId);
       const routeSummary = route ? buildRouteSummary(route, data) : undefined;
       if (!stop || !routeSummary) return undefined;
 

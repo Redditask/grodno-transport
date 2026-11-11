@@ -1,4 +1,4 @@
-import type { GeoJSONSourceSpecification, Map } from 'maplibre-gl';
+import type { GeoJSONSourceSpecification, Map, Popup } from 'maplibre-gl';
 
 import { transportCatalog } from '@/data/transportData';
 
@@ -26,7 +26,27 @@ export const selectStopOnMap = (map: Map, stopId?: string) => {
   return selectedStop?.coordinates;
 };
 
-export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) => {
+export const selectRouteOnMap = (map: Map, routeId?: string) => {
+  const routeStopIds = routeId ? transportCatalog.getRouteStopIds(routeId) : undefined;
+
+  map.setFilter(
+    stopLayerId,
+    routeStopIds ? ['in', ['get', 'stopId'], ['literal', routeStopIds]] : null,
+  );
+
+  const firstStopId = routeStopIds?.[0];
+  const firstStop = firstStopId ? transportCatalog.getMappedStop(firstStopId) : undefined;
+
+  return firstStop?.coordinates;
+};
+
+export const addStopLayers = (
+  map: Map,
+  onSelectStop: (stopId: string) => void,
+  stopTooltip: Popup,
+) => {
+  const stopColor = getComputedStyle(map.getContainer()).getPropertyValue('--color-stop').trim();
+
   map.addSource(stopSourceId, {
     type: 'geojson',
     data: stops,
@@ -40,7 +60,7 @@ export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) 
     source: stopSourceId,
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 4, 16, 7],
-      'circle-color': '#246f9b', //--color-stop
+      'circle-color': stopColor,
       'circle-stroke-color': '#fff',
       'circle-stroke-width': 1.5,
     },
@@ -53,7 +73,7 @@ export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) 
     filter: ['==', ['get', 'stopId'], ''],
     paint: {
       'circle-radius': 9,
-      'circle-color': '#246f9b', //--color-stop
+      'circle-color': stopColor,
       'circle-stroke-color': '#fff',
       'circle-stroke-width': 3,
     },
@@ -61,17 +81,35 @@ export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) 
 
   const clickableLayers = [selectedStopLayerId, stopLayerId];
 
+  let hoveredStopId: string | undefined;
+
   map.on('click', clickableLayers, ({ point, features }) => {
+    stopTooltip.remove();
+
     const stopId = getNearestStopId(map, point, features ?? []);
 
     if (stopId) onSelectStop(stopId);
   });
 
-  map.on('mouseenter', clickableLayers, () => {
+  map.on('mousemove', clickableLayers, ({ point, features }) => {
+    const stopId = getNearestStopId(map, point, features ?? []);
+    if (!stopId || map.isMoving()) return;
+    if (stopId === hoveredStopId && stopTooltip.isOpen()) return;
+
+    const stop = transportCatalog.getMappedStop(stopId);
+    if (!stop) return;
+
+    const { longitude, latitude } = stop.coordinates;
+    hoveredStopId = stopId;
     map.getCanvas().style.cursor = 'pointer';
+    stopTooltip.setLngLat([longitude, latitude]).setText(stop.name);
+
+    if (!stopTooltip.isOpen()) stopTooltip.addTo(map);
   });
 
   map.on('mouseleave', clickableLayers, () => {
+    hoveredStopId = undefined;
     map.getCanvas().style.cursor = '';
+    stopTooltip.remove();
   });
 };

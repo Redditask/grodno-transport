@@ -7,12 +7,54 @@
 }
 
 .map {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset-inline: 0;
+  inset-block: calc(-1 * var(--header-height)) calc(-1 * var(--footer-height));
+}
+
+.map :global(.map-stop-tooltip) {
+  pointer-events: none;
+
+  :global(.maplibregl-popup-content) {
+    max-width: 240px;
+    padding: 7px 11px;
+
+    border-radius: 9px;
+
+    color: var(--color-text);
+    background: var(--glass-surface);
+    backdrop-filter: var(--glass-filter);
+    box-shadow: var(--glass-shadow);
+
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+  }
+
+  :global(.maplibregl-popup-tip) {
+    display: none;
+  }
 }
 
 .map :global(.maplibregl-ctrl-bottom-left) {
-  bottom: 36px;
+  bottom: calc(var(--footer-height) + 36px);
+}
+
+.map :global(.maplibregl-ctrl-bottom-right) {
+  bottom: var(--footer-height);
+}
+
+.map :global(.maplibregl-ctrl-group),
+.clearStop {
+  border: 1px solid var(--glass-edge);
+  border-radius: 12px;
+
+  background: var(--glass-surface);
+  backdrop-filter: var(--glass-filter);
+  box-shadow: var(--glass-shadow);
 }
 
 .map :global(.maplibregl-ctrl-group) button {
@@ -36,11 +78,7 @@
   min-height: 44px;
   padding-inline: 14px;
 
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-
   color: var(--color-text);
-  background: var(--color-surface);
 
   font: inherit;
   font-size: 13px;
@@ -69,11 +107,12 @@
     margin: 0;
     padding: 10px 14px;
 
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--glass-edge);
     border-radius: 12px;
 
     color: var(--color-text-secondary);
-    background: var(--color-surface);
+    background: var(--glass-surface);
+    backdrop-filter: var(--glass-filter);
 
     font-size: 13px;
     text-align: center;

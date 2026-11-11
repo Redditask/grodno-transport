@@ -2,7 +2,7 @@ import type { Map } from 'maplibre-gl';
 import type { RefObject } from 'react';
 import { useEffect } from 'react';
 
-import { selectStopOnMap } from '@/components/CityMap/layers/stopLayers';
+import { selectRouteOnMap, selectStopOnMap } from '@/components/CityMap/layers/stopLayers';
 
 import { getCenterOffset } from './utils';
 
@@ -12,6 +12,7 @@ interface UseMapSelectionViewOptions {
   overlayRef: RefObject<HTMLDivElement | null>;
   clearButtonRef: RefObject<HTMLButtonElement | null>;
   selectedStopId?: string;
+  selectedRouteId?: string;
   isMapReady: boolean;
 }
 
@@ -21,6 +22,7 @@ export const useMapSelectionView = ({
   overlayRef,
   clearButtonRef,
   selectedStopId,
+  selectedRouteId,
   isMapReady,
 }: UseMapSelectionViewOptions) => {
   useEffect(() => {
@@ -29,7 +31,10 @@ export const useMapSelectionView = ({
 
     if (!isMapReady || !map || !container) return;
 
-    const coordinates = selectStopOnMap(map, selectedStopId);
+    const routeCoordinates = selectRouteOnMap(map, selectedRouteId);
+    const stopCoordinates = selectStopOnMap(map, selectedStopId);
+
+    const coordinates = stopCoordinates ?? routeCoordinates;
     if (!coordinates) return;
 
     const overlay = overlayRef.current;
@@ -54,5 +59,13 @@ export const useMapSelectionView = ({
     if (overlay) observer.observe(overlay);
 
     return () => observer.disconnect();
-  }, [clearButtonRef, containerRef, isMapReady, mapRef, overlayRef, selectedStopId]);
+  }, [
+    clearButtonRef,
+    containerRef,
+    isMapReady,
+    mapRef,
+    overlayRef,
+    selectedStopId,
+    selectedRouteId,
+  ]);
 };

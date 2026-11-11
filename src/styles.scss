@@ -7,12 +7,18 @@
   --color-accent-soft: #edf5ff;
   --color-text-secondary: #6e6e73;
   --color-surface-hover: #fafbfc;
-  --color-bus: #13784b;
-  --color-bus-soft: #eaf6ef;
+  --color-bus: #075c39;
+  --color-bus-soft: #d2eddd;
   --color-stop: #246f9b;
   --color-stop-soft: #eaf5fb;
-  --color-trolleybus: #293f8f;
-  --color-trolleybus-soft: #edf0fc;
+  --color-trolleybus: #233975;
+  --color-trolleybus-soft: #dce6ff;
+
+  --glass-surface: var(--color-surface);
+  --glass-inner: var(--color-surface);
+  --glass-edge: var(--color-border);
+  --glass-filter: none;
+  --glass-shadow: 0 6px 24px rgb(24 38 52 / 13%);
 
   font-family: system-ui, sans-serif;
 
@@ -20,6 +26,17 @@
   background: var(--color-background);
 
   font-synthesis: none;
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  @media (prefers-reduced-transparency: no-preference) {
+    :root {
+      --glass-surface: rgb(255 255 255 / 68%);
+      --glass-inner: rgb(255 255 255 / 48%);
+      --glass-edge: rgb(255 255 255 / 82%);
+      --glass-filter: blur(20px) saturate(145%);
+    }
+  }
 }
 
 * {
