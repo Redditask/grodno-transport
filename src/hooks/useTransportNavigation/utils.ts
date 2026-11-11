@@ -1,6 +1,6 @@
 import type { SearchHistoryEntry, SearchScreen } from '@/types/search';
 
-export type OpenFrom = Pick<SearchHistoryEntry, 'scrollTop' | 'focusId'> | 'results';
+export type OpenFrom = Pick<SearchHistoryEntry, 'scrollTop' | 'focusId'> | 'map';
 
 type NavigationAction =
   | { kind: 'open'; screen: SearchScreen; from: OpenFrom }
@@ -28,7 +28,7 @@ export const updateSearchHistory = (
     case 'open': {
       const nextEntry = { screen: action.screen, scrollTop: 0 };
 
-      if (action.from === 'results') {
+      if (action.from === 'map') {
         if (
           action.screen.kind === 'stopRoutes' &&
           action.screen.stopId === getSelectedStopId(history)
@@ -36,7 +36,7 @@ export const updateSearchHistory = (
           return history;
         }
 
-        return [history[0], nextEntry];
+        return [...history, nextEntry];
       }
 
       const nextHistory: SearchHistory = [...history];

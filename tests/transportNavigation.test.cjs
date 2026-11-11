@@ -29,18 +29,19 @@ test('back from a schedule restores the previous screen and its focus position',
   }
 });
 
-test('map selection starts from results and switching the stop replaces its screen', async () => {
+test('clearing a stop selected from a route keeps the route until it is dismissed', async () => {
   const { initialSearchHistory, updateSearchHistory, getActiveSearchEntry, getSelectedStopId } =
     await navigation;
+  const route = { kind: 'routeStops', routeId: 'bus-1-out' };
   const fromSearch = updateSearchHistory(initialSearchHistory, {
     kind: 'open',
-    screen: { kind: 'routeStops', routeId: 'bus-1-out' },
+    screen: route,
     from: position,
   });
   const mapSelection = updateSearchHistory(fromSearch, {
     kind: 'open',
     screen: { kind: 'stopRoutes', stopId: 'stop-7' },
-    from: 'results',
+    from: 'map',
   });
   const nextStop = updateSearchHistory(mapSelection, {
     kind: 'replace',
@@ -48,11 +49,15 @@ test('map selection starts from results and switching the stop replaces its scre
   });
 
   assert.equal(getSelectedStopId(nextStop), 'stop-8');
-  assert.deepEqual(getActiveSearchEntry(updateSearchHistory(nextStop, { kind: 'back' })), {
+  const clearedStop = updateSearchHistory(nextStop, { kind: 'back', until: 'unselected' });
+  assert.deepEqual(clearedStop, fromSearch);
+  assert.equal(getSelectedStopId(clearedStop), undefined);
+
+  const clearedRoute = updateSearchHistory(clearedStop, { kind: 'back' });
+  assert.deepEqual(getActiveSearchEntry(clearedRoute), {
     screen: { kind: 'results' },
     ...position,
   });
-  assert.deepEqual(updateSearchHistory(nextStop, { kind: 'reset' }), initialSearchHistory);
 });
 
 test('back returns to the selected stop while clearing the map returns to results', async () => {
@@ -61,7 +66,7 @@ test('back returns to the selected stop while clearing the map returns to result
   const stop = updateSearchHistory(initialSearchHistory, {
     kind: 'open',
     screen: { kind: 'stopRoutes', stopId: 'stop-7' },
-    from: 'results',
+    from: 'map',
   });
   const schedule = updateSearchHistory(stop, {
     kind: 'open',
@@ -99,7 +104,7 @@ test('clicking the selected map marker keeps the timetable and its return histor
   const repeatedClick = updateSearchHistory(timetable, {
     kind: 'open',
     screen: { kind: 'stopRoutes', stopId },
-    from: 'results',
+    from: 'map',
   });
 
   assert.equal(repeatedClick, timetable);

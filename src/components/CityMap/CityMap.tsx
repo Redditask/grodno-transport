@@ -12,7 +12,7 @@ interface CityMapProps {
   selectedRouteId?: string;
   overlayRef: RefObject<HTMLDivElement | null>;
   onSelectStop: (stopId: string) => void;
-  onClearStop: () => void;
+  onClearSelection: () => void;
 }
 
 export const CityMap = ({
@@ -20,7 +20,7 @@ export const CityMap = ({
   selectedRouteId,
   overlayRef,
   onSelectStop,
-  onClearStop,
+  onClearSelection,
 }: CityMapProps) => {
   const { containerRef, mapRef, status } = useCityMap(onSelectStop);
   const clearButtonRef = useRef<HTMLButtonElement>(null);
@@ -39,12 +39,12 @@ export const CityMap = ({
     <section className={styles.viewport} aria-label="Карта Гродно">
       <div className={styles.map} ref={containerRef} />
 
-      {selectedStopId ? (
+      {selectedStopId || selectedRouteId ? (
         <button
           ref={clearButtonRef}
           className={styles.clearStop}
           type="button"
-          onClick={onClearStop}
+          onClick={onClearSelection}
         >
           Отменить выбор
         </button>
