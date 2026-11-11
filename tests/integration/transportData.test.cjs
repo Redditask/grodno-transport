@@ -1,10 +1,10 @@
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
 
-const lines = require('../src/data/lines.json');
-const routes = require('../src/data/routes.json');
-const schedules = require('../src/data/schedules.json');
-const stops = require('../src/data/stops.json');
+const lines = require('../../src/data/lines.json');
+const routes = require('../../src/data/routes.json');
+const schedules = require('../../src/data/schedules.json');
+const stops = require('../../src/data/stops.json');
 
 const indexById = (entries, name) => {
   const index = new Map();
@@ -18,9 +18,11 @@ const indexById = (entries, name) => {
 };
 
 test('transport JSON has unique IDs and valid line, route, stop and schedule links', () => {
+  // Строим индексы и проверяем уникальность ID перед проверкой ссылок между таблицами.
   const linesById = indexById(lines, 'lines');
   const routesById = indexById(routes, 'routes');
   const stopsById = indexById(stops, 'stops');
+  // Для каждой пары «маршрут + остановка» допустимо только одно расписание.
   const scheduleKeys = new Set();
 
   for (const line of lines) {
