@@ -5,8 +5,8 @@ import { searchTransport } from '@/data/utils/searchTransport';
 
 export const createTransportCatalog = (data: TransportData) => {
   const { stops, routes, schedules } = data;
-  const mappedStops = stops.flatMap(({ id, coordinates }) =>
-    coordinates ? [{ id, coordinates }] : [],
+  const mappedStops = stops.flatMap(({ id, name, coordinates }) =>
+    coordinates ? [{ id, name, coordinates }] : [],
   );
 
   const getStop = (stopId: string) => stops.find(({ id }) => id === stopId);

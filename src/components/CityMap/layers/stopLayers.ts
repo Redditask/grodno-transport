@@ -1,4 +1,4 @@
-import type { GeoJSONSourceSpecification, Map } from 'maplibre-gl';
+import type { GeoJSONSourceSpecification, Map, Popup } from 'maplibre-gl';
 
 import { transportCatalog } from '@/data/transportData';
 
@@ -40,7 +40,11 @@ export const selectRouteOnMap = (map: Map, routeId?: string) => {
   return firstStop?.coordinates;
 };
 
-export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) => {
+export const addStopLayers = (
+  map: Map,
+  onSelectStop: (stopId: string) => void,
+  stopTooltip: Popup,
+) => {
   map.addSource(stopSourceId, {
     type: 'geojson',
     data: stops,
@@ -75,17 +79,35 @@ export const addStopLayers = (map: Map, onSelectStop: (stopId: string) => void) 
 
   const clickableLayers = [selectedStopLayerId, stopLayerId];
 
+  let hoveredStopId: string | undefined;
+
   map.on('click', clickableLayers, ({ point, features }) => {
+    stopTooltip.remove();
+
     const stopId = getNearestStopId(map, point, features ?? []);
 
     if (stopId) onSelectStop(stopId);
   });
 
-  map.on('mouseenter', clickableLayers, () => {
+  map.on('mousemove', clickableLayers, ({ point, features }) => {
+    const stopId = getNearestStopId(map, point, features ?? []);
+    if (!stopId || map.isMoving()) return;
+    if (stopId === hoveredStopId && stopTooltip.isOpen()) return;
+
+    const stop = transportCatalog.getMappedStop(stopId);
+    if (!stop) return;
+
+    const { longitude, latitude } = stop.coordinates;
+    hoveredStopId = stopId;
     map.getCanvas().style.cursor = 'pointer';
+    stopTooltip.setLngLat([longitude, latitude]).setText(stop.name);
+
+    if (!stopTooltip.isOpen()) stopTooltip.addTo(map);
   });
 
   map.on('mouseleave', clickableLayers, () => {
+    hoveredStopId = undefined;
     map.getCanvas().style.cursor = '';
+    stopTooltip.remove();
   });
 };

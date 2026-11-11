@@ -11,6 +11,32 @@
   height: 100%;
 }
 
+.map :global(.map-stop-tooltip) {
+  pointer-events: none;
+
+  :global(.maplibregl-popup-content) {
+    max-width: 240px;
+    padding: 7px 11px;
+
+    border-radius: 9px;
+
+    color: var(--color-text);
+    background: var(--color-surface);
+    box-shadow: 0 4px 16px rgb(29 29 31 / 16%);
+
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+  }
+
+  :global(.maplibregl-popup-tip) {
+    display: none;
+  }
+}
+
 .map :global(.maplibregl-ctrl-bottom-left) {
   bottom: 36px;
 }

@@ -20,7 +20,7 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
 
     const loadMap = async () => {
       try {
-        const { Map, NavigationControl, setWorkerUrl } = await import('maplibre-gl');
+        const { Map, NavigationControl, Popup, setWorkerUrl } = await import('maplibre-gl');
 
         if (isDisposed) return;
 
@@ -59,7 +59,16 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
         map.addControl(new NavigationControl({ showCompass: false }), 'bottom-left');
 
         map.once('load', () => {
-          addStopLayers(map, onSelectStop);
+          const stopTooltip = new Popup({
+            className: 'map-stop-tooltip',
+            closeButton: false,
+            closeOnClick: false,
+            closeOnMove: true,
+            focusAfterOpen: false,
+            offset: 12,
+          });
+
+          addStopLayers(map, onSelectStop, stopTooltip);
           setStatus('ready');
         });
         map.on('error', () => setStatus((current) => (current === 'loading' ? 'error' : current)));
