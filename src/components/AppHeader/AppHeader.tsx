@@ -1,19 +1,25 @@
 import { useCurrentTime } from '@/hooks/useCurrentTime';
-import { formatTransportTime } from '@/utils/transportTime';
+import { formatTransportDate, formatTransportTime } from '@/utils/transportTime';
 
 import styles from './AppHeader.module.scss';
 
 export const AppHeader = () => {
-  const localTime = formatTransportTime(useCurrentTime());
+  const now = useCurrentTime();
+  const localTime = formatTransportTime(now);
+  const localDate = formatTransportDate(now);
 
   return (
     <header className={styles.header}>
       <h1>Транспорт Гродно</h1>
 
-      <span className={styles.liveTime}>
-        <span aria-hidden="true" />
-        {localTime}
-      </span>
+      <div className={styles.dateTime}>
+        <time className={styles.liveTime} dateTime={localTime}>
+          <span aria-hidden="true" />
+          {localTime}
+        </time>
+
+        <span className={styles.localDate}>{localDate}</span>
+      </div>
     </header>
   );
 };
