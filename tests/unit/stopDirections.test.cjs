@@ -13,6 +13,7 @@ const makeStop = (id, name, directionHint) => ({
 test('a pair switches both ways, normalizes names and preserves source data', async () => {
   const { getOppositeStop } = await modulePromise;
 
+  // Площадки отличаются регистром, пробелами и ID, но название у них одно.
   const outbound = makeStop('stop-2', ' Улица Белые Росы ', 'К Лапенковской');
   const inbound = makeStop('stop-10', 'улица белые росы', 'К Брикеля');
   const unrelated = makeStop('stop-3', 'Улица Белая', 'К Боброва');
@@ -32,6 +33,7 @@ test('a pair switches both ways, normalizes names and preserves source data', as
 test('three same-name stops form a stable cycle regardless of source order', async () => {
   const { getOppositeStop } = await modulePromise;
 
+  // Проверяем замкнутый цикл из трёх площадок с числовым порядком ID.
   const first = makeStop('stop-2', 'Гродно Азот', 'К Карского');
   const second = makeStop('stop-10', 'Гродно Азот', 'К Грандичам');
   const third = makeStop('stop-20', 'Гродно Азот', 'К Аульсу');
@@ -49,6 +51,7 @@ test('three same-name stops form a stable cycle regardless of source order', asy
 test('unique stops and groups with missing hints have no switch target', async () => {
   const { getOppositeStop } = await modulePromise;
 
+  // Одиночной остановке или паре без нужных подсказок переключатель не нужен.
   const first = makeStop('stop-1', 'Улица Мирная');
   const second = makeStop('stop-2', 'Улица Мирная');
   const labeled = makeStop('stop-3', 'Улица Мирная', 'К Обрембского');

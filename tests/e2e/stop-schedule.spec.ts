@@ -1,0 +1,106 @@
+import { expect, test } from '@playwright/test';
+
+import { stubBasemap } from './basemap';
+
+const stopName = 'Улица Якубовского';
+const towardsLane = 'В сторону «пер. Фолюш»';
+const towardsStreet = 'В сторону «улица Фолюш»';
+
+test.beforeEach(async ({ page }) => {
+  // Фиксируем будний день и минское время для всех проверок отправлений.
+  await page.clock.setFixedTime(new Date('2026-11-11T06:00:00+03:00'));
+
+  // Убираем внешнюю подложку карты, чтобы тесты не зависели от сети.
+  await stubBasemap(page);
+
+  await page.goto('/');
+});
+
+test('opens a stop schedule, switches to weekends and restores route focus', async ({ page }) => {
+  const panel = page.getByRole('region', { name: 'Поиск транспорта и остановок' });
+  await panel.getByRole('searchbox').fill(stopName);
+  await panel
+    .getByRole('button', { name: `Остановка ${stopName} ${towardsLane}`, exact: true })
+    .click();
+
+  // Открываем расписание выбранного автобуса через остановку.
+  const bus = panel.getByRole('button', { name: /^Автобус №3\b/ });
+  await bus.click();
+
+  await expect(panel.getByRole('heading', { name: 'Все отправления' })).toBeVisible();
+  await expect(panel.getByRole('button', { name: 'Будни', pressed: true })).toBeVisible();
+  await expect(panel.locator('time[datetime="06:01"]')).toBeVisible();
+
+  // Переключаем день и убеждаемся, что время из буднего расписания исчезло.
+  await panel.getByRole('button', { name: 'Выходные' }).click();
+  await expect(panel.getByRole('button', { name: 'Выходные', pressed: true })).toBeVisible();
+  await expect(panel.locator('time[datetime="05:26"]')).toBeVisible();
+  await expect(panel.locator('time[datetime="06:01"]')).toHaveCount(0);
+
+  // После возврата фокус должен попасть на ту же строку автобуса.
+  await panel.getByRole('button', { name: 'К маршрутам' }).click();
+  await expect(bus).toBeFocused();
+});
+
+test('switches to the opposite platform and returns directly to search results', async ({
+  page,
+}) => {
+  const panel = page.getByRole('region', { name: 'Поиск транспорта и остановок' });
+  await panel.getByRole('searchbox').fill(stopName);
+  // Из одноимённых площадок выбираем нужную по подписи направления.
+  const platform = panel.getByRole('button', {
+    name: `Остановка ${stopName} ${towardsLane}`,
+    exact: true,
+  });
+  await platform.click();
+
+  await panel.getByRole('button', { name: 'Сменить направление' }).click();
+  await expect(panel.getByText(towardsStreet, { exact: true })).toBeVisible();
+
+  // Смена площадки заменяет экран: один шаг назад ведёт сразу к результатам.
+  await panel.getByRole('button', { name: 'К результатам' }).click();
+  await expect(platform).toBeVisible();
+});
+
+test('opens a timetable from a route and returns to its stop list', async ({ page }) => {
+  const panel = page.getByRole('region', { name: 'Поиск транспорта и остановок' });
+  // Выбираем направление автобуса по его номеру и конечным остановкам.
+  const direction = 'Механический завод → Вишневец';
+  await panel.getByRole('searchbox').fill('1');
+  await panel.getByRole('button', { name: `Автобус №1 ${direction}`, exact: true }).click();
+
+  await expect(panel.getByRole('heading', { name: direction, exact: true })).toBeVisible();
+  const stop = panel.getByRole('button', { name: /^Улица Карского/ });
+  await stop.click();
+
+  await expect(panel.getByRole('heading', { name: 'Улица Карского', exact: true })).toBeVisible();
+  await expect(panel.getByRole('heading', { name: direction, exact: true })).toBeVisible();
+  // Сверяем конкретное время, чтобы поймать расписание от другого направления.
+  await expect(panel.locator('time[datetime="07:10"]')).toBeVisible();
+
+  // Возвращаемся на ту же остановку списка и проверяем обратное направление.
+  await panel.getByRole('button', { name: 'К остановкам' }).click();
+  await expect(stop).toBeFocused();
+
+  await panel.getByRole('button', { name: 'Сменить направление' }).click();
+  await expect(
+    panel.getByRole('heading', { name: 'Вишневец → Механический завод', exact: true }),
+  ).toBeVisible();
+});
+
+test('shows an empty weekend timetable for a weekday-only route', async ({ page }) => {
+  const panel = page.getByRole('region', { name: 'Поиск транспорта и остановок' });
+
+  // У этого направления автобуса №12 есть отправления в будни, но нет в выходные.
+  await panel.getByRole('searchbox').fill('автобус 12');
+  await panel
+    .getByRole('button', { name: 'Автобус №12 Улица Молодежная → Улица Одельская', exact: true })
+    .click();
+  await panel.getByRole('button', { name: /^Улица Молодежная/ }).click();
+  await expect(panel.locator('time').first()).toBeVisible();
+
+  // При смене вкладки прежние времена исчезают, а панель объясняет, почему список пуст.
+  await panel.getByRole('button', { name: 'Выходные' }).click();
+  await expect(panel.getByText('В выбранный день рейсов нет.')).toBeVisible();
+  await expect(panel.locator('time')).toHaveCount(0);
+});

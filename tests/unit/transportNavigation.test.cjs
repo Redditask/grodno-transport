@@ -10,6 +10,7 @@ test('back from a schedule restores the previous screen and its focus position',
   const route = { kind: 'routeStops', routeId: 'bus-1-out' };
   const schedule = { kind: 'schedule', routeId: route.routeId, stopId: 'stop-7' };
 
+  // Открываем маршрут и расписание, сохраняя прокрутку и фокус предыдущего экрана.
   const routeHistory = updateSearchHistory(initialSearchHistory, {
     kind: 'open',
     screen: route,
@@ -22,6 +23,7 @@ test('back from a schedule restores the previous screen and its focus position',
   });
 
   assert.equal(getSelectedStopId(scheduleHistory), 'stop-7');
+  // И обычный возврат, и отмена выбора остановки возвращают к маршруту.
   for (const action of [{ kind: 'back' }, { kind: 'back', until: 'unselected' }]) {
     const restored = updateSearchHistory(scheduleHistory, action);
     assert.deepEqual(getActiveSearchEntry(restored), { screen: route, ...position });
@@ -38,6 +40,7 @@ test('clearing a stop selected from a route keeps the route until it is dismisse
     screen: route,
     from: position,
   });
+  // Выбираем метку из маршрута, затем заменяем текущую площадку на встречную.
   const mapSelection = updateSearchHistory(fromSearch, {
     kind: 'open',
     screen: { kind: 'stopRoutes', stopId: 'stop-7' },
@@ -49,6 +52,7 @@ test('clearing a stop selected from a route keeps the route until it is dismisse
   });
 
   assert.equal(getSelectedStopId(nextStop), 'stop-8');
+  // Первая отмена убирает остановку, вторая — сам маршрут.
   const clearedStop = updateSearchHistory(nextStop, { kind: 'back', until: 'unselected' });
   assert.deepEqual(clearedStop, fromSearch);
   assert.equal(getSelectedStopId(clearedStop), undefined);
@@ -63,6 +67,7 @@ test('clearing a stop selected from a route keeps the route until it is dismisse
 test('back returns to the selected stop while clearing the map returns to results', async () => {
   const { initialSearchHistory, updateSearchHistory, getActiveSearchEntry, getSelectedStopId } =
     await navigation;
+  // Открываем остановку с карты и переходим в её расписание.
   const stop = updateSearchHistory(initialSearchHistory, {
     kind: 'open',
     screen: { kind: 'stopRoutes', stopId: 'stop-7' },
@@ -74,6 +79,7 @@ test('back returns to the selected stop while clearing the map returns to result
     from: position,
   });
 
+  // Кнопка «Назад» оставляет выбранную остановку; отмена с карты снимает выбор.
   const back = updateSearchHistory(schedule, { kind: 'back' });
   assert.equal(getSelectedStopId(back), 'stop-7');
   assert.deepEqual(getActiveSearchEntry(back), {
@@ -101,6 +107,7 @@ test('clicking the selected map marker keeps the timetable and its return histor
     from: position,
   });
 
+  // Повторный клик по выбранной метке не должен сбрасывать открытое расписание.
   const repeatedClick = updateSearchHistory(timetable, {
     kind: 'open',
     screen: { kind: 'stopRoutes', stopId },

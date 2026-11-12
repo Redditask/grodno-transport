@@ -1,5 +1,6 @@
 import type { TransportData } from '@/data/transportData';
-import type { TransportType } from '@/domain/line';
+import type { Stop } from '@/domain/stop';
+import type { RouteSummary } from '@/types/route';
 import type { TransportSearchResults } from '@/types/search';
 
 import { buildRouteSummary } from './buildRouteSummary';
@@ -7,62 +8,65 @@ import { buildRouteSummary } from './buildRouteSummary';
 const normalizeSearchText = (text: string): string =>
   text.trim().toLocaleLowerCase('ru').replaceAll('ё', 'е').replace(/\s+/g, ' ');
 
-export const searchTransport = (
-  query: string,
-  transportData: TransportData,
-): TransportSearchResults => {
-  const searchText = normalizeSearchText(query);
-  if (!searchText) return { routes: [], stops: [] };
+const searchCollator = new Intl.Collator('ru', { numeric: true });
 
-  const typeMatch = searchText.match(/^(автобус(?:ы)?|троллейбус(?:ы)?)(?=\s|№|\d|$)/u);
-  const transportType: TransportType | undefined = typeMatch
-    ? typeMatch[1].startsWith('троллейбус')
-      ? 'trolleybus'
-      : 'bus'
-    : undefined;
-  const numberQuery = searchText
-    .slice(typeMatch?.[0].length ?? 0)
-    .replace(/^\s*№\s*/, '')
-    .trim();
-
-  const routes = transportData.routes
+export const createTransportSearch = (transportData: TransportData) => {
+  const routeEntries = transportData.routes
     .flatMap((route) => {
       const summary = buildRouteSummary(route, transportData);
 
-      if (!summary || (transportType && summary.line.transportType !== transportType)) return [];
-
-      if (!numberQuery && transportType) return [summary];
-
-      return normalizeSearchText(summary.line.number).startsWith(numberQuery) ? [summary] : [];
+      return summary ? [{ summary, number: normalizeSearchText(summary.line.number) }] : [];
     })
-    .sort((a, b) => {
-      const exactOrder =
-        Number(normalizeSearchText(b.line.number) === numberQuery) -
-        Number(normalizeSearchText(a.line.number) === numberQuery);
-
-      return (
-        exactOrder ||
-        a.line.number.localeCompare(b.line.number, 'ru', { numeric: true }) ||
+    .sort(
+      ({ summary: a }, { summary: b }) =>
+        searchCollator.compare(a.line.number, b.line.number) ||
         a.line.transportType.localeCompare(b.line.transportType) ||
-        a.route.id.localeCompare(b.route.id, 'ru', { numeric: true })
-      );
-    });
+        searchCollator.compare(a.route.id, b.route.id),
+    );
 
-  const stops = transportType
-    ? []
-    : transportData.stops
-        .filter((stop) => normalizeSearchText(stop.name).includes(searchText))
-        .sort((a, b) => {
-          const prefixOrder =
-            Number(normalizeSearchText(b.name).startsWith(searchText)) -
-            Number(normalizeSearchText(a.name).startsWith(searchText));
+  const stopEntries = transportData.stops
+    .map((stop) => ({ stop, name: normalizeSearchText(stop.name) }))
+    .sort(
+      ({ stop: a }, { stop: b }) =>
+        searchCollator.compare(a.name, b.name) || searchCollator.compare(a.id, b.id),
+    );
 
-          return (
-            prefixOrder ||
-            a.name.localeCompare(b.name, 'ru', { numeric: true }) ||
-            a.id.localeCompare(b.id, 'ru', { numeric: true })
-          );
-        });
+  return (query: string): TransportSearchResults => {
+    const searchText = normalizeSearchText(query);
+    if (!searchText) return { routes: [], stops: [] };
 
-  return { routes, stops };
+    const typeMatch = searchText.match(/^(автобус(?:ы)?|троллейбус(?:ы)?)(?=\s|№|\d|$)/u);
+    const transportType = typeMatch?.[1].startsWith('троллейбус') ? 'trolleybus' : 'bus';
+    const numberQuery = searchText
+      .slice(typeMatch?.[0].length ?? 0)
+      .replace(/^\s*№\s*/, '')
+      .trim();
+
+    const exactRoutes: RouteSummary[] = [];
+    const otherRoutes: RouteSummary[] = [];
+
+    for (const { summary, number } of routeEntries) {
+      if (typeMatch && summary.line.transportType !== transportType) continue;
+      if (!number.startsWith(numberQuery)) continue;
+
+      (number === numberQuery ? exactRoutes : otherRoutes).push(summary);
+    }
+
+    const prefixStops: Stop[] = [];
+    const otherStops: Stop[] = [];
+
+    if (!typeMatch) {
+      for (const { stop, name } of stopEntries) {
+        if (!name.includes(searchText)) continue;
+
+        (name.startsWith(searchText) ? prefixStops : otherStops).push(stop);
+      }
+    }
+
+    return { routes: [...exactRoutes, ...otherRoutes], stops: [...prefixStops, ...otherStops] };
+  };
 };
+
+// Unit tests use this helper to run one query against a fixture.
+export const searchTransport = (query: string, transportData: TransportData) =>
+  createTransportSearch(transportData)(query);
