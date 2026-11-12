@@ -3,6 +3,7 @@ import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';
 
 import { applyBasemapColors } from '@/components/CityMap/layers/applyBasemapColors';
+import { addRouteLayer } from '@/components/CityMap/layers/routeLayer';
 import { addStopLayers } from '@/components/CityMap/layers/stopLayers';
 
 type MapStatus = 'loading' | 'ready' | 'error';
@@ -71,7 +72,9 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
             offset: 12,
           });
 
+          addRouteLayer(map);
           addStopLayers(map, onSelectStop, stopTooltip);
+
           setStatus('ready');
         });
         map.on('error', () => setStatus((current) => (current === 'loading' ? 'error' : current)));
