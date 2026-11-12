@@ -68,7 +68,7 @@ jobs:
         run: npm ci
 
       - name: Install Chromium
-        run: npx --no-install playwright install --with-deps chromium
+        run: npx --no-install playwright install --only-shell chromium
 
       - name: Run browser tests
         run: npm run test:e2e
