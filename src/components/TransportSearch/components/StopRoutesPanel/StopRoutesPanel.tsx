@@ -29,7 +29,9 @@ export const StopRoutesPanel = ({
         <StopBadge />
 
         <div>
-          <h2 className={`${panel.heading} ${styles.title}`} tabIndex={-1} data-screen-heading>
+          <p className={styles.label}>Остановка</p>
+
+          <h2 className={panel.heading} tabIndex={-1} data-screen-heading>
             {stop.name}
           </h2>
 
@@ -43,7 +45,7 @@ export const StopRoutesPanel = ({
         <SwitchDirectionButton onClick={() => onSwitchStop(oppositeStop.id)} />
       ) : null}
 
-      <p className={panel.caption}>Остановка · Ближайший транспорт по расписанию</p>
+      <p className={panel.caption}>Ближайший транспорт по расписанию</p>
 
       {routeItems.length ? (
         <ul className={styles.routes}>
