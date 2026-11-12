@@ -321,7 +321,7 @@
     "stopIds": [
       "stop-1614",
       "stop-620",
-      "stop-465",
+      "stop-466",
       "stop-528",
       "stop-527",
       "stop-618",
@@ -448,7 +448,7 @@
       "stop-1759",
       "stop-1761",
       "stop-1760",
-      "stop-1678",
+      "stop-1729",
       "stop-1293",
       "stop-1679",
       "stop-1680",
@@ -481,7 +481,7 @@
       "stop-1759",
       "stop-1761",
       "stop-1760",
-      "stop-1678",
+      "stop-1729",
       "stop-1293",
       "stop-1679",
       "stop-1680",
@@ -541,7 +541,7 @@
       "stop-361",
       "stop-440",
       "stop-615",
-      "stop-437",
+      "stop-374",
       "stop-1096",
       "stop-1654",
       "stop-1673",
@@ -919,7 +919,7 @@
       "stop-661",
       "stop-481",
       "stop-620",
-      "stop-466",
+      "stop-465",
       "stop-468",
       "stop-470",
       "stop-472",
@@ -1114,7 +1114,7 @@
       "stop-593",
       "stop-590",
       "stop-589",
-      "stop-1435"
+      "stop-1434"
     ]
   },
   {
@@ -1860,7 +1860,7 @@
     "id": "bus-41-direction-1",
     "lineId": "bus-41",
     "stopIds": [
-      "stop-1120",
+      "stop-1125",
       "stop-1121",
       "stop-1122",
       "stop-1044",
@@ -2046,7 +2046,7 @@
       "stop-530",
       "stop-481",
       "stop-620",
-      "stop-465",
+      "stop-466",
       "stop-528",
       "stop-527",
       "stop-618",
@@ -2323,7 +2323,7 @@
       "stop-1555",
       "stop-1562",
       "stop-1563",
-      "stop-1119",
+      "stop-1122",
       "stop-1044",
       "stop-732",
       "stop-698"
@@ -2617,7 +2617,7 @@
       "stop-460",
       "stop-462",
       "stop-464",
-      "stop-466",
+      "stop-465",
       "stop-468",
       "stop-470",
       "stop-472",
@@ -2632,7 +2632,7 @@
       "stop-471",
       "stop-469",
       "stop-1063",
-      "stop-465",
+      "stop-466",
       "stop-463",
       "stop-461",
       "stop-459",
@@ -2896,14 +2896,14 @@
       "stop-662",
       "stop-660",
       "stop-1649",
-      "stop-496"
+      "stop-495"
     ]
   },
   {
     "id": "trolleybus-10-direction-1",
     "lineId": "trolleybus-10",
     "stopIds": [
-      "stop-495",
+      "stop-496",
       "stop-1070",
       "stop-661",
       "stop-481",
@@ -2984,14 +2984,14 @@
       "stop-662",
       "stop-660",
       "stop-1649",
-      "stop-496"
+      "stop-495"
     ]
   },
   {
     "id": "trolleybus-12-direction-1",
     "lineId": "trolleybus-12",
     "stopIds": [
-      "stop-495",
+      "stop-496",
       "stop-1070",
       "stop-661",
       "stop-481",
@@ -3075,14 +3075,14 @@
       "stop-489",
       "stop-492",
       "stop-1649",
-      "stop-496"
+      "stop-495"
     ]
   },
   {
     "id": "trolleybus-14-direction-1",
     "lineId": "trolleybus-14",
     "stopIds": [
-      "stop-495",
+      "stop-496",
       "stop-490",
       "stop-676",
       "stop-1444",
@@ -3117,7 +3117,7 @@
       "stop-571",
       "stop-1063",
       "stop-466",
-      "stop-529",
+      "stop-528",
       "stop-527",
       "stop-618",
       "stop-616",
@@ -3132,7 +3132,7 @@
     "stopIds": [
       "stop-632",
       "stop-526",
-      "stop-528",
+      "stop-529",
       "stop-464",
       "stop-465",
       "stop-468",
@@ -3156,7 +3156,7 @@
       "stop-532",
       "stop-530",
       "stop-482",
-      "stop-529",
+      "stop-528",
       "stop-527",
       "stop-618",
       "stop-616",
@@ -3176,7 +3176,7 @@
       "stop-302",
       "stop-1060",
       "stop-526",
-      "stop-528",
+      "stop-529",
       "stop-480",
       "stop-531",
       "stop-533",
@@ -3213,7 +3213,7 @@
       "stop-487",
       "stop-489",
       "stop-490",
-      "stop-1070",
+      "stop-1649",
       "stop-495"
     ]
   },
@@ -3226,7 +3226,7 @@
       "stop-532",
       "stop-530",
       "stop-482",
-      "stop-529",
+      "stop-528",
       "stop-527",
       "stop-618",
       "stop-616",
@@ -3246,7 +3246,7 @@
       "stop-302",
       "stop-1060",
       "stop-526",
-      "stop-528",
+      "stop-529",
       "stop-480",
       "stop-531",
       "stop-533",
@@ -3274,14 +3274,14 @@
       "stop-489",
       "stop-492",
       "stop-1649",
-      "stop-496"
+      "stop-495"
     ]
   },
   {
     "id": "trolleybus-20-direction-1",
     "lineId": "trolleybus-20",
     "stopIds": [
-      "stop-495",
+      "stop-496",
       "stop-490",
       "stop-659",
       "stop-364",
@@ -3365,8 +3365,8 @@
       "stop-339",
       "stop-341",
       "stop-300",
-      "stop-301",
-      "stop-303",
+      "stop-302",
+      "stop-1060",
       "stop-478",
       "stop-518"
     ]
@@ -3378,8 +3378,8 @@
       "stop-518",
       "stop-346",
       "stop-344",
-      "stop-1060",
-      "stop-302",
+      "stop-303",
+      "stop-301",
       "stop-298",
       "stop-628",
       "stop-342",
@@ -3403,13 +3403,13 @@
     "id": "trolleybus-23-direction-0",
     "lineId": "trolleybus-23",
     "stopIds": [
-      "stop-1620",
+      "stop-1555",
       "stop-1127",
       "stop-1564",
       "stop-1565",
       "stop-653",
       "stop-709",
-      "stop-712",
+      "stop-711",
       "stop-1030",
       "stop-647",
       "stop-554",
@@ -3471,14 +3471,14 @@
       "stop-649",
       "stop-1655",
       "stop-713",
-      "stop-711",
-      "stop-709",
+      "stop-712",
+      "stop-1745",
       "stop-1567",
       "stop-654",
       "stop-1566",
       "stop-1123",
-      "stop-1555",
-      "stop-1620"
+      "stop-1620",
+      "stop-1555"
     ]
   },
   {
@@ -3537,15 +3537,15 @@
       "stop-339",
       "stop-341",
       "stop-300",
-      "stop-301",
+      "stop-302",
       "stop-303",
-      "stop-305",
+      "stop-1061",
       "stop-422",
       "stop-421",
       "stop-385",
       "stop-560",
-      "stop-558",
-      "stop-722",
+      "stop-1727",
+      "stop-557",
       "stop-556"
     ]
   },
@@ -3555,15 +3555,15 @@
     "stopIds": [
       "stop-554",
       "stop-555",
-      "stop-557",
+      "stop-722",
       "stop-559",
       "stop-419",
       "stop-420",
-      "stop-1061",
+      "stop-305",
       "stop-304",
-      "stop-1060",
-      "stop-302",
-      "stop-298",
+      "stop-303",
+      "stop-301",
+      "stop-300",
       "stop-628",
       "stop-342",
       "stop-340",
@@ -3572,7 +3572,7 @@
       "stop-322",
       "stop-324",
       "stop-325",
-      "stop-327",
+      "stop-633",
       "stop-333"
     ]
   },
@@ -3583,19 +3583,19 @@
       "stop-1667",
       "stop-436",
       "stop-496",
-      "stop-1649",
+      "stop-1070",
       "stop-662",
       "stop-481",
       "stop-620",
       "stop-465",
-      "stop-1063"
+      "stop-468"
     ]
   },
   {
     "id": "trolleybus-27-direction-1",
     "lineId": "trolleybus-27",
     "stopIds": [
-      "stop-468",
+      "stop-1063",
       "stop-619",
       "stop-483",
       "stop-663",
@@ -3613,7 +3613,7 @@
     "stopIds": [
       "stop-1063",
       "stop-466",
-      "stop-529",
+      "stop-528",
       "stop-527",
       "stop-618",
       "stop-616",
@@ -3633,7 +3633,7 @@
       "stop-302",
       "stop-1060",
       "stop-526",
-      "stop-528",
+      "stop-529",
       "stop-464",
       "stop-465",
       "stop-468"
@@ -3653,7 +3653,7 @@
       "stop-307",
       "stop-309",
       "stop-312",
-      "stop-313",
+      "stop-314",
       "stop-315",
       "stop-318",
       "stop-336",
@@ -3670,10 +3670,10 @@
       "stop-342",
       "stop-340",
       "stop-338",
-      "stop-1094",
+      "stop-319",
       "stop-317",
       "stop-316",
-      "stop-314",
+      "stop-313",
       "stop-308",
       "stop-422",
       "stop-420",
@@ -3691,7 +3691,7 @@
       "stop-1655",
       "stop-713",
       "stop-712",
-      "stop-709",
+      "stop-1745",
       "stop-1065",
       "stop-650",
       "stop-323",
@@ -3726,7 +3726,7 @@
       "stop-1655",
       "stop-713",
       "stop-712",
-      "stop-709",
+      "stop-1745",
       "stop-1065",
       "stop-650",
       "stop-323",
@@ -3735,7 +3735,7 @@
       "stop-339",
       "stop-341",
       "stop-300",
-      "stop-301",
+      "stop-302",
       "stop-303",
       "stop-526",
       "stop-529",
@@ -3745,14 +3745,14 @@
       "stop-489",
       "stop-492",
       "stop-1649",
-      "stop-496"
+      "stop-495"
     ]
   },
   {
     "id": "trolleybus-6-direction-1",
     "lineId": "trolleybus-6",
     "stopIds": [
-      "stop-495",
+      "stop-496",
       "stop-490",
       "stop-676",
       "stop-1444",
@@ -3761,8 +3761,8 @@
       "stop-527",
       "stop-427",
       "stop-304",
-      "stop-1060",
-      "stop-302",
+      "stop-303",
+      "stop-301",
       "stop-298",
       "stop-628",
       "stop-342",
@@ -3797,14 +3797,14 @@
       "stop-489",
       "stop-492",
       "stop-1649",
-      "stop-496"
+      "stop-495"
     ]
   },
   {
     "id": "trolleybus-7-direction-1",
     "lineId": "trolleybus-7",
     "stopIds": [
-      "stop-495",
+      "stop-496",
       "stop-490",
       "stop-488",
       "stop-487",
@@ -3835,8 +3835,8 @@
       "stop-313",
       "stop-308",
       "stop-422",
-      "stop-421",
-      "stop-385",
+      "stop-420",
+      "stop-419",
       "stop-566",
       "stop-567",
       "stop-570",
@@ -3845,8 +3845,8 @@
       "stop-466",
       "stop-480",
       "stop-530",
-      "stop-532",
-      "stop-534",
+      "stop-533",
+      "stop-1066",
       "stop-537"
     ]
   },
@@ -3855,8 +3855,8 @@
     "lineId": "trolleybus-8",
     "stopIds": [
       "stop-537",
-      "stop-1066",
-      "stop-533",
+      "stop-534",
+      "stop-532",
       "stop-531",
       "stop-482",
       "stop-464",
@@ -3866,8 +3866,8 @@
       "stop-569",
       "stop-568",
       "stop-565",
-      "stop-419",
-      "stop-420",
+      "stop-385",
+      "stop-421",
       "stop-307",
       "stop-309",
       "stop-314",
