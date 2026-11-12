@@ -26,18 +26,11 @@ export const selectStopOnMap = (map: Map, stopId?: string) => {
   return selectedStop?.coordinates;
 };
 
-export const selectRouteOnMap = (map: Map, routeId?: string) => {
-  const routeStopIds = routeId ? transportCatalog.getRouteStopIds(routeId) : undefined;
-
+export const selectRouteStopsOnMap = (map: Map, routeStopIds?: string[]) => {
   map.setFilter(
     stopLayerId,
     routeStopIds ? ['in', ['get', 'stopId'], ['literal', routeStopIds]] : null,
   );
-
-  const firstStopId = routeStopIds?.[0];
-  const firstStop = firstStopId ? transportCatalog.getMappedStop(firstStopId) : undefined;
-
-  return firstStop?.coordinates;
 };
 
 export const addStopLayers = (

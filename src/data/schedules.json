@@ -56155,7 +56155,7 @@
   },
   {
     "routeId": "bus-6-direction-0",
-    "stopId": "stop-466",
+    "stopId": "stop-465",
     "departures": {
       "weekday": [
         {
@@ -57973,7 +57973,7 @@
   },
   {
     "routeId": "bus-6-direction-1",
-    "stopId": "stop-465",
+    "stopId": "stop-466",
     "departures": {
       "weekday": [
         {
@@ -97539,7 +97539,7 @@
   },
   {
     "routeId": "bus-15-direction-1",
-    "stopId": "stop-465",
+    "stopId": "stop-466",
     "departures": {
       "weekday": [
         {
@@ -121963,7 +121963,7 @@
   },
   {
     "routeId": "bus-17-direction-1",
-    "stopId": "stop-1678",
+    "stopId": "stop-1729",
     "departures": {
       "weekday": [
         {
@@ -127701,7 +127701,7 @@
   },
   {
     "routeId": "bus-18-direction-0",
-    "stopId": "stop-1678",
+    "stopId": "stop-1729",
     "departures": {
       "weekday": [
         {
@@ -132151,7 +132151,7 @@
   },
   {
     "routeId": "bus-18-direction-1",
-    "stopId": "stop-437",
+    "stopId": "stop-374",
     "departures": {
       "weekday": [
         {
@@ -162878,7 +162878,7 @@
   },
   {
     "routeId": "bus-24-direction-0",
-    "stopId": "stop-466",
+    "stopId": "stop-465",
     "departures": {
       "weekday": [
         {
@@ -185532,7 +185532,7 @@
   },
   {
     "routeId": "bus-27-direction-0",
-    "stopId": "stop-1435",
+    "stopId": "stop-1434",
     "departures": {
       "weekday": [
         {
@@ -255072,7 +255072,7 @@
   },
   {
     "routeId": "bus-41-direction-1",
-    "stopId": "stop-1120",
+    "stopId": "stop-1125",
     "departures": {
       "weekday": [
         {
@@ -264368,7 +264368,7 @@
   },
   {
     "routeId": "bus-46-direction-1",
-    "stopId": "stop-465",
+    "stopId": "stop-466",
     "departures": {
       "weekday": [
         {
@@ -285818,7 +285818,7 @@
   },
   {
     "routeId": "bus-50-direction-1",
-    "stopId": "stop-1119",
+    "stopId": "stop-1122",
     "departures": {
       "weekday": [
         {
@@ -305944,7 +305944,7 @@
   },
   {
     "routeId": "trolleybus-2-direction-0",
-    "stopId": "stop-529",
+    "stopId": "stop-528",
     "departures": {
       "weekday": [
         {
@@ -310036,7 +310036,7 @@
   },
   {
     "routeId": "trolleybus-2-direction-1",
-    "stopId": "stop-528",
+    "stopId": "stop-529",
     "departures": {
       "weekday": [
         {
@@ -312236,7 +312236,7 @@
   },
   {
     "routeId": "trolleybus-3-direction-0",
-    "stopId": "stop-529",
+    "stopId": "stop-528",
     "departures": {
       "weekday": [
         {
@@ -316016,7 +316016,7 @@
   },
   {
     "routeId": "trolleybus-3-direction-1",
-    "stopId": "stop-528",
+    "stopId": "stop-529",
     "departures": {
       "weekday": [
         {
@@ -319526,7 +319526,7 @@
   },
   {
     "routeId": "trolleybus-4-direction-0",
-    "stopId": "stop-313",
+    "stopId": "stop-314",
     "departures": {
       "weekday": [
         {
@@ -322766,7 +322766,7 @@
   },
   {
     "routeId": "trolleybus-4-direction-1",
-    "stopId": "stop-1094",
+    "stopId": "stop-319",
     "departures": {
       "weekday": [
         {
@@ -324116,7 +324116,7 @@
   },
   {
     "routeId": "trolleybus-4-direction-1",
-    "stopId": "stop-314",
+    "stopId": "stop-313",
     "departures": {
       "weekday": [
         {
@@ -326152,7 +326152,7 @@
   },
   {
     "routeId": "trolleybus-5-direction-0",
-    "stopId": "stop-709",
+    "stopId": "stop-1745",
     "departures": {
       "weekday": [
         {
@@ -332755,7 +332755,7 @@
   },
   {
     "routeId": "trolleybus-7-direction-0",
-    "stopId": "stop-496",
+    "stopId": "stop-495",
     "departures": {
       "weekday": [
         {
@@ -333089,7 +333089,7 @@
   },
   {
     "routeId": "trolleybus-7-direction-1",
-    "stopId": "stop-495",
+    "stopId": "stop-496",
     "departures": {
       "weekday": [
         {
@@ -338067,7 +338067,7 @@
   },
   {
     "routeId": "trolleybus-6-direction-0",
-    "stopId": "stop-709",
+    "stopId": "stop-1745",
     "departures": {
       "weekday": [
         {
@@ -340547,7 +340547,7 @@
   },
   {
     "routeId": "trolleybus-6-direction-0",
-    "stopId": "stop-301",
+    "stopId": "stop-302",
     "departures": {
       "weekday": [
         {
@@ -343825,7 +343825,7 @@
   },
   {
     "routeId": "trolleybus-6-direction-0",
-    "stopId": "stop-496",
+    "stopId": "stop-495",
     "departures": {
       "weekday": [
         {
@@ -344123,7 +344123,7 @@
   },
   {
     "routeId": "trolleybus-6-direction-1",
-    "stopId": "stop-495",
+    "stopId": "stop-496",
     "departures": {
       "weekday": [
         {
@@ -346785,7 +346785,7 @@
   },
   {
     "routeId": "trolleybus-6-direction-1",
-    "stopId": "stop-1060",
+    "stopId": "stop-303",
     "departures": {
       "weekday": [
         {
@@ -347083,7 +347083,7 @@
   },
   {
     "routeId": "trolleybus-6-direction-1",
-    "stopId": "stop-302",
+    "stopId": "stop-301",
     "departures": {
       "weekday": [
         {
@@ -369481,7 +369481,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-0",
-    "stopId": "stop-421",
+    "stopId": "stop-420",
     "departures": {
       "weekday": [
         {
@@ -370085,7 +370085,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-0",
-    "stopId": "stop-385",
+    "stopId": "stop-419",
     "departures": {
       "weekday": [
         {
@@ -372859,7 +372859,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-0",
-    "stopId": "stop-532",
+    "stopId": "stop-533",
     "departures": {
       "weekday": [
         {
@@ -373189,7 +373189,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-0",
-    "stopId": "stop-534",
+    "stopId": "stop-1066",
     "departures": {
       "weekday": [
         {
@@ -374179,7 +374179,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-1",
-    "stopId": "stop-1066",
+    "stopId": "stop-534",
     "departures": {
       "weekday": [
         {
@@ -374509,7 +374509,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-1",
-    "stopId": "stop-533",
+    "stopId": "stop-532",
     "departures": {
       "weekday": [
         {
@@ -377613,7 +377613,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-1",
-    "stopId": "stop-419",
+    "stopId": "stop-385",
     "departures": {
       "weekday": [
         {
@@ -377915,7 +377915,7 @@
   },
   {
     "routeId": "trolleybus-8-direction-1",
-    "stopId": "stop-420",
+    "stopId": "stop-421",
     "departures": {
       "weekday": [
         {
@@ -393441,7 +393441,7 @@
   },
   {
     "routeId": "trolleybus-10-direction-1",
-    "stopId": "stop-495",
+    "stopId": "stop-496",
     "departures": {
       "weekday": [
         {
@@ -393759,7 +393759,7 @@
   },
   {
     "routeId": "trolleybus-10-direction-0",
-    "stopId": "stop-496",
+    "stopId": "stop-495",
     "departures": {
       "weekday": [
         {
@@ -410881,7 +410881,7 @@
   },
   {
     "routeId": "trolleybus-12-direction-0",
-    "stopId": "stop-496",
+    "stopId": "stop-495",
     "departures": {
       "weekday": [
         {
@@ -411223,7 +411223,7 @@
   },
   {
     "routeId": "trolleybus-12-direction-1",
-    "stopId": "stop-495",
+    "stopId": "stop-496",
     "departures": {
       "weekday": [
         {
@@ -422277,7 +422277,7 @@
   },
   {
     "routeId": "trolleybus-14-direction-0",
-    "stopId": "stop-496",
+    "stopId": "stop-495",
     "departures": {
       "weekday": [
         {
@@ -422665,7 +422665,7 @@
   },
   {
     "routeId": "trolleybus-14-direction-1",
-    "stopId": "stop-495",
+    "stopId": "stop-496",
     "departures": {
       "weekday": [
         {
@@ -427659,7 +427659,7 @@
   },
   {
     "routeId": "trolleybus-15-direction-0",
-    "stopId": "stop-529",
+    "stopId": "stop-528",
     "departures": {
       "weekday": [
         {
@@ -428925,7 +428925,7 @@
   },
   {
     "routeId": "trolleybus-15-direction-1",
-    "stopId": "stop-528",
+    "stopId": "stop-529",
     "departures": {
       "weekday": [
         {
@@ -431273,7 +431273,7 @@
   },
   {
     "routeId": "trolleybus-18-direction-0",
-    "stopId": "stop-529",
+    "stopId": "stop-528",
     "departures": {
       "weekday": [
         {
@@ -432613,7 +432613,7 @@
   },
   {
     "routeId": "trolleybus-18-direction-1",
-    "stopId": "stop-528",
+    "stopId": "stop-529",
     "departures": {
       "weekday": [
         {
@@ -434703,7 +434703,7 @@
   },
   {
     "routeId": "trolleybus-19-direction-1",
-    "stopId": "stop-1070",
+    "stopId": "stop-1649",
     "departures": {
       "weekday": [],
       "weekend": [
@@ -440686,7 +440686,7 @@
   },
   {
     "routeId": "trolleybus-20-direction-1",
-    "stopId": "stop-495",
+    "stopId": "stop-496",
     "departures": {
       "weekday": [
         {
@@ -441036,7 +441036,7 @@
   },
   {
     "routeId": "trolleybus-20-direction-0",
-    "stopId": "stop-496",
+    "stopId": "stop-495",
     "departures": {
       "weekday": [
         {
@@ -452556,7 +452556,7 @@
   },
   {
     "routeId": "trolleybus-22-direction-0",
-    "stopId": "stop-301",
+    "stopId": "stop-302",
     "departures": {
       "weekday": [
         {
@@ -452662,7 +452662,7 @@
   },
   {
     "routeId": "trolleybus-22-direction-0",
-    "stopId": "stop-303",
+    "stopId": "stop-1060",
     "departures": {
       "weekday": [
         {
@@ -453298,7 +453298,7 @@
   },
   {
     "routeId": "trolleybus-22-direction-1",
-    "stopId": "stop-1060",
+    "stopId": "stop-303",
     "departures": {
       "weekday": [
         {
@@ -453510,7 +453510,7 @@
   },
   {
     "routeId": "trolleybus-22-direction-1",
-    "stopId": "stop-302",
+    "stopId": "stop-301",
     "departures": {
       "weekday": [
         {
@@ -455520,7 +455520,7 @@
   },
   {
     "routeId": "trolleybus-23-direction-0",
-    "stopId": "stop-1620",
+    "stopId": "stop-1555",
     "departures": {
       "weekday": [
         {
@@ -457352,7 +457352,7 @@
   },
   {
     "routeId": "trolleybus-23-direction-0",
-    "stopId": "stop-712",
+    "stopId": "stop-711",
     "departures": {
       "weekday": [
         {
@@ -473396,7 +473396,7 @@
   },
   {
     "routeId": "trolleybus-23-direction-1",
-    "stopId": "stop-711",
+    "stopId": "stop-712",
     "departures": {
       "weekday": [
         {
@@ -473992,7 +473992,7 @@
   },
   {
     "routeId": "trolleybus-23-direction-1",
-    "stopId": "stop-709",
+    "stopId": "stop-1745",
     "departures": {
       "weekday": [
         {
@@ -475208,7 +475208,7 @@
   },
   {
     "routeId": "trolleybus-23-direction-1",
-    "stopId": "stop-1555",
+    "stopId": "stop-1620",
     "departures": {
       "weekday": [
         {
@@ -475518,7 +475518,7 @@
   },
   {
     "routeId": "trolleybus-23-direction-1",
-    "stopId": "stop-1620",
+    "stopId": "stop-1555",
     "departures": {
       "weekday": [
         {
@@ -487888,7 +487888,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-0",
-    "stopId": "stop-301",
+    "stopId": "stop-302",
     "departures": {
       "weekday": [
         {
@@ -488220,7 +488220,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-0",
-    "stopId": "stop-305",
+    "stopId": "stop-1061",
     "departures": {
       "weekday": [
         {
@@ -489050,7 +489050,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-0",
-    "stopId": "stop-558",
+    "stopId": "stop-1727",
     "departures": {
       "weekday": [
         {
@@ -489216,7 +489216,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-0",
-    "stopId": "stop-722",
+    "stopId": "stop-557",
     "departures": {
       "weekday": [
         {
@@ -489726,7 +489726,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-1",
-    "stopId": "stop-557",
+    "stopId": "stop-722",
     "departures": {
       "weekday": [
         {
@@ -490616,7 +490616,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-1",
-    "stopId": "stop-1061",
+    "stopId": "stop-305",
     "departures": {
       "weekday": [
         {
@@ -490972,7 +490972,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-1",
-    "stopId": "stop-1060",
+    "stopId": "stop-303",
     "departures": {
       "weekday": [
         {
@@ -491150,7 +491150,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-1",
-    "stopId": "stop-302",
+    "stopId": "stop-301",
     "departures": {
       "weekday": [
         {
@@ -491526,7 +491526,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-1",
-    "stopId": "stop-298",
+    "stopId": "stop-300",
     "departures": {
       "weekday": [
         {
@@ -493074,7 +493074,7 @@
   },
   {
     "routeId": "trolleybus-25-direction-1",
-    "stopId": "stop-327",
+    "stopId": "stop-633",
     "departures": {
       "weekday": [
         {
@@ -493737,7 +493737,7 @@
   },
   {
     "routeId": "trolleybus-27-direction-0",
-    "stopId": "stop-1649",
+    "stopId": "stop-1070",
     "departures": {
       "weekday": [
         {
@@ -494093,7 +494093,7 @@
   },
   {
     "routeId": "trolleybus-27-direction-0",
-    "stopId": "stop-1063",
+    "stopId": "stop-468",
     "departures": {
       "weekday": [
         {
@@ -494287,7 +494287,7 @@
   },
   {
     "routeId": "trolleybus-27-direction-1",
-    "stopId": "stop-468",
+    "stopId": "stop-1063",
     "departures": {
       "weekday": [
         {

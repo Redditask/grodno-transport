@@ -77,31 +77,6 @@
   line-height: 1.6;
 }
 
-.back {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-
-  padding: 5px 0;
-  margin-bottom: 20px;
-
-  border: 0;
-  border-radius: 4px;
-
-  color: var(--color-accent);
-  background: transparent;
-
-  font: inherit;
-  font-size: 12px;
-
-  cursor: pointer;
-}
-
-.back:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 4px;
-}
-
 .panelHeading {
   display: flex;
   align-items: baseline;

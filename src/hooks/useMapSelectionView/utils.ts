@@ -24,3 +24,37 @@ export const getCenterOffset = (
 
   return areaOnRight > areaBelow ? [coveredWidth / 2, 0] : [0, (coveredHeight - bottomInset) / 2];
 };
+
+export const getRoutePadding = (
+  container: HTMLElement,
+  overlay: HTMLElement | null,
+  clearButton: HTMLButtonElement | null,
+) => {
+  const map = container.getBoundingClientRect();
+  const viewport = container.parentElement?.getBoundingClientRect() ?? map;
+  const margin = 20;
+  const padding = {
+    top: Math.max(0, viewport.top - map.top) + margin,
+    bottom: Math.max(0, map.bottom - viewport.bottom) + 32,
+    left: margin,
+    right: margin,
+  };
+
+  const panel = overlay?.getBoundingClientRect();
+  if (!panel?.width || !panel.height) return padding;
+
+  const left = Math.max(padding.left, panel.right - map.left + margin);
+  const top = Math.max(padding.top, panel.bottom - map.top + margin);
+  const bottom = clearButton
+    ? Math.max(padding.bottom, map.bottom - clearButton.getBoundingClientRect().top + margin / 2)
+    : padding.bottom;
+  const areaOnRight =
+    Math.max(0, map.width - left - padding.right) * (map.height - padding.top - padding.bottom);
+  const areaBelow =
+    (map.width - padding.left - padding.right) * Math.max(0, map.height - top - bottom);
+
+  if (areaOnRight > areaBelow) return { ...padding, left };
+  if (areaBelow > 0) return { ...padding, top, bottom };
+
+  return padding;
+};

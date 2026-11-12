@@ -6,8 +6,8 @@ import type { useTransportNavigation } from '@/hooks/useTransportNavigation';
 import type { ResultLimits, SearchScreen } from '@/types/search';
 
 import { SearchScreenContent } from './components/SearchScreenContent/SearchScreenContent';
+import { SearchScreenNavigation } from './components/SearchScreenNavigation/SearchScreenNavigation';
 
-import panel from './styles/SearchPanel.module.scss';
 import styles from './TransportSearch.module.scss';
 
 interface TransportSearchProps {
@@ -27,14 +27,6 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
   const screen = activeEntry.screen;
   const hasQuery = query.trim().length > 0;
   const hasContent = hasQuery || screen.kind !== 'results';
-  const backLabel =
-    previousScreen?.kind === 'stopRoutes'
-      ? 'К маршрутам'
-      : previousScreen?.kind === 'routeStops'
-        ? 'К остановкам'
-        : hasQuery
-          ? 'К результатам'
-          : 'К карте';
 
   const results = useMemo(() => transportCatalog.search(query), [query]);
 
@@ -158,12 +150,13 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
           data-collapsed={isCollapsed}
           ref={contentRef}
         >
-          {screen.kind !== 'results' ? (
-            <button className={panel.back} type="button" onClick={() => back()}>
-              <span aria-hidden="true">←</span>
-              {backLabel}
-            </button>
-          ) : null}
+          <SearchScreenNavigation
+            screen={screen}
+            previousScreen={previousScreen}
+            hasQuery={hasQuery}
+            onBack={back}
+            onOpenScreen={openScreen}
+          />
 
           <SearchScreenContent
             screen={screen}

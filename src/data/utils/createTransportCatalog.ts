@@ -10,6 +10,7 @@ export const createTransportCatalog = (data: TransportData) => {
     coordinates ? [{ id, name, coordinates }] : [],
   );
 
+  const linesById = new Map(data.lines.map((line) => [line.id, line]));
   const stopsById = new Map(stops.map((stop) => [stop.id, stop]));
   const routesById = new Map(routes.map((route) => [route.id, route]));
   const mappedStopsById = new Map(mappedStops.map((stop) => [stop.id, stop]));
@@ -57,6 +58,11 @@ export const createTransportCatalog = (data: TransportData) => {
     },
 
     getRouteStopIds: (routeId: string) => getRoute(routeId)?.stopIds,
+
+    getRouteTransportType(routeId: string) {
+      const lineId = getRoute(routeId)?.lineId;
+      return lineId ? linesById.get(lineId)?.transportType : undefined;
+    },
 
     getRouteDetails(routeId: string) {
       const route = getRoute(routeId);

@@ -31,6 +31,18 @@ test('opens a stop schedule, switches to weekends and restores route focus', asy
   await expect(panel.getByRole('button', { name: 'Будни', pressed: true })).toBeVisible();
   await expect(panel.locator('time[datetime="06:01"]')).toBeVisible();
 
+  // Из расписания остановки открываем то же направление и возвращаемся обратно.
+  const openRoute = panel.getByRole('button', { name: 'К маршруту' });
+  await openRoute.click();
+  await expect(
+    panel.getByRole('heading', { name: 'Улица Фолюш → Железнодорожный вокзал', exact: true }),
+  ).toBeVisible();
+  await expect(panel.getByRole('button', { name: /^Улица Якубовского/ })).toBeVisible();
+
+  await panel.getByRole('button', { name: 'К расписанию' }).click();
+  await expect(panel.locator('time[datetime="06:01"]')).toBeVisible();
+  await expect(openRoute).toBeFocused();
+
   // Переключаем день и убеждаемся, что время из буднего расписания исчезло.
   await panel.getByRole('button', { name: 'Выходные' }).click();
   await expect(panel.getByRole('button', { name: 'Выходные', pressed: true })).toBeVisible();
@@ -38,7 +50,7 @@ test('opens a stop schedule, switches to weekends and restores route focus', asy
   await expect(panel.locator('time[datetime="06:01"]')).toHaveCount(0);
 
   // После возврата фокус должен попасть на ту же строку автобуса.
-  await panel.getByRole('button', { name: 'К маршрутам' }).click();
+  await panel.getByRole('button', { name: 'К другим маршрутам' }).click();
   await expect(bus).toBeFocused();
 });
 
@@ -78,8 +90,18 @@ test('opens a timetable from a route and returns to its stop list', async ({ pag
   // Сверяем конкретное время, чтобы поймать расписание от другого направления.
   await expect(panel.locator('time[datetime="07:10"]')).toBeVisible();
 
+  // Из расписания маршрута открываем площадку с её списком транспорта.
+  const openStop = panel.getByRole('button', { name: 'К остановке' });
+  await openStop.click();
+  await expect(panel.getByRole('heading', { name: 'Улица Карского', exact: true })).toBeVisible();
+  await expect(panel.getByRole('button', { name: /^Автобус №1\b/ })).toBeVisible();
+
+  await panel.getByRole('button', { name: 'К расписанию' }).click();
+  await expect(panel.locator('time[datetime="07:10"]')).toBeVisible();
+  await expect(openStop).toBeFocused();
+
   // Возвращаемся на ту же остановку списка и проверяем обратное направление.
-  await panel.getByRole('button', { name: 'К остановкам' }).click();
+  await panel.getByRole('button', { name: 'К другим остановкам' }).click();
   await expect(stop).toBeFocused();
 
   await panel.getByRole('button', { name: 'Сменить направление' }).click();
