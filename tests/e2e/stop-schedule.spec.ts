@@ -52,6 +52,16 @@ test('opens a stop schedule, switches to weekends and restores route focus', asy
   // После возврата фокус должен попасть на ту же строку автобуса.
   await panel.getByRole('button', { name: 'К другим маршрутам' }).click();
   await expect(bus).toBeFocused();
+
+  // Номер в компактном списке открывает то же расписание и получает фокус при возврате.
+  const shortcut = panel
+    .getByRole('list', { name: 'Автобусы' })
+    .getByRole('button', { name: /^Расписание\. Автобус №3\b/ });
+  await shortcut.click();
+  await expect(panel.locator('time[datetime="06:01"]')).toBeVisible();
+
+  await panel.getByRole('button', { name: 'К другим маршрутам' }).click();
+  await expect(shortcut).toBeFocused();
 });
 
 test('switches to the opposite platform and returns directly to search results', async ({
@@ -125,4 +135,37 @@ test('shows an empty weekend timetable for a weekday-only route', async ({ page 
   await panel.getByRole('button', { name: 'Выходные' }).click();
   await expect(panel.getByText('В выбранный день рейсов нет.')).toBeVisible();
   await expect(panel.locator('time')).toHaveCount(0);
+});
+
+test('opens either direction of a repeated route number', async ({ page }) => {
+  const panel = page.getByRole('region', { name: 'Поиск транспорта и остановок' });
+  await panel.getByRole('searchbox').fill('Областная филармония');
+  await panel.getByRole('button', { name: 'Остановка Областная филармония', exact: true }).click();
+
+  // Компактные кнопки связаны с конечными в подписи под номерами.
+  const shortcuts = panel
+    .getByRole('list', { name: 'Автобусы' })
+    .getByRole('button', { name: /^Расписание\. Автобус №39\b/ });
+  await expect(shortcuts).toHaveText(['391', '392']);
+  const directions = panel.getByRole('list', { name: 'Направления', exact: true });
+  await expect(directions).toBeHidden();
+  await panel.getByText('Направления', { exact: true }).click();
+  await expect(directions).toBeVisible();
+  await expect(directions.getByRole('listitem')).toHaveText([
+    '391 → Рынок Южный',
+    '392 → Областная филармония',
+  ]);
+
+  // Проверяем, что обе кнопки ведут в расписания разных направлений.
+  await shortcuts.nth(0).click();
+  await expect(
+    panel.getByRole('heading', { name: 'Областная филармония → Рынок Южный', exact: true }),
+  ).toBeVisible();
+  await panel.getByRole('button', { name: 'К другим маршрутам' }).click();
+  await expect(shortcuts.nth(0)).toBeFocused();
+
+  await shortcuts.nth(1).click();
+  await expect(
+    panel.getByRole('heading', { name: 'Рынок Южный → Областная филармония', exact: true }),
+  ).toBeVisible();
 });
