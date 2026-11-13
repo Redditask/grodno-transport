@@ -1,4 +1,4 @@
-import type { ChangeEvent, KeyboardEvent } from 'react';
+import type { ChangeEvent, KeyboardEvent, UIEvent } from 'react';
 import { useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { transportCatalog } from '@/data/transportData';
@@ -10,6 +10,8 @@ import { SearchScreenNavigation } from './components/SearchScreenNavigation/Sear
 
 import styles from './TransportSearch.module.scss';
 
+const scrollThreshold = 120;
+
 interface TransportSearchProps {
   navigation: ReturnType<typeof useTransportNavigation>;
 }
@@ -18,7 +20,9 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
   const { activeEntry, previousScreen, back, reset } = navigation;
   const [query, setQuery] = useState('');
   const [limits, setLimits] = useState<ResultLimits>({ routes: 10, stops: 10 });
+
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   const contentId = useId();
   const contentRef = useRef<HTMLDivElement>(null);
@@ -59,6 +63,7 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
 
   const updateQuery = (nextQuery: string) => {
     setQuery(nextQuery);
+    setShowScrollToTop(false);
     setIsCollapsed(false);
     setLimits({ routes: 10, stops: 10 });
     reset();
@@ -86,6 +91,20 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
     setLimits((current) => ({ ...current, [group]: current[group] + 10 }));
 
   const handleTogglePanel = () => setIsCollapsed((collapsed) => !collapsed);
+
+  const handleScroll = (event: UIEvent<HTMLDivElement>) => {
+    setShowScrollToTop(event.currentTarget.scrollTop > scrollThreshold);
+  };
+
+  const handleScrollToTop = () => {
+    const content = contentRef.current;
+    if (!content) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    content.focus({ preventScroll: true });
+    content.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'instant' : 'smooth' });
+  };
 
   return (
     <section
@@ -149,6 +168,8 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
           id={contentId}
           data-collapsed={isCollapsed}
           ref={contentRef}
+          tabIndex={-1}
+          onScroll={handleScroll}
         >
           <SearchScreenNavigation
             screen={screen}
@@ -167,6 +188,26 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
             onReplaceScreen={navigation.replace}
           />
         </div>
+      ) : null}
+
+      {hasContent && showScrollToTop ? (
+        <button
+          className={styles.scrollToTop}
+          type="button"
+          aria-label="Прокрутить вверх"
+          aria-controls={contentId}
+          onClick={handleScrollToTop}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M12 19V5m-6 6 6-6 6 6"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
       ) : null}
     </section>
   );
