@@ -13,11 +13,14 @@ export const App = () => {
   const searchPanelRef = useRef<HTMLDivElement>(null);
 
   const navigation = useTransportNavigation();
-
   const { open, back, selectedStopId, selectedRouteId } = navigation;
 
   const handleOpenStopFromMap = useCallback(
     (stopId: string) => open({ kind: 'stopRoutes', stopId }, 'map'),
+    [open],
+  );
+  const handleOpenRouteFromMap = useCallback(
+    (routeId: string) => open({ kind: 'routeStops', routeId }, 'map'),
     [open],
   );
   const hasMapSelection = Boolean(selectedStopId || selectedRouteId);
@@ -45,6 +48,7 @@ export const App = () => {
           selectedRouteId={selectedRouteId}
           overlayRef={searchPanelRef}
           onSelectStop={handleOpenStopFromMap}
+          onSelectRoute={handleOpenRouteFromMap}
           onClearSelection={handleDismissMapSelection}
         />
 

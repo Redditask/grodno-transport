@@ -3,6 +3,7 @@ import { useRef } from 'react';
 
 import { useCityMap } from '@/hooks/useCityMap';
 import { useMapSelectionView } from '@/hooks/useMapSelectionView';
+import { useVehicleMarkers } from '@/hooks/useVehicleMarkers';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
 import styles from './CityMap.module.scss';
@@ -12,6 +13,7 @@ interface CityMapProps {
   selectedRouteId?: string;
   overlayRef: RefObject<HTMLDivElement | null>;
   onSelectStop: (stopId: string) => void;
+  onSelectRoute: (routeId: string) => void;
   onClearSelection: () => void;
 }
 
@@ -20,6 +22,7 @@ export const CityMap = ({
   selectedRouteId,
   overlayRef,
   onSelectStop,
+  onSelectRoute,
   onClearSelection,
 }: CityMapProps) => {
   const { containerRef, mapRef, status } = useCityMap(onSelectStop);
@@ -32,6 +35,14 @@ export const CityMap = ({
     clearButtonRef,
     selectedStopId,
     selectedRouteId,
+    isMapReady: status === 'ready',
+  });
+
+  useVehicleMarkers({
+    mapRef,
+    selectedStopId,
+    selectedRouteId,
+    onSelectRoute,
     isMapReady: status === 'ready',
   });
 

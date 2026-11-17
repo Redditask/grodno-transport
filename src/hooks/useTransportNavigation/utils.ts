@@ -30,8 +30,18 @@ export const updateSearchHistory = (
 
       if (action.from === 'map') {
         if (
-          action.screen.kind === 'stopRoutes' &&
-          action.screen.stopId === getSelectedStopId(history)
+          nextEntry.screen.kind === 'stopRoutes' &&
+          nextEntry.screen.stopId === getSelectedStopId(history)
+        ) {
+          return history;
+        }
+
+        const currentEntry = getActiveSearchEntry(history);
+
+        if (
+          nextEntry.screen.kind === 'routeStops' &&
+          currentEntry.screen.kind === 'routeStops' &&
+          nextEntry.screen.routeId === currentEntry.screen.routeId
         ) {
           return history;
         }
