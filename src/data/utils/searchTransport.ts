@@ -67,6 +67,6 @@ export const createTransportSearch = (transportData: TransportData) => {
   };
 };
 
-// Unit tests use this helper to run one query against a fixture.
+// Модульные тесты используют эту функцию, чтобы выполнить один запрос на тестовых данных.
 export const searchTransport = (query: string, transportData: TransportData) =>
   createTransportSearch(transportData)(query);

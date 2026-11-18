@@ -4,6 +4,7 @@ import type { StopRouteItem } from '@/types/route';
 import { StopBadge } from '../StopBadge/StopBadge';
 import { SwitchDirectionButton } from '../SwitchDirectionButton/SwitchDirectionButton';
 import { RouteListItem } from './components/RouteListItem/RouteListItem';
+import { StopRoutesShortcuts } from './components/StopRouteShortcuts/StopRoutesShortcuts';
 
 import panel from '../../styles/SearchPanel.module.scss';
 import styles from './StopRoutesPanel.module.scss';
@@ -43,6 +44,10 @@ export const StopRoutesPanel = ({
 
       {oppositeStop ? (
         <SwitchDirectionButton onClick={() => onSwitchStop(oppositeStop.id)} />
+      ) : null}
+
+      {routeItems.length ? (
+        <StopRoutesShortcuts routeItems={routeItems} onSelectRoute={onSelectRoute} />
       ) : null}
 
       <p className={panel.caption}>Ближайший транспорт по расписанию</p>

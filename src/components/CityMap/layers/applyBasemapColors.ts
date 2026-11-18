@@ -1,6 +1,6 @@
 import type { Map } from 'maplibre-gl';
 
-// Layer IDs from the OpenFreeMap Positron style.
+// Идентификаторы слоёв из стиля Positron сервиса OpenFreeMap.
 const basemapColors = [
   { layerId: 'water', property: 'fill-color', color: '#78bde0' },
   { layerId: 'waterway', property: 'line-color', color: '#78bde0' },
