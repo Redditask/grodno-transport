@@ -24,6 +24,7 @@ const interpolate = (from: MapPoint, to: MapPoint, progress: number): MapPoint =
   from[1] + (to[1] - from[1]) * progress,
 ];
 
+// Для каждой точки сохраняем координаты для карты и расстояние от начала маршрута вдоль дороги.
 export const measureRoute = (coordinates: number[][]): RoutePoint[] => {
   const referenceLatitude = coordinates[0]?.[1] ?? 0;
   const points: RoutePoint[] = [];
@@ -47,6 +48,8 @@ export const measureRoute = (coordinates: number[][]): RoutePoint[] => {
   return points;
 };
 
+// Находим точку на дороге рядом с каждой остановкой по порядку движения.
+// Для каждой остановки возвращаем расстояние от начала маршрута до этой точки.
 export const projectStops = (route: RoutePoint[], stops: MapPoint[]): number[] | undefined => {
   if (route.length < 2) return;
 
@@ -97,6 +100,9 @@ export const projectStops = (route: RoutePoint[], stops: MapPoint[]): number[] |
   return stopDistances;
 };
 
+// Собираем рейсы из расписаний отдельных остановок. Первое время на каждой остановке
+// считаем одним рейсом, второе — следующим. Если число отправлений различается,
+// пары могут сдвинуться, поэтому такое расписание пропускаем.
 export const buildVehicleTrips = (
   departuresByStop: Departure[][],
   stopDistances: number[],
@@ -112,6 +118,7 @@ export const buildVehicleTrips = (
 
   return departures.flatMap((_, tripIndex) => {
     const times = sortedTimes.map((stopTimes) => stopTimes[tripIndex]);
+    // Отбрасываем рейс, если время идёт назад или перегон требует слишком высокой скорости.
     const isPlausible = times.every((time, stopIndex) => {
       if (stopIndex === 0) return true;
 
@@ -124,6 +131,7 @@ export const buildVehicleTrips = (
   });
 };
 
+// По времени определяем, между какими остановками едет машина и какую часть пути она уже прошла.
 export const getVehiclePosition = (
   route: RoutePoint[],
   stopDistances: number[],
@@ -137,6 +145,7 @@ export const getVehiclePosition = (
   const startDistance = stopDistances[nextStop - 1];
   const distance = startDistance + (stopDistances[nextStop] - startDistance) * progress;
 
+  // Переводим пройденное расстояние в координаты на линии дороги.
   const nextPoint = route.findIndex((point) => point.distance >= distance);
   if (nextPoint <= 0) return route[0]?.coordinates;
 

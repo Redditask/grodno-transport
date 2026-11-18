@@ -19,7 +19,7 @@ const resolveTypeScript = (sourcePath, context, nextResolve) => {
   return nextResolve(specifier, context);
 };
 
-// Node needs the same source alias and directory imports as Vite.
+// Для тестов Node.js использует тот же псевдоним путей и импорты из папок, что и Vite.
 registerHooks({
   resolve(specifier, context, nextResolve) {
     if (specifier.startsWith('@/')) {
