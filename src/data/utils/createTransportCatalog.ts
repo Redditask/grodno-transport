@@ -57,6 +57,8 @@ export const createTransportCatalog = (data: TransportData) => {
       };
     },
 
+    getRouteIds: () => [...routesById.keys()],
+
     getRouteStopIds: (routeId: string) => getRoute(routeId)?.stopIds,
 
     getRouteTransportType(routeId: string) {

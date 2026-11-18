@@ -1,9 +1,8 @@
-import type { Map as LibreMap, Marker } from 'maplibre-gl';
+import type { Map as LibreMap } from 'maplibre-gl';
 import type { RefObject } from 'react';
-import { useEffect, useEffectEvent } from 'react';
+import { useEffect, useEffectEvent, useRef } from 'react';
 
-import { createVehicleMarker } from '@/components/CityMap/vehicles/vehicleMarkers';
-import { createVehiclePositions } from '@/components/CityMap/vehicles/vehiclePositions';
+import type { createVehicleLayer } from '@/components/CityMap/layers/vehicleLayer';
 
 interface VehicleMarkersOptions {
   mapRef: RefObject<LibreMap | null>;
@@ -23,6 +22,8 @@ export const useVehicleMarkers = ({
   selectedStopId,
   onSelectRoute,
 }: VehicleMarkersOptions) => {
+  // Выбор может поменяться, пока карта работает. Через ref проверяем видимость без пересоздания слоя.
+  const syncVisibilityRef = useRef<(() => void) | undefined>(undefined);
   const getSelection = useEffectEvent(() => ({ selectedRouteId, selectedStopId }));
 
   useEffect(() => {
@@ -30,77 +31,87 @@ export const useVehicleMarkers = ({
     if (!isMapReady || !map) return;
 
     let isDisposed = false;
-    let animationFrame = 0;
-    let removeMarkers: (() => void) | undefined;
+    let isLoading = false;
+    let wasVisible = false;
+    let animationFrame: number | undefined;
+    let lastUpdate = -Infinity;
+    let layer: ReturnType<typeof createVehicleLayer> | undefined;
 
-    const start = async () => {
-      const { Marker, Popup } = await import('maplibre-gl');
-      if (isDisposed) return;
-
-      const getPositions = createVehiclePositions();
-      const markersById = new Map<string, Marker>();
-      const tooltip = new Popup({
-        className: 'map-stop-tooltip',
-        closeButton: false,
-        closeOnClick: false,
-        closeOnMove: true,
-        focusAfterOpen: false,
-        offset: 14,
-      });
-      let lastUpdate = -Infinity;
-
-      removeMarkers = () => {
-        tooltip.remove();
-        for (const marker of markersById.values()) marker.remove();
-      };
-
-      const animate = (timestamp: number) => {
-        animationFrame = requestAnimationFrame(animate);
-        if (timestamp - lastUpdate < updateInterval) return;
-        lastUpdate = timestamp;
-
-        const { selectedRouteId, selectedStopId } = getSelection();
-        const showVehicles = selectedRouteId || selectedStopId || map.getZoom() >= minOverviewZoom;
-        const positions = showVehicles
-          ? getPositions(new Date(), selectedRouteId, selectedStopId)
-          : [];
-        const activeIds = new Set(positions.map(({ id }) => id));
-
-        for (const [id, marker] of markersById) {
-          if (activeIds.has(id)) continue;
-
-          if (marker.getElement().matches(':hover, :focus')) tooltip.remove();
-          marker.remove();
-          markersById.delete(id);
-        }
-
-        for (const position of positions) {
-          const marker = markersById.get(position.id);
-          if (!marker) {
-            markersById.set(
-              position.id,
-              createVehicleMarker(map, Marker, tooltip, position, onSelectRoute),
-            );
-
-            continue;
-          }
-
-          marker.setLngLat(position.coordinates);
-          if (tooltip.isOpen() && marker.getElement().matches(':hover, :focus')) {
-            tooltip.setLngLat(position.coordinates);
-          }
-        }
-      };
-
+    // Просим браузер вызвать нас в следующем кадре, но пересчитываем метки примерно раз в 100 мс.
+    const animate = (timestamp: number) => {
       animationFrame = requestAnimationFrame(animate);
+      if (timestamp - lastUpdate < updateInterval) return;
+
+      lastUpdate = timestamp;
+      const { selectedRouteId, selectedStopId } = getSelection();
+      layer?.update(selectedRouteId, selectedStopId);
     };
 
-    void start();
+    const stopAnimation = () => {
+      if (animationFrame === undefined) return;
 
+      cancelAnimationFrame(animationFrame);
+      animationFrame = undefined;
+      lastUpdate = -Infinity;
+      layer?.clear();
+    };
+
+    const syncVisibility = () => {
+      const { selectedRouteId, selectedStopId } = getSelection();
+      const isVisible =
+        !document.hidden &&
+        Boolean(selectedRouteId || selectedStopId || map.getZoom() >= minOverviewZoom);
+
+      // События масштаба приходят часто. Запускаем или останавливаем цикл только при смене видимости.
+      if (isVisible === wasVisible) return;
+      wasVisible = isVisible;
+
+      if (!isVisible) {
+        stopAnimation();
+        return;
+      }
+
+      if (layer) {
+        animationFrame = requestAnimationFrame(animate);
+        return;
+      }
+
+      if (isLoading) return;
+      isLoading = true;
+
+      // Подготовка расписаний начинается только тогда, когда транспорт нужен на экране.
+      void import('@/components/CityMap/layers/vehicleLayer')
+        .then(({ createVehicleLayer }) => {
+          // Пока импорт загружался, карту могли закрыть, а метки могли стать не нужны.
+          if (isDisposed) return;
+
+          layer = createVehicleLayer(map, onSelectRoute);
+          if (wasVisible) animationFrame = requestAnimationFrame(animate);
+        })
+        .catch((error: unknown) => {
+          console.error('Не удалось загрузить движение транспорта.', error);
+        })
+        .finally(() => {
+          isLoading = false;
+        });
+    };
+
+    syncVisibilityRef.current = syncVisibility;
+    map.on('zoom', syncVisibility);
+    document.addEventListener('visibilitychange', syncVisibility);
+    syncVisibility();
+
+    // Снимаем подписки и отменяем кадр, когда карта или эффект завершают работу.
     return () => {
       isDisposed = true;
-      cancelAnimationFrame(animationFrame);
-      removeMarkers?.();
+      syncVisibilityRef.current = undefined;
+      document.removeEventListener('visibilitychange', syncVisibility);
+      map.off('zoom', syncVisibility);
+      stopAnimation();
     };
   }, [isMapReady, mapRef, onSelectRoute]);
+
+  useEffect(() => {
+    syncVisibilityRef.current?.();
+  }, [selectedRouteId, selectedStopId]);
 };

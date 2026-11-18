@@ -5,10 +5,8 @@ import { formatTransportTime, getDayType, timeToMinutes } from '@/utils/transpor
 
 import { buildVehicleTrips, getVehiclePosition, measureRoute, projectStops } from './vehicleTrips';
 
-const pilotRouteIds = ['bus-17-direction-0', 'bus-17-direction-1', 'trolleybus-1-direction-0'];
-
-const buildPilotRoutes = () =>
-  pilotRouteIds.flatMap((routeId) => {
+const buildVehicleRoutes = () =>
+  transportCatalog.getRouteIds().flatMap((routeId) => {
     const details = transportCatalog.getRouteDetails(routeId);
     const coordinates = getRouteGeometry(routeId);
     if (!details || !coordinates) return [];
@@ -27,34 +25,42 @@ const buildPilotRoutes = () =>
     );
     if (!stopDistances) return [];
 
+    const trips = {
+      weekday: buildVehicleTrips(
+        routeStops.map(({ schedule }) => schedule?.departures.weekday ?? []),
+        stopDistances,
+      ),
+      weekend: buildVehicleTrips(
+        routeStops.map(({ schedule }) => schedule?.departures.weekend ?? []),
+        stopDistances,
+      ),
+    };
+    if (!trips.weekday.length && !trips.weekend.length) return [];
+
     return [
       {
         routeId,
         stopIds: new Set(route.stopIds),
         transportType: line.transportType,
+        routeNumber: line.number,
         label: formatTransportLabel(line) + ' · ' + origin + ' → ' + destination,
         geometry,
         stopDistances,
-        trips: {
-          weekday: buildVehicleTrips(
-            routeStops.map(({ schedule }) => schedule?.departures.weekday ?? []),
-            stopDistances,
-          ),
-          weekend: buildVehicleTrips(
-            routeStops.map(({ schedule }) => schedule?.departures.weekend ?? []),
-            stopDistances,
-          ),
-        },
+        trips,
       },
     ];
   });
 
+// При запуске анимации один раз привязываем остановки к дороге и собираем времена по рейсам.
+// Возвращаем функцию, которая помнит эти данные и пересчитывает только текущие позиции.
 export const createVehiclePositions = () => {
-  const routes = buildPilotRoutes();
+  const routes = buildVehicleRoutes();
   let serviceMinute = -1;
   let minutesToday = 0;
   let serviceDayTypes: ReturnType<typeof getDayType>[] = [];
 
+  // В хуке это getPositions. На каждом обновлении передаём ей текущее время и выбор на карте.
+  // В ответ получаем список рейсов, которые уже начались, ещё идут и подходят под фильтр.
   return (now: Date, selectedRouteId?: string, selectedStopId?: string) => {
     // Часы и тип дня пересчитываем раз в минуту, а движение уточняем по секундам.
     const minute = Math.floor(now.getTime() / 60_000);
@@ -72,7 +78,7 @@ export const createVehiclePositions = () => {
     );
 
     return matchingRoutes.flatMap(
-      ({ routeId, transportType, label, trips, geometry, stopDistances }) =>
+      ({ routeId, transportType, routeNumber, label, trips, geometry, stopDistances }) =>
         serviceDayTypes.flatMap((dayType, dayIndex) => {
           const dayOffset = dayIndex - 1;
           const serviceMinutes = minutes - dayOffset * 1440;
@@ -85,6 +91,7 @@ export const createVehiclePositions = () => {
               id: routeId + ':' + (minute - minutesToday + dayOffset * 1440) + ':' + trip.times[0],
               routeId,
               transportType,
+              routeNumber,
               label,
               coordinates,
             };
