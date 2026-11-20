@@ -28,6 +28,35 @@ test('a trip follows the bends in the road and reaches each stop at its schedule
   assert.equal(getVehiclePosition(route, distances, trip, 16), undefined);
 });
 
+test('stop projection checks the remaining stops before choosing a pass through a loop', async () => {
+  const { measureRoute, projectStops } = await modules;
+
+  // Первые две остановки ближе к позднему проезду. Третья доступна только на раннем.
+  const route = measureRoute([
+    [0, 0.0002],
+    [0.002, 0.0002],
+    [0.003, 0.0002],
+    [0.003, -0.001],
+    [0, -0.001],
+    [0, 0],
+    [0.002, 0],
+    [0.002, -0.001],
+  ]);
+  const stops = [
+    [0.001, 0],
+    [0.0017, 0],
+    [0.0028, 0.0002],
+  ];
+
+  const distances = projectStops(route, stops);
+
+  assert.ok(distances);
+  assert.ok(distances[0] < distances[1]);
+  assert.ok(distances[1] < route[1].distance);
+  assert.ok(distances[2] > route[1].distance && distances[2] < route[2].distance);
+  assert.equal(projectStops(route, [stops[2], ...stops]), undefined);
+});
+
 test('incomplete and implausible schedules do not produce guessed trips', async () => {
   const { buildVehicleTrips } = await modules;
 

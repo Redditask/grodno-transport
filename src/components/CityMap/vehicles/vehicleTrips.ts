@@ -7,6 +7,11 @@ interface RoutePoint {
   distance: number;
 }
 
+interface StopProjection {
+  routeDistance: number;
+  distanceToStop: number;
+}
+
 interface VehicleTrip {
   times: number[];
 }
@@ -48,32 +53,31 @@ export const measureRoute = (coordinates: number[][]): RoutePoint[] => {
   return points;
 };
 
-// Находим точку на дороге рядом с каждой остановкой по порядку движения.
-// Для каждой остановки возвращаем расстояние от начала маршрута до этой точки.
+// stops уже содержит площадки в порядке маршрута. Возвращаем расстояния вдоль линии
+// от начала маршрута до каждой из этих площадок в том же порядке.
 export const projectStops = (route: RoutePoint[], stops: MapPoint[]): number[] | undefined => {
   if (route.length < 2) return;
 
   const referenceLatitude = route[0].coordinates[1];
-  const stopDistances: number[] = [];
+  const points = route.map(({ coordinates, distance }) => ({
+    coordinates: toMeters(coordinates, referenceLatitude),
+    distance,
+  }));
 
-  for (const stop of stops) {
+  // Для каждой площадки просматриваем всю линию. Если автобус проходит рядом дважды,
+  // обе точки становятся вариантами привязки одной площадки.
+  const projectionsByStop = stops.map((stop) => {
     const [stopX, stopY] = toMeters(stop, referenceLatitude);
-    const previousDistance = stopDistances.at(-1) ?? -1;
-    let nearestDistance = maxStopDistance;
+    const projections: StopProjection[] = [];
 
-    let routeDistance: number | undefined;
-
-    for (let index = 1; index < route.length; index++) {
-      const from = route[index - 1];
-      const to = route[index];
-
+    for (let index = 1; index < points.length; index++) {
+      const from = points[index - 1];
+      const to = points[index];
       const length = to.distance - from.distance;
+      if (!length) continue;
 
-      if (!length || to.distance <= previousDistance) continue;
-
-      const [fromX, fromY] = toMeters(from.coordinates, referenceLatitude);
-      const [toX, toY] = toMeters(to.coordinates, referenceLatitude);
-
+      const [fromX, fromY] = from.coordinates;
+      const [toX, toY] = to.coordinates;
       const progress = Math.max(
         0,
         Math.min(
@@ -82,19 +86,51 @@ export const projectStops = (route: RoutePoint[], stops: MapPoint[]): number[] |
         ),
       );
 
-      const distance = from.distance + length * progress;
-      if (distance <= previousDistance) continue;
-
-      const [x, y] = interpolate([fromX, fromY], [toX, toY], progress);
+      const [x, y] = interpolate(from.coordinates, to.coordinates, progress);
       const distanceToStop = Math.hypot(stopX - x, stopY - y);
-      if (distanceToStop >= nearestDistance) continue;
+      if (distanceToStop >= maxStopDistance) continue;
 
-      nearestDistance = distanceToStop;
-      routeDistance = distance;
+      projections.push({ routeDistance: from.distance + length * progress, distanceToStop });
     }
 
-    if (routeDistance === undefined) return;
-    stopDistances.push(routeDistance);
+    return projections;
+  });
+
+  // Идём с конца и ищем самый поздний вариант для каждой остановки.
+  // Он должен быть раньше границы следующей остановки. Для последней остановки границы ещё нет.
+  const latestDistances: number[] = [];
+  let nextDistance = Infinity;
+
+  for (let index = projectionsByStop.length - 1; index >= 0; index--) {
+    const projections = projectionsByStop[index];
+    let latestIndex = projections.length - 1;
+
+    while (latestIndex >= 0 && projections[latestIndex].routeDistance >= nextDistance) {
+      latestIndex--;
+    }
+    if (latestIndex < 0) return;
+
+    nextDistance = projections[latestIndex].routeDistance;
+    latestDistances[index] = nextDistance;
+  }
+
+  // С начала выбираем ближайшую к площадке точку после предыдущей остановки
+  // и в пределах границы, найденной при проходе с конца.
+  const stopDistances: number[] = [];
+
+  for (const [index, projections] of projectionsByStop.entries()) {
+    const previousDistance = stopDistances.at(-1) ?? -1;
+    let nearest: StopProjection | undefined;
+
+    for (const projection of projections) {
+      if (projection.routeDistance <= previousDistance) continue;
+      if (projection.routeDistance > latestDistances[index]) break;
+
+      if (!nearest || projection.distanceToStop < nearest.distanceToStop) nearest = projection;
+    }
+
+    if (!nearest) return;
+    stopDistances.push(nearest.routeDistance);
   }
 
   return stopDistances;

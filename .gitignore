@@ -8,4 +8,5 @@ work/
 !.env.example
 *.log
 *.md
+!/README.md
 .idea/

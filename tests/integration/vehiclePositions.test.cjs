@@ -66,8 +66,8 @@ test('compatible directions from across the network appear over a weekday and we
     }
   }
 
-  assert.equal(routeIds.size, 112);
+  assert.equal(routeIds.size, 145);
   assert.ok(routeIds.has('bus-34-direction-0'));
   assert.ok(routeIds.has('trolleybus-11-direction-0'));
-  assert.ok(!routeIds.has('bus-46-direction-1'));
+  assert.ok(routeIds.has('bus-46-direction-1'));
 });
