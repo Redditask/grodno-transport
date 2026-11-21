@@ -12,9 +12,16 @@
   inset-block: calc(-1 * var(--header-height)) calc(-1 * var(--footer-height));
 }
 
-.map :global(.map-stop-tooltip) {
-  z-index: 2;
+.map :global(.map_tooltip) {
   pointer-events: none;
+
+  &:global(.map-stop-tooltip) {
+    z-index: 2;
+  }
+
+  &:global(.map-vehicle-tooltip) {
+    z-index: 3;
+  }
 
   :global(.maplibregl-popup-content) {
     max-width: 240px;
@@ -61,6 +68,14 @@
 .map :global(.maplibregl-ctrl-group) button {
   width: 44px;
   height: 44px;
+
+  &:first-child {
+    border-radius: 11px 11px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 11px 11px;
+  }
 }
 
 .map :global(.maplibregl-canvas):focus-visible {

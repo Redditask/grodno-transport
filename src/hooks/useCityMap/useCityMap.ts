@@ -64,7 +64,7 @@ export const useCityMap = (onSelectStop: (stopId: string) => void) => {
           applyBasemapColors(map);
 
           const stopTooltip = new Popup({
-            className: 'map-stop-tooltip',
+            className: 'map_tooltip map-stop-tooltip',
             closeButton: false,
             closeOnClick: false,
             closeOnMove: true,
