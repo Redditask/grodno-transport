@@ -1,4 +1,4 @@
-import type { RefObject } from 'react';
+import type { KeyboardEventHandler, RefObject } from 'react';
 import { useRef } from 'react';
 
 import { useCityMap } from '@/hooks/useCityMap';
@@ -15,6 +15,7 @@ interface CityMapProps {
   onSelectStop: (stopId: string) => void;
   onSelectRoute: (routeId: string) => void;
   onClearSelection: () => void;
+  onKeyDown: KeyboardEventHandler<HTMLElement>;
 }
 
 export const CityMap = ({
@@ -24,6 +25,7 @@ export const CityMap = ({
   onSelectStop,
   onSelectRoute,
   onClearSelection,
+  onKeyDown,
 }: CityMapProps) => {
   const { containerRef, mapRef, status } = useCityMap(onSelectStop);
   const clearButtonRef = useRef<HTMLButtonElement>(null);
@@ -47,7 +49,7 @@ export const CityMap = ({
   });
 
   return (
-    <section className={styles.viewport} aria-label="Карта Гродно">
+    <section className={styles.viewport} aria-label="Карта Гродно" onKeyDown={onKeyDown}>
       <div className={styles.map} ref={containerRef} />
 
       {selectedStopId || selectedRouteId ? (

@@ -25,7 +25,7 @@ export const useTransportNavigation = () => {
   const selectedRouteId = activeScreen.kind === 'routeStops' ? activeScreen.routeId : undefined;
 
   const replace = (screen: SearchScreen) => dispatch({ kind: 'replace', screen });
-  const back = (until?: 'unselected') => dispatch({ kind: 'back', until });
+  const back = () => dispatch({ kind: 'back' });
   const reset = () => dispatch({ kind: 'reset' });
 
   return {

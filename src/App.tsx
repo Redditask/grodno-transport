@@ -14,7 +14,7 @@ export const App = () => {
   const [isSearchCollapsed, setIsSearchCollapsed] = useState(false);
 
   const navigation = useTransportNavigation();
-  const { open, back, selectedStopId, selectedRouteId } = navigation;
+  const { open, back, reset, selectedStopId, selectedRouteId } = navigation;
 
   const handleOpenStopFromMap = useCallback(
     (stopId: string) => {
@@ -32,33 +32,29 @@ export const App = () => {
     },
     [open],
   );
-  const hasMapSelection = Boolean(selectedStopId || selectedRouteId);
 
-  const handleDismissMapSelection = () => {
-    back(selectedStopId ? 'unselected' : undefined);
-  };
-
-  const handleMapStageKeyDown = (event: KeyboardEvent<HTMLElement>) => {
-    if (event.key !== 'Escape' || !hasMapSelection) return;
+  const handleBackOnEscape = (event: KeyboardEvent<HTMLElement>) => {
+    if (event.key !== 'Escape') return;
 
     event.preventDefault();
     event.stopPropagation();
 
-    handleDismissMapSelection();
+    back();
   };
 
   return (
     <div className={styles.page}>
       <AppHeader />
 
-      <main className={styles.mapStage} onKeyDownCapture={handleMapStageKeyDown}>
+      <main className={styles.mapStage}>
         <CityMap
           selectedStopId={selectedStopId}
           selectedRouteId={selectedRouteId}
           overlayRef={searchPanelRef}
           onSelectStop={handleOpenStopFromMap}
           onSelectRoute={handleOpenRouteFromMap}
-          onClearSelection={handleDismissMapSelection}
+          onClearSelection={reset}
+          onKeyDown={handleBackOnEscape}
         />
 
         <div className={styles.searchPanel} ref={searchPanelRef}>
@@ -66,6 +62,7 @@ export const App = () => {
             navigation={navigation}
             isCollapsed={isSearchCollapsed}
             onCollapseChange={setIsSearchCollapsed}
+            onKeyDown={handleBackOnEscape}
           />
         </div>
       </main>

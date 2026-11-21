@@ -23,17 +23,13 @@ test('back from a schedule restores the previous screen and its focus position',
   });
 
   assert.equal(getSelectedStopId(scheduleHistory), 'stop-7');
-  // И обычный возврат, и отмена выбора остановки возвращают к маршруту.
-  for (const action of [{ kind: 'back' }, { kind: 'back', until: 'unselected' }]) {
-    const restored = updateSearchHistory(scheduleHistory, action);
-    assert.deepEqual(getActiveSearchEntry(restored), { screen: route, ...position });
-    assert.equal(getSelectedStopId(restored), undefined);
-  }
+  const restored = updateSearchHistory(scheduleHistory, { kind: 'back' });
+  assert.deepEqual(getActiveSearchEntry(restored), { screen: route, ...position });
+  assert.equal(getSelectedStopId(restored), undefined);
 });
 
-test('clearing a stop selected from a route keeps the route until it is dismissed', async () => {
-  const { initialSearchHistory, updateSearchHistory, getActiveSearchEntry, getSelectedStopId } =
-    await navigation;
+test('clearing the map resets both the selected stop and its previous route', async () => {
+  const { initialSearchHistory, updateSearchHistory, getSelectedStopId } = await navigation;
   const route = { kind: 'routeStops', routeId: 'bus-1-out' };
   const fromSearch = updateSearchHistory(initialSearchHistory, {
     kind: 'open',
@@ -52,16 +48,9 @@ test('clearing a stop selected from a route keeps the route until it is dismisse
   });
 
   assert.equal(getSelectedStopId(nextStop), 'stop-8');
-  // Первая отмена убирает остановку, вторая — сам маршрут.
-  const clearedStop = updateSearchHistory(nextStop, { kind: 'back', until: 'unselected' });
-  assert.deepEqual(clearedStop, fromSearch);
-  assert.equal(getSelectedStopId(clearedStop), undefined);
-
-  const clearedRoute = updateSearchHistory(clearedStop, { kind: 'back' });
-  assert.deepEqual(getActiveSearchEntry(clearedRoute), {
-    screen: { kind: 'results' },
-    ...position,
-  });
+  const cleared = updateSearchHistory(nextStop, { kind: 'reset' });
+  assert.deepEqual(cleared, initialSearchHistory);
+  assert.equal(getSelectedStopId(cleared), undefined);
 });
 
 test('back returns to the selected stop while clearing the map returns to results', async () => {
@@ -87,7 +76,7 @@ test('back returns to the selected stop while clearing the map returns to result
     ...position,
   });
 
-  const cleared = updateSearchHistory(schedule, { kind: 'back', until: 'unselected' });
+  const cleared = updateSearchHistory(schedule, { kind: 'reset' });
   assert.equal(getSelectedStopId(cleared), undefined);
   assert.equal(getActiveSearchEntry(cleared).screen.kind, 'results');
 });
