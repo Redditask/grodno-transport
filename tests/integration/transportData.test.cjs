@@ -40,7 +40,7 @@ test('transport JSON has unique IDs and valid line, route, stop and schedule lin
     }
   }
 
-  for (const { routeId, stopId } of schedules) {
+  for (const { routeId, stopId, departures } of schedules) {
     const key = `${routeId} / ${stopId}`;
     assert.ok(
       routesById.get(routeId)?.stopIds.includes(stopId),
@@ -48,5 +48,19 @@ test('transport JSON has unique IDs and valid line, route, stop and schedule lin
     );
     assert.ok(!scheduleKeys.has(key), `${key}: duplicate schedule`);
     scheduleKeys.add(key);
+
+    for (const [dayType, times] of Object.entries(departures)) {
+      for (const { time, serviceMinutes } of times) {
+        const label = `${key} / ${dayType} / ${time}`;
+        assert.ok(
+          Number.isInteger(serviceMinutes) && serviceMinutes >= 0,
+          `${label}: invalid serviceMinutes ${serviceMinutes}`,
+        );
+
+        const hours = String(Math.floor(serviceMinutes / 60) % 24).padStart(2, '0');
+        const minutes = String(serviceMinutes % 60).padStart(2, '0');
+        assert.equal(time, `${hours}:${minutes}`, `${label}: time does not match serviceMinutes`);
+      }
+    }
   }
 });

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import type { Stop } from '@/domain/stop';
 import { useCurrentTime } from '@/hooks/useCurrentTime';
 import type { StopRouteItem } from '@/types/route';
+import { formatTransportLabel } from '@/utils/formatTransportLabel';
 import { groupDeparturesByHour } from '@/utils/groupDeparturesByHour';
 import type { DayType } from '@/utils/transportTime';
 import { getDayType } from '@/utils/transportTime';
@@ -40,10 +41,7 @@ export const SchedulePanel = ({ stop, routeItem }: SchedulePanelProps) => {
         <TransportBadge line={routeItem.line} />
 
         <div>
-          <span className={styles.transportName}>
-            {routeItem.line.transportType === 'bus' ? 'Автобус' : 'Троллейбус'} №
-            {routeItem.line.number}
-          </span>
+          <span className={styles.transportName}>{formatTransportLabel(routeItem.line)}</span>
 
           <h3 className={styles.direction}>
             {routeItem.origin} → {routeItem.destination}
