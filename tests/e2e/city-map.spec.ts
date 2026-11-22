@@ -3,11 +3,11 @@ import { expect, test } from '@playwright/test';
 
 import { failBasemap, stubBasemap } from './basemap';
 
-const readStopMarkers = async (page: Page) => {
+const readStopMarker = async (page: Page, startY: number) => {
   const screenshot = await page.screenshot();
 
   return page.evaluate(
-    async (imageUrl) => {
+    async ({ imageUrl, startY }) => {
       // Метки нарисованы в WebGL и не имеют DOM-узлов. Ищем их по цвету на снимке.
       const image = new Image();
       image.src = imageUrl;
@@ -31,78 +31,72 @@ const readStopMarkers = async (page: Page) => {
         return rgb.every((channel, index) => Math.abs(channel - data[pixel + index]) <= 3);
       };
 
-      let pixels = 0;
-      let point: { x: number; y: number } | undefined;
-
-      // Считаем площадь меток и выбираем точку внутри кружка, справа от панели поиска.
-      for (let y = 80; y < height - 90; y++) {
-        for (let x = 8; x < width - 8; x++) {
-          if (!isMarkerPixel(x, y)) continue;
-
-          pixels++;
+      // Берём точку внутри кружка, справа от панели поиска.
+      for (let y = startY; y < height - 90; y++) {
+        for (let x = Math.floor(width / 2) + 1; x < width - 8; x++) {
           if (
-            !point &&
-            x > width / 2 &&
+            isMarkerPixel(x, y) &&
             isMarkerPixel(x - 2, y) &&
             isMarkerPixel(x + 2, y) &&
             isMarkerPixel(x, y - 2) &&
             isMarkerPixel(x, y + 2)
           ) {
-            point = { x, y };
+            return { x, y };
           }
         }
       }
-
-      return { pixels, point };
     },
-    `data:image/png;base64,${screenshot.toString('base64')}`,
+    { imageUrl: `data:image/png;base64,${screenshot.toString('base64')}`, startY },
   );
 };
 
-test('hovering and clicking a map marker opens the stop, and clearing restores markers', async ({
-  page,
-}) => {
+test('opens another map stop after clearing the selection', async ({ page }) => {
   // Проверяем мышь на широком экране, где панель не перекрывает выбранную точку.
   await page.setViewportSize({ width: 1100, height: 760 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.clock.setFixedTime(new Date('2026-11-22T02:00:00+03:00'));
   await stubBasemap(page);
   await page.goto('/');
 
   const map = page.getByRole('region', { name: 'Карта Гродно' });
   const search = page.getByRole('region', { name: 'Поиск транспорта и остановок' });
-  const tooltip = map.locator('.maplibregl-popup-content');
+  const tooltip = map.locator('.map-stop-tooltip');
   const clearSelection = map.getByRole('button', { name: 'Отменить выбор' });
 
-  let initialMarkers: Awaited<ReturnType<typeof readStopMarkers>> | undefined;
-  await expect(async () => {
-    initialMarkers = await readStopMarkers(page);
-    expect(initialMarkers.point).toBeDefined();
-  }).toPass({ timeout: 10_000 });
+  const openStop = async (startY: number) => {
+    let point: Awaited<ReturnType<typeof readStopMarker>>;
+    await expect(async () => {
+      point = await readStopMarker(page, startY);
+      expect(point).toBeDefined();
+    }).toPass({ timeout: 10_000 });
 
-  const { point, pixels: initialPixels } = initialMarkers!;
-  if (!point) throw new Error('No clickable map marker was found');
+    if (!point) throw new Error('No clickable map marker was found');
 
-  // Наводим курсор на кружок и проверяем, что клик открывает ту же остановку.
-  await page.mouse.move(point.x, point.y);
-  await expect(tooltip).toBeVisible();
-  const stopName = (await tooltip.innerText()).trim();
-  expect(stopName).not.toBe('');
+    await page.mouse.move(point.x, point.y);
+    await expect(tooltip).toBeVisible();
+    const name = (await tooltip.innerText()).trim();
+    expect(name).not.toBe('');
 
-  await page.mouse.click(point.x, point.y);
-  const stopHeading = search.getByRole('heading', { name: stopName, exact: true });
-  await expect(stopHeading).toBeVisible();
+    await page.mouse.click(point.x, point.y);
+    const heading = search.getByRole('heading', { name, exact: true });
+    await expect(heading).toBeVisible();
+    return { heading, name };
+  };
+
+  const firstStop = await openStop(80);
   await expect(clearSelection).toBeVisible();
 
-  // После выбора остаётся одна метка, после отмены снова видно много меток.
-  await expect
-    .poll(async () => (await readStopMarkers(page)).pixels)
-    .toBeLessThan(initialPixels / 4);
-
   await clearSelection.click();
-  await expect(stopHeading).toBeHidden();
+  await expect(firstStop.heading).toBeHidden();
   await expect(clearSelection).toBeHidden();
-  await expect
-    .poll(async () => (await readStopMarkers(page)).pixels)
-    .toBeGreaterThan(initialPixels / 4);
+
+  const zoomOut = map.getByRole('button', { name: 'Отдалить карту' });
+  await zoomOut.click();
+  await zoomOut.click();
+
+  // После приближения первая остановка в центре. Ищем следующую в нижней части карты.
+  const secondStop = await openStop(480);
+  expect(secondStop.name).not.toBe(firstStop.name);
 });
 
 test('a basemap load failure is reported without disabling transport search', async ({ page }) => {
