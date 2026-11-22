@@ -9,7 +9,7 @@ export const createVehicleLayer = (map: LibreMap, onSelectRoute: (routeId: strin
   const getPositions = createVehiclePositions();
   const markersById = new Map<string, Marker>();
   const tooltip = new Popup({
-    className: 'map-stop-tooltip',
+    className: 'map_tooltip map-vehicle-tooltip',
     closeButton: false,
     closeOnClick: false,
     closeOnMove: true,

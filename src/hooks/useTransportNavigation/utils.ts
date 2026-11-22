@@ -5,7 +5,7 @@ export type OpenFrom = Pick<SearchHistoryEntry, 'scrollTop' | 'focusId'> | 'map'
 type NavigationAction =
   | { kind: 'open'; screen: SearchScreen; from: OpenFrom }
   | { kind: 'replace'; screen: SearchScreen }
-  | { kind: 'back'; until?: 'unselected' }
+  | { kind: 'back' }
   | { kind: 'reset' };
 
 type SearchHistory = [SearchHistoryEntry, ...SearchHistoryEntry[]];
@@ -62,24 +62,8 @@ export const updateSearchHistory = (
       if (history.length === 1) return history;
 
       return [history[0], ...history.slice(1, -1), { screen: action.screen, scrollTop: 0 }];
-    case 'back': {
-      let remainingLength = history.length;
-
-      if (action.until === 'unselected') {
-        while (
-          remainingLength > 1 &&
-          getScreenStopId(history[remainingLength - 1].screen) !== undefined
-        ) {
-          remainingLength -= 1;
-        }
-      } else {
-        remainingLength = Math.max(1, remainingLength - 1);
-      }
-
-      return remainingLength === history.length
-        ? history
-        : [history[0], ...history.slice(1, remainingLength)];
-    }
+    case 'back':
+      return history.length === 1 ? history : [history[0], ...history.slice(1, -1)];
     case 'reset':
       return initialSearchHistory;
   }

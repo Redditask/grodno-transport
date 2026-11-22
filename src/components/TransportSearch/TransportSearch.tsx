@@ -1,4 +1,4 @@
-import type { ChangeEvent, KeyboardEvent, UIEvent } from 'react';
+import type { ChangeEvent, KeyboardEventHandler, UIEvent } from 'react';
 import { useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import { transportCatalog } from '@/data/transportData';
@@ -14,14 +14,21 @@ const scrollThreshold = 120;
 
 interface TransportSearchProps {
   navigation: ReturnType<typeof useTransportNavigation>;
+  isCollapsed: boolean;
+  onCollapseChange: (isCollapsed: boolean) => void;
+  onKeyDown: KeyboardEventHandler<HTMLElement>;
 }
 
-export const TransportSearch = ({ navigation }: TransportSearchProps) => {
+export const TransportSearch = ({
+  navigation,
+  isCollapsed,
+  onCollapseChange,
+  onKeyDown,
+}: TransportSearchProps) => {
   const { activeEntry, previousScreen, back, reset } = navigation;
   const [query, setQuery] = useState('');
   const [limits, setLimits] = useState<ResultLimits>({ routes: 10, stops: 10 });
 
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   const contentId = useId();
@@ -64,7 +71,7 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
   const updateQuery = (nextQuery: string) => {
     setQuery(nextQuery);
     setShowScrollToTop(false);
-    setIsCollapsed(false);
+    onCollapseChange(false);
     setLimits({ routes: 10, stops: 10 });
     reset();
   };
@@ -78,19 +85,10 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
     inputRef.current?.focus();
   };
 
-  const handleKeyDown = (event: KeyboardEvent<HTMLElement>) => {
-    if (event.key === 'Escape') {
-      event.preventDefault();
-      event.stopPropagation();
-
-      back();
-    }
-  };
-
   const handleShowMore = (group: keyof ResultLimits) =>
     setLimits((current) => ({ ...current, [group]: current[group] + 10 }));
 
-  const handleTogglePanel = () => setIsCollapsed((collapsed) => !collapsed);
+  const handleTogglePanel = () => onCollapseChange(!isCollapsed);
 
   const handleScroll = (event: UIEvent<HTMLDivElement>) => {
     setShowScrollToTop(event.currentTarget.scrollTop > scrollThreshold);
@@ -110,7 +108,7 @@ export const TransportSearch = ({ navigation }: TransportSearchProps) => {
     <section
       className={styles.search}
       aria-label="Поиск транспорта и остановок"
-      onKeyDown={handleKeyDown}
+      onKeyDown={onKeyDown}
     >
       <div className={styles.searchBar}>
         <svg className={styles.searchIcon} viewBox="0 0 24 24" fill="none" aria-hidden="true">

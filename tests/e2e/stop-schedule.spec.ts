@@ -49,8 +49,8 @@ test('opens a stop schedule, switches to weekends and restores route focus', asy
   await expect(panel.locator('time[datetime="05:26"]')).toBeVisible();
   await expect(panel.locator('time[datetime="06:01"]')).toHaveCount(0);
 
-  // После возврата фокус должен попасть на ту же строку автобуса.
-  await panel.getByRole('button', { name: 'К другим маршрутам' }).click();
+  // Escape в панели возвращает на остановку и восстанавливает фокус на строке автобуса.
+  await page.keyboard.press('Escape');
   await expect(bus).toBeFocused();
 
   // Номер в компактном списке открывает то же расписание и получает фокус при возврате.
@@ -60,8 +60,19 @@ test('opens a stop schedule, switches to weekends and restores route focus', asy
   await shortcut.click();
   await expect(panel.locator('time[datetime="06:01"]')).toBeVisible();
 
-  await panel.getByRole('button', { name: 'К другим маршрутам' }).click();
+  const map = page.getByRole('region', { name: 'Карта Гродно' });
+  const clearSelection = map.getByRole('button', { name: 'Отменить выбор' });
+
+  // При фокусе на карте первый Escape закрывает расписание, второй отменяет выбор.
+  await clearSelection.press('Escape');
   await expect(shortcut).toBeFocused();
+  await expect(clearSelection).toBeVisible();
+
+  await clearSelection.press('Escape');
+  await expect(clearSelection).toBeHidden();
+  await expect(
+    panel.getByRole('button', { name: `Остановка ${stopName} ${towardsLane}`, exact: true }),
+  ).toBeVisible();
 });
 
 test('switches to the opposite platform and returns directly to search results', async ({
@@ -111,12 +122,22 @@ test('opens a timetable from a route and returns to its stop list', async ({ pag
   await expect(openStop).toBeFocused();
 
   // Возвращаемся на ту же остановку списка и проверяем обратное направление.
-  await panel.getByRole('button', { name: 'К другим остановкам' }).click();
+  await page.keyboard.press('Escape');
   await expect(stop).toBeFocused();
 
   await panel.getByRole('button', { name: 'Сменить направление' }).click();
   await expect(
     panel.getByRole('heading', { name: 'Вишневец → Механический завод', exact: true }),
+  ).toBeVisible();
+
+  await stop.click();
+  const clearSelection = page
+    .getByRole('region', { name: 'Карта Гродно' })
+    .getByRole('button', { name: 'Отменить выбор' });
+  await clearSelection.click();
+  await expect(clearSelection).toBeHidden();
+  await expect(
+    panel.getByRole('button', { name: `Автобус №1 ${direction}`, exact: true }),
   ).toBeVisible();
 });
 

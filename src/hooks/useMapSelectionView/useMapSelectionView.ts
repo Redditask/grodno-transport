@@ -7,6 +7,8 @@ import { selectStopOnMap } from '@/components/CityMap/layers/stopLayers';
 
 import { getCenterOffset, getRoutePadding } from './utils';
 
+const minZoom = 14;
+
 interface UseMapSelectionViewOptions {
   mapRef: RefObject<Map | null>;
   containerRef: RefObject<HTMLDivElement | null>;
@@ -49,6 +51,7 @@ export const useMapSelectionView = ({
 
         map.easeTo({
           center: [stopCoordinates.longitude, stopCoordinates.latitude],
+          zoom: Math.max(map.getZoom(), minZoom),
           offset,
           padding: { top: 0, right: 0, bottom: 0, left: 0 },
         });
