@@ -68,7 +68,7 @@ jobs:
         run: npm ci
 
       - name: Install Chromium
-        run: npx --no-install playwright install --only-shell chromium
+        run: npm exec --workspace web -- playwright install --only-shell chromium
 
       - name: Run browser tests
         run: npm run test:e2e
@@ -78,7 +78,7 @@ jobs:
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: playwright-results
-          path: work/playwright-results
+          path: web/work/playwright-results
           if-no-files-found: ignore
           include-hidden-files: true
           retention-days: 7

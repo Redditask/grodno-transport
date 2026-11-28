@@ -9,4 +9,6 @@ work/
 *.log
 *.md
 !/README.md
+!/web/README.md
+!/api/README.md
 .idea/
